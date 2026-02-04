@@ -31,12 +31,23 @@ export default function CocktailsPage({ barStock, cocktailsData, darkMode }) {
     });
   }, [possibleCocktails]);
 
-  // Filter cocktails based on search input
-  const filteredCocktails = useMemo(() => {
-    if (!search) return possibleCocktails;
-    const results = fuse.search(search);
-    return results.map(r => r.item);
-  }, [search, fuse, possibleCocktails]);
+// Filter cocktails based on search input and prioritize ones with all ingredients
+const filteredCocktails = useMemo(() => {
+  if (!search) return possibleCocktails;
+
+  // Run Fuse search
+  const results = fuse.search(search).map(r => r.item);
+
+  // Sort by missingIngredients length (assumes possibleCocktails already has missingIngredients)
+  return results
+    .map(cocktail => {
+      const match = possibleCocktails.find(c => c.id === cocktail.id);
+      return match || { ...cocktail, missingIngredients: [] };
+    })
+    .sort((a, b) => a.missingIngredients.length - b.missingIngredients.length);
+
+}, [search, fuse, possibleCocktails]);
+
 
   const containerStyle = {
     minHeight: "100vh",
