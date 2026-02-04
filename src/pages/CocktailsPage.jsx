@@ -9,16 +9,14 @@ export default function CocktailsPage({ barStock, cocktailsData, darkMode }) {
 
   // Determine cocktails you can make or almost make
   const possibleCocktails = useMemo(() => {
-    return cocktailsData
-      .map(cocktail => {
-        // missingIngredients is now an array of ingredient names
-        const missingIngredients = cocktail.ingredients
-          .filter(i => !barStock.includes(i.name.toLowerCase()))
-          .map(i => i.name);
-        return { ...cocktail, missingIngredients };
-      })
-      .filter(c => c.missingIngredients.length <= 1);
-  }, [cocktailsData, barStock]);
+  return cocktailsData.map(cocktail => {
+    const missingIngredients = cocktail.ingredients
+      .filter(i => !barStock.includes(i.name.toLowerCase())) 
+      .map(i => i.name); // only store the name for display
+    return { ...cocktail, missingIngredients };
+  });
+}, [cocktailsData, barStock]);
+
 
   // Set up Fuse.js for fuzzy searching by cocktail name or ingredient names
   const fuse = useMemo(() => {
