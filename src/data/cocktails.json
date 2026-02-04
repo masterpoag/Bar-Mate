@@ -88,7 +88,7 @@
         "amount": "1.5 cl"
       },
       {
-        "name": "Sugar Syrup",
+        "name": "Simple Syrup",
         "amount": "1 cl"
       },
       {
@@ -197,7 +197,7 @@
         "amount": "1 cl"
       },
       {
-        "name": "Sugar Syrup",
+        "name": "Simple Syrup",
         "amount": "1 cl"
       },
       {
@@ -507,33 +507,6 @@
     "glass": "Collins glass",
     "category": "Ordinary Drink",
     "alcoholic": "Alcoholic"
-  },
-  {
-    "name": "Chocolate Beverage",
-    "ingredients": [
-      {
-        "name": "Milk",
-        "amount": "6 cups"
-      },
-      {
-        "name": "Chocolate",
-        "amount": "3 oz Mexican"
-      },
-      {
-        "name": "Cinnamon",
-        "amount": "1 tsp powdered"
-      },
-      {
-        "name": "Egg",
-        "amount": "3"
-      }
-    ],
-    "instructions": "Boil milk in the top of a deep double boiler five minutes. Remove from fire and add chocolate, mixed with the cinnamon, a little at a time, beating with molinillo or egg beater after each addition. When the chocolate is thoroughly blended, heat to the boiling point. Place over bottom of double boiler and add eggs, whipping constantly, until they are thoroughly blended and the mixture is frothing. Serve in coffee mug. Serves eight.",
-    "description": "",
-    "image": "https://www.thecocktaildb.com/images/media/drink/jbqrhv1487603186.jpg",
-    "glass": "Coffee mug",
-    "category": "Cocoa",
-    "alcoholic": "Non alcoholic"
   },
   {
     "name": "Aquamarine",
@@ -867,7 +840,7 @@
         "amount": "1/2"
       },
       {
-        "name": "Sugar Syrup",
+        "name": "Simple Syrup",
         "amount": "1 tsp"
       },
       {
@@ -983,7 +956,7 @@
         "amount": "1 cl"
       },
       {
-        "name": "Sugar syrup",
+        "name": "Simple Syrup",
         "amount": "1 dash"
       }
     ],
@@ -1800,7 +1773,7 @@
         "amount": "3 cl"
       },
       {
-        "name": "Sugar Syrup",
+        "name": "Simple Syrup",
         "amount": "3 cl"
       },
       {
@@ -1889,7 +1862,7 @@
         "amount": "1/2 oz"
       },
       {
-        "name": "Sugar Syrup",
+        "name": "Simple Syrup",
         "amount": "1/2 oz"
       },
       {
@@ -1926,33 +1899,6 @@
     "glass": "Cocktail glass",
     "category": "Cocktail",
     "alcoholic": "Alcoholic"
-  },
-  {
-    "name": "Nuked Hot Chocolate",
-    "ingredients": [
-      {
-        "name": "Cocoa powder",
-        "amount": "2 tsp"
-      },
-      {
-        "name": "Sugar",
-        "amount": "1 tsp"
-      },
-      {
-        "name": "Vanilla extract",
-        "amount": "1/2 tsp"
-      },
-      {
-        "name": "Milk",
-        "amount": "12 oz"
-      }
-    ],
-    "instructions": "Mix with a bit of milk (1 oz or so) in coffee mug. Nuke mug for about 30-50 seconds. Stir until the heated cocoa dissolves. Fill mug with milk. Nuke for 1-2 minutes, depending on wattage and preferences as to burnt mouth parts.",
-    "description": "",
-    "image": "https://www.thecocktaildb.com/images/media/drink/xcu6nb1487603142.jpg",
-    "glass": "Coffee mug",
-    "category": "Cocoa",
-    "alcoholic": "Non alcoholic"
   },
   {
     "name": "Highland Fling Cocktail",
@@ -3438,7 +3384,7 @@
         "amount": "1 shot"
       },
       {
-        "name": "Sugar Syrup",
+        "name": "Simple Syrup",
         "amount": "1/2 shot"
       },
       {
@@ -3646,29 +3592,6 @@
     "alcoholic": "Alcoholic"
   },
   {
-    "name": "Empellón Cocina's Fat-Washed Mezcal",
-    "ingredients": [
-      {
-        "name": "Mezcal",
-        "amount": "2 oz"
-      },
-      {
-        "name": "Chocolate liqueur",
-        "amount": "3/4 oz"
-      },
-      {
-        "name": "Coffee liqueur",
-        "amount": "1/2 oz"
-      }
-    ],
-    "instructions": "To ensure that your pork fat is just as delicious as theirs, here’s their adobo marinade and what to do with it (you’ll also need a rack of ribs):\r\n\r\n4 ancho chiles, 8 guajillo chiles and 4 chipotle chiles, plus 4 cloves roasted garlic, half a cup of cider vinegar, a quarter teaspoon of Mexican oregano, 1 teaspoon of ground black pepper, a whole clove, a quarter teaspoon of ground cinnamon and a half teaspoon of ground cumin.\r\n\r\nToast the dried chiles and soak in water for at least an hour until they are rehydrated. Drain and discard the soaking liquid. Combine the soaked chiles with the remaining ingredients and purée until smooth.\r\n\r\nCold smoke a rack of baby back pork ribs by taking a large hotel pan with woodchips on one side and charcoal on the other. Place another, smaller, pan with pork ribs, above the charcoal/woodchip pan. Ignite the charcoal, being careful to not ignite the woodchips. Cover both pans with foil and allow to smoke for 10-15 minutes, until desired level of smoke is achieved, then coat with adobo marinade and wrap in tin foil prior to placing ribs in a 300 degree oven for 7 hours. When the ribs have cooled, strain off the fat and use for the infusion.\r\n\r\nIf you’re having a hard time coming up to the same kind of volume of fat, make up the balance with pork lard from a butcher. To get the same depth of flavor without the ribs, heat up the fat in a pot with a few spoons of the marinade.\r\n\r\nOnce you’ve got your tub of seasoned pork fat in cooled liquid form, pour equal amounts of Ilegal Joven mezcal and fat into a sealable container. Seal the container and give it a really good shake, then put it in the freezer overnight. When the whole thing is separated and congealed, pour it through a fine mesh chinoise. If you don’t have a chinoise, try a fine mesh strainer, or if you don’t have one of those, try spooning off most of the fat. There will be some beads of orange fat left in the strained mezcal: run that through a few layers of cheesecloth (or coffee filters in a pinch) to get rid of the last of it.\r\n\r\nThe mezcal is now ready for drinking, straight-up or in a cocktail. \r\n\r\nHabanero tincture\r\n\r\nSlice habaneros and add 2 ounces Ilegal Joven mezcal.\r\nAllow to sit overnight or until desired level of heat is achieved.\r\nCocktail\r\n\r\nCombine mezcal and chocolate liqueur in a mixing glass with ice and stir for 45 seconds.\r\nStrain into chilled coupe.\r\nCarefully \"sink\" the coffee liqueur down the inside of the coupe over a spoon.\r\nGarnish with 5 drops habanero tincture.",
-    "description": "",
-    "image": "https://www.thecocktaildb.com/images/media/drink/osgvxt1513595509.jpg",
-    "glass": "Beer Glass",
-    "category": "Cocktail",
-    "alcoholic": "Alcoholic"
-  },
-  {
     "name": "Bermuda Highball",
     "ingredients": [
       {
@@ -3746,7 +3669,7 @@
         "amount": "0.75 oz"
       },
       {
-        "name": "Sugar Syrup",
+        "name": "Simple Syrup",
         "amount": "0.75 oz"
       },
       {
@@ -3762,7 +3685,7 @@
         "amount": "Garnish with"
       }
     ],
-    "instructions": "Muddle the blackberries in a tumbler glass. Mix the Gin, lemon juice and sugar syrup in a shaker and strain over chopped ice. Top with Soda water and garnish with more blackberries and some mint",
+    "instructions": "Muddle the blackberries in a tumbler glass. Mix the Gin, lemon juice and Simple Syrup in a shaker and strain over chopped ice. Top with Soda water and garnish with more blackberries and some mint",
     "description": "Dark, Fruity",
     "image": "https://www.thecocktaildb.com/images/media/drink/stwiva1619704025.jpg",
     "glass": "Old-fashioned glass",
@@ -4039,7 +3962,7 @@
         "amount": "10 ml"
       },
       {
-        "name": "Sugar Syrup",
+        "name": "Simple Syrup",
         "amount": "10 ml"
       },
       {
@@ -4399,7 +4322,7 @@
         "amount": "15 cl"
       },
       {
-        "name": "Sugar syrup",
+        "name": "Simple Syrup",
         "amount": "2-3 cl"
       },
       {
@@ -4407,7 +4330,7 @@
         "amount": ""
       }
     ],
-    "instructions": "Place some ice cubes in a large tumbler or highball glass, add lemon juice, orange juice, sugar syrup, and stir well. Top up with cold soda water, serve with a drinking straw.",
+    "instructions": "Place some ice cubes in a large tumbler or highball glass, add lemon juice, orange juice, Simple Syrup, and stir well. Top up with cold soda water, serve with a drinking straw.",
     "description": "",
     "image": "https://www.thecocktaildb.com/images/media/drink/ytsxxw1441167732.jpg",
     "glass": "Highball glass",
@@ -4505,37 +4428,6 @@
     "glass": "Pint glass",
     "category": "Beer",
     "alcoholic": "Alcoholic"
-  },
-  {
-    "name": "Castillian Hot Chocolate",
-    "ingredients": [
-      {
-        "name": "Cocoa powder",
-        "amount": "1/2 cup"
-      },
-      {
-        "name": "Sugar",
-        "amount": "1 cup"
-      },
-      {
-        "name": "Cornstarch",
-        "amount": "7 tsp"
-      },
-      {
-        "name": "Water",
-        "amount": "1/2 cup"
-      },
-      {
-        "name": "Milk",
-        "amount": "1 qt"
-      }
-    ],
-    "instructions": "Shift the cocoa and sugar together into a medium-sized saucepan. Dissolve the cornstarch in the water, and stir into the cocoa and sugar until it is a smooth paste. Begin heating the mixture, stirring it with a whisk, and gradually pour in the milk. Continue stirring with the whisk as you bring the liquid to a simmer. Allow the chocolate to simmer for about 10 minutes, stirring often, until it is thick, glossy and completely smooth. Serve steaming hot in coffee mug. Serves six.",
-    "description": "",
-    "image": "https://www.thecocktaildb.com/images/media/drink/3nbu4a1487603196.jpg",
-    "glass": "Coffee mug",
-    "category": "Cocoa",
-    "alcoholic": "Non alcoholic"
   },
   {
     "name": "National Aquarium",
@@ -5151,7 +5043,7 @@
         "amount": "2 oz"
       },
       {
-        "name": "Sugar Syrup",
+        "name": "Simple Syrup",
         "amount": "1 oz"
       },
       {
@@ -5167,7 +5059,7 @@
         "amount": "2 oz"
       }
     ],
-    "instructions": "Shake a handful of mint, 2oz white rum, 1oz of sugar syrup, 1oz lime juice and 2 dashes angostura bitters with ice. Double strain into a glass and top with 2oz of prosecco.",
+    "instructions": "Shake a handful of mint, 2oz white rum, 1oz of Simple Syrup, 1oz lime juice and 2 dashes angostura bitters with ice. Double strain into a glass and top with 2oz of prosecco.",
     "description": "",
     "image": "https://www.thecocktaildb.com/images/media/drink/eo8gfx1699022995.jpg",
     "glass": "Cocktail glass",
@@ -5891,33 +5783,6 @@
     "alcoholic": "Alcoholic"
   },
   {
-    "name": "Spanish chocolate",
-    "ingredients": [
-      {
-        "name": "Milk",
-        "amount": "2 cups"
-      },
-      {
-        "name": "Chocolate",
-        "amount": "2 oz sweet"
-      },
-      {
-        "name": "Cinnamon",
-        "amount": "1/2 tsp"
-      },
-      {
-        "name": "Egg yolk",
-        "amount": "2 beaten"
-      }
-    ],
-    "instructions": "Stir the milk with the chocolate and the cinnamon over low heat until the chocolate dissolves. Add the eggs and beat the mixture until it becomes thick, taking care not to boil. Serve in coffee mug.",
-    "description": "",
-    "image": "https://www.thecocktaildb.com/images/media/drink/pra8vt1487603054.jpg",
-    "glass": "Coffee mug",
-    "category": "Cocoa",
-    "alcoholic": "Non alcoholic"
-  },
-  {
     "name": "Rum Cobbler",
     "ingredients": [
       {
@@ -6307,7 +6172,7 @@
     "name": "Rail Splitter",
     "ingredients": [
       {
-        "name": "Sugar syrup",
+        "name": "Simple Syrup",
         "amount": "2 tsp"
       },
       {
@@ -6319,7 +6184,7 @@
         "amount": ""
       }
     ],
-    "instructions": "Mix sugar syrup with lemon juice in a tall glass. Fill up with ginger ale.",
+    "instructions": "Mix Simple Syrup with lemon juice in a tall glass. Fill up with ginger ale.",
     "description": "",
     "image": "https://www.thecocktaildb.com/images/media/drink/stsuqq1441207660.jpg",
     "glass": "Highball glass",
@@ -6504,7 +6369,7 @@
         "amount": "1/4 shot"
       },
       {
-        "name": "Sugar Syrup",
+        "name": "Simple Syrup",
         "amount": "1/4 shot"
       },
       {
@@ -7157,7 +7022,7 @@
         "amount": "1/3 oz"
       },
       {
-        "name": "Sugar syrup",
+        "name": "Simple Syrup",
         "amount": "1 tsp"
       },
       {
@@ -7165,7 +7030,7 @@
         "amount": "2 pinches"
       }
     ],
-    "instructions": "Coat the rim of a shot glass with sugar using sugar syrup to stick. Add the Chambord raspberry liqueur to the shot glass, and carefully layer the Baileys Irish Cream on top. Serve.",
+    "instructions": "Coat the rim of a shot glass with sugar using Simple Syrup to stick. Add the Chambord raspberry liqueur to the shot glass, and carefully layer the Baileys Irish Cream on top. Serve.",
     "description": "",
     "image": "https://www.thecocktaildb.com/images/media/drink/uuytrp1474039804.jpg",
     "glass": "Shot glass",
@@ -7568,37 +7433,6 @@
     "glass": "Wine Glass",
     "category": "Cocktail",
     "alcoholic": "Alcoholic"
-  },
-  {
-    "name": "Hot Chocolate to Die for",
-    "ingredients": [
-      {
-        "name": "Chocolate",
-        "amount": "12 oz fine"
-      },
-      {
-        "name": "Butter",
-        "amount": "1 tsp"
-      },
-      {
-        "name": "Vanilla extract",
-        "amount": "1/2 tsp"
-      },
-      {
-        "name": "Half-and-half",
-        "amount": "1 cup"
-      },
-      {
-        "name": "Marshmallows",
-        "amount": "mini"
-      }
-    ],
-    "instructions": "Melt the chocolate, butter and vanilla in a double boiler. When just smooth stir in the cream.",
-    "description": "",
-    "image": "https://www.thecocktaildb.com/images/media/drink/0lrmjp1487603166.jpg",
-    "glass": "Coffee mug",
-    "category": "Cocoa",
-    "alcoholic": "Non alcoholic"
   },
   {
     "name": "Irish Spring",
@@ -8035,7 +7869,7 @@
         "amount": "1/2 tsp"
       }
     ],
-    "instructions": "Combine sugar and 3/4 cup water in a small saucepan. Bring to a boil, stirring constantly. Reduce heat and simmer until all sugar is dissolved. Remove from heat and cool. In an aging container, combine apricot halves, almond extract, grain alcohol with 1/2 cup water, and brandy. Stir in cooled sugar syrup mixture. Cap and let age for 2 days. Remove apricot halves. (Save apricot halves, can be used for cooking). Add food coloring and glycerine. Stir, recap and continue aging for 1 to 2 months. Re-bottle as desired. Liqueur is ready to serve but will continue to improve with additional aging.",
+    "instructions": "Combine sugar and 3/4 cup water in a small saucepan. Bring to a boil, stirring constantly. Reduce heat and simmer until all sugar is dissolved. Remove from heat and cool. In an aging container, combine apricot halves, almond extract, grain alcohol with 1/2 cup water, and brandy. Stir in cooled Simple Syrup mixture. Cap and let age for 2 days. Remove apricot halves. (Save apricot halves, can be used for cooking). Add food coloring and glycerine. Stir, recap and continue aging for 1 to 2 months. Re-bottle as desired. Liqueur is ready to serve but will continue to improve with additional aging.",
     "description": "",
     "image": "https://www.thecocktaildb.com/images/media/drink/swqxuv1472719649.jpg",
     "glass": "Collins Glass",
@@ -10408,7 +10242,7 @@
         "amount": ""
       }
     ],
-    "instructions": "Boil water and sugar until dissolved. Turn off heat. Slowly add dry instant coffee and continue stirring. Add a chopped vanilla bean to the vodka, then combine the cooled sugar syrup and coffee solution with the vodka. Cover tightly and shake vigorously each day for 3 weeks. Strain and filter. Its also best to let the sugar mixture cool completely so the vodka won't evaporate when its added. If you like a smoother feel to the liqueur you can add about 1 teaspoon of glycerine to the finished product.",
+    "instructions": "Boil water and sugar until dissolved. Turn off heat. Slowly add dry instant coffee and continue stirring. Add a chopped vanilla bean to the vodka, then combine the cooled Simple Syrup and coffee solution with the vodka. Cover tightly and shake vigorously each day for 3 weeks. Strain and filter. Its also best to let the sugar mixture cool completely so the vodka won't evaporate when its added. If you like a smoother feel to the liqueur you can add about 1 teaspoon of glycerine to the finished product.",
     "description": "",
     "image": "https://www.thecocktaildb.com/images/media/drink/qvrrvu1472667494.jpg",
     "glass": "Collins Glass",
@@ -11145,7 +10979,7 @@
         "amount": "1.5 cl"
       },
       {
-        "name": "Sugar syrup",
+        "name": "Simple Syrup",
         "amount": "1 cl"
       },
       {
@@ -11261,7 +11095,7 @@
         "amount": "15 ml"
       },
       {
-        "name": "Sugar Syrup",
+        "name": "Simple Syrup",
         "amount": "10 ml"
       },
       {
@@ -11273,7 +11107,7 @@
         "amount": "2"
       }
     ],
-    "instructions": "Put the Bombay Sapphire, Martini Bianco, sugar syrup & blackberries in a cocktail shaker with lots of ice and shake vigorously before pouring into a balloon glass, topping up with lemonade and garnishing with a wedge of orange.",
+    "instructions": "Put the Bombay Sapphire, Martini Bianco, Simple Syrup & blackberries in a cocktail shaker with lots of ice and shake vigorously before pouring into a balloon glass, topping up with lemonade and garnishing with a wedge of orange.",
     "description": "",
     "image": "https://www.thecocktaildb.com/images/media/drink/t0iugg1509556712.jpg",
     "glass": "Balloon Glass",
@@ -11443,7 +11277,7 @@
         "amount": "3/4 oz double"
       }
     ],
-    "instructions": "If available, rim cocktail (Martini) glass with sugar syrup then dip into chocolate flakes or powder. Add ingredients into shaker with ice. Shake well then strain into cocktail glass.",
+    "instructions": "If available, rim cocktail (Martini) glass with Simple Syrup then dip into chocolate flakes or powder. Add ingredients into shaker with ice. Shake well then strain into cocktail glass.",
     "description": "",
     "image": "https://www.thecocktaildb.com/images/media/drink/svuvrq1441208310.jpg",
     "glass": "Cocktail glass",
