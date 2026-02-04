@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import glob from 'glob';
+import { globSync } from 'glob';
 import { SitemapStream, streamToPromise } from 'sitemap';
 
 const DOMAIN = 'https://bar.ravstormdev.top';
@@ -11,7 +11,8 @@ const PAGE_GLOB = './src/pages/**/*.{jsx,tsx}';
 async function generateSitemap() {
   const sitemap = new SitemapStream({ hostname: DOMAIN });
 
-  const files = glob.sync(PAGE_GLOB);
+  const files = globSync(PAGE_GLOB);
+
 
   files.forEach((file) => {
     let url = file
