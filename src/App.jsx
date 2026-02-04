@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import BarStockPage from "./pages/BarStockPage";
 import CocktailsPage from "./pages/CocktailsPage";
 import cocktailsData from "./data/cocktails.json";
+import SearchCocktailsPage from "./pages/SearchCocktailsPage";
 
 export default function App() {
   // Load from cookies or defaults
@@ -37,7 +38,8 @@ export default function App() {
     <Router>
       <nav style={{ display: "flex", padding: "1rem", alignItems: "center" }}>
         <Link to="/" style={{ marginRight: "1rem" }}>Bar Stock</Link>
-        <Link to="/cocktails">Cocktails</Link>
+        <Link to="/cocktails">Cocktails You Can Make</Link>
+        <Link to="/search">Search Cocktails</Link>
 
         <button
           onClick={() => setDarkMode(prev => !prev)}
@@ -79,6 +81,16 @@ export default function App() {
             />
           }
         />
+        <Route
+          path="/search"
+          element={
+            <SearchCocktailsPage
+              cocktailsData={cocktailsData}
+              darkMode={darkMode}
+            />
+          }
+        />
+        
       </Routes>
     </Router>
   );
