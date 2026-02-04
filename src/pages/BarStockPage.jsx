@@ -1,68 +1,84 @@
-import React, { useState } from "react";
-export default function BarStockPage({ barStock, setBarStock, darkMode }) {
-  const [input, setInput] = useState("");
+import React, { useState, useMemo } from "react";
 
-  const addIngredient = () => {
-    const ing = input.trim().toLowerCase();
-    if (ing && !barStock.includes(ing)) {
+export default function BarStockPage({ barStock, setBarStock, darkMode, cocktailsData }) {
+  const [search, setSearch] = useState("");
+
+  // 1️⃣ Auto-pull all unique ingredients from cocktails
+  const allIngredients = useMemo(() => {
+    const ingredientsSet = new Set();
+    cocktailsData.forEach(cocktail => {
+      cocktail.ingredients.forEach(i => {
+        if (i) ingredientsSet.add(i.toLowerCase());
+      });
+    });
+    return Array.from(ingredientsSet);
+  }, [cocktailsData]);
+
+  // 2️⃣ Filtered and sorted ingredients
+  const filteredIngredients = useMemo(() => {
+    return allIngredients
+      .filter(i => i.includes(search.toLowerCase()))
+      .sort((a, b) => {
+        // Selected ingredients go first
+        const aSelected = barStock.includes(a) ? 0 : 1;
+        const bSelected = barStock.includes(b) ? 0 : 1;
+        if (aSelected !== bSelected) return aSelected - bSelected;
+        return a.localeCompare(b);
+      });
+  }, [allIngredients, search, barStock]);
+
+  // 3️⃣ Toggle ingredient selection
+  const toggleIngredient = (ing) => {
+    if (barStock.includes(ing)) {
+      setBarStock(barStock.filter(i => i !== ing));
+    } else {
       setBarStock([...barStock, ing]);
-      setInput("");
     }
   };
 
-  const removeIngredient = ing => setBarStock(barStock.filter(i => i !== ing));
-
-  const inputStyle = {
-    padding: "0.5rem",
-    width: "200px",
-    borderRadius: "5px",
-    border: `1px solid ${darkMode ? "#333" : "#ccc"}`,
-    background: darkMode ? "#1e1e1e" : "#fff",
-    color: darkMode ? "#f5f5f5" : "#121212",
-    marginRight: "0.5rem"
-  };
-
-  const buttonStyle = {
-    padding: "0.5rem 1rem",
-    borderRadius: "5px",
-    border: "none",
-    cursor: "pointer",
-    background: "#ff6f61",
-    color: "#fff"
-  };
-
-  const tagStyle = ing => ({
+  const badgeStyle = (ing) => ({
     padding: "0.4rem 0.8rem",
     borderRadius: "20px",
-    display: "flex",
-    alignItems: "center",
-    gap: "0.5rem",
-    background: darkMode ? "#333" : "#e0e0e0",
-    color: darkMode ? "#f5f5f5" : "#121212",
-    cursor: "pointer"
+    cursor: "pointer",
+    background: barStock.includes(ing) ? "#ff6f61" : darkMode ? "#333" : "#e0e0e0",
+    color: barStock.includes(ing) ? "#fff" : darkMode ? "#f5f5f5" : "#121212",
+    textTransform: "capitalize",
+    transition: "0.2s",
   });
+
+  const searchStyle = {
+    padding: "0.5rem",
+    borderRadius: "5px",
+    width: "100%",
+    maxWidth: "300px",
+    marginBottom: "1rem",
+    border: darkMode ? "1px solid #555" : "1px solid #ccc",
+    background: darkMode ? "#1e1e1e" : "#fff",
+    color: darkMode ? "#f5f5f5" : "#121212"
+  };
 
   return (
     <div>
       <h1>🍾 Your Bar Stock</h1>
 
-      <div style={{ marginBottom: "1rem", display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-        <input
-          type="text"
-          value={input}
-          placeholder="Add ingredient..."
-          onChange={e => setInput(e.target.value)}
-          onKeyDown={e => e.key === "Enter" && addIngredient()}
-          style={inputStyle}
-        />
-        <button onClick={addIngredient} style={buttonStyle}>Add</button>
-      </div>
+      {/* Fuzzy search input */}
+      <input
+        type="text"
+        placeholder="Search ingredients..."
+        value={search}
+        onChange={e => setSearch(e.target.value)}
+        style={searchStyle}
+      />
 
+      {/* Ingredients badges */}
       <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
-        {barStock.map(ing => (
-          <div key={ing} style={tagStyle(ing)}>
-            <span style={{ textTransform: "capitalize" }}>{ing}</span>
-            <span onClick={() => removeIngredient(ing)} style={{ fontWeight: "bold", cursor: "pointer" }}>×</span>
+        {filteredIngredients.map(ing => (
+          <div
+            key={ing}
+            style={badgeStyle(ing)}
+            onClick={() => toggleIngredient(ing)}
+          >
+            {ing}
           </div>
         ))}
       </div>
