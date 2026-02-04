@@ -21,7 +21,7 @@ function App() {
   
   return (
     <Router>
-      <div style={{ padding: "1rem", fontFamily: "Arial, sans-serif" }}>
+      <div style={{ padding: "0rem", fontFamily: "Arial, sans-serif" }}>
         <nav style={navStyle}>
           <Link to="/" style={linkStyle}>🍾 Bar Stock</Link>
           <Link to="/cocktails" style={linkStyle}>🍹 Cocktails</Link>
