@@ -3,6 +3,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/masterpoag/Bar-Mate)
 ![GitHub contributors](https://img.shields.io/github/contributors/masterpoag/Bar-Mate)
 ![GitHub license](https://img.shields.io/github/license/masterpoag/Bar-Mate)
+---
 
 Welcome to **Bar Mate**! This is a free, open-source project that lets you explore, search, and discover cocktails. You can check what cocktails you can make with your current bar stock, search by ingredients or names, and get detailed instructions for each drink.  
 
