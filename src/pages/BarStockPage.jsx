@@ -36,6 +36,8 @@ export default function BarStockPage({ barStock, setBarStock, darkMode, cocktail
     }
   };
 
+  
+
   const badgeStyle = (ing) => ({
     padding: "0.4rem 0.8rem",
     borderRadius: "20px",
@@ -58,7 +60,7 @@ export default function BarStockPage({ barStock, setBarStock, darkMode, cocktail
   };
 
   return (
-    <div>
+    <div style={{ marginTop: 0, marginBottom: "1rem" }}>
       <h1 style={{ marginTop: 0, marginBottom: "1rem" }}>🍾 Your Bar Stock</h1>
 
 
