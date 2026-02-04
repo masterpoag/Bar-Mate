@@ -7,18 +7,19 @@ export default function CocktailsPage({ barStock, cocktailsData, darkMode }) {
 
   if (!cocktailsData) return <p>Loading cocktails...</p>;
 
-  // Determine cocktails you can make or almost make
+  // 1️⃣ Determine cocktails you can make or almost make
   const possibleCocktails = useMemo(() => {
-  return cocktailsData.map(cocktail => {
-    const missingIngredients = cocktail.ingredients
-      .filter(i => !barStock.includes(i.name.toLowerCase())) 
-      .map(i => i.name); // only store the name for display
-    return { ...cocktail, missingIngredients };
-  });
-}, [cocktailsData, barStock]);
+    return cocktailsData
+      .map(cocktail => {
+        const missingIngredients = cocktail.ingredients
+          .filter(i => !barStock.includes(i.name.toLowerCase()))
+          .map(i => i.name);
+        return { ...cocktail, missingIngredients };
+      })
+      .filter(c => c.missingIngredients.length <= 1); // ✅ only 0 or 1 missing
+  }, [cocktailsData, barStock]);
 
-
-  // Set up Fuse.js for fuzzy searching by cocktail name or ingredient names
+  // 2️⃣ Set up Fuse.js for fuzzy searching by cocktail name or ingredient names
   const fuse = useMemo(() => {
     return new Fuse(possibleCocktails, {
       keys: [
@@ -29,14 +30,14 @@ export default function CocktailsPage({ barStock, cocktailsData, darkMode }) {
     });
   }, [possibleCocktails]);
 
-  // Filter cocktails based on search input
+  // 3️⃣ Filter cocktails based on search input
   const filteredCocktails = useMemo(() => {
     if (!search) return possibleCocktails;
     const results = fuse.search(search);
     return results.map(r => r.item);
   }, [search, fuse, possibleCocktails]);
 
-  // Styles
+  // 4️⃣ Styles
   const containerStyle = {
     minHeight: "100vh",
     width: "100vw",
