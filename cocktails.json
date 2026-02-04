@@ -1,0 +1,1499 @@
+[
+  {
+    "name": "Grasshopper",
+    "ingredients": [
+      "green creme de menthe",
+      "creme de cacao",
+      "light cream"
+    ],
+    "instructions": "Pour ingredients into a cocktail shaker with ice. Shake briskly and then strain into a chilled cocktail glass.",
+    "description": "IBA,ContemporaryClassic,Halloween",
+    "image": "https://www.thecocktaildb.com/images/media/drink/aqm9el1504369613.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Thriller",
+    "ingredients": [
+      "scotch",
+      "wine",
+      "orange juice"
+    ],
+    "instructions": "In a shaker half-filled with ice cubes, combine all of the ingredients. Shake well. Strain into a cocktail glass.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/rvuswq1461867714.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Pink Moon",
+    "ingredients": [
+      "gin",
+      "coconut liqueur",
+      "elderflower cordial",
+      "lime juice",
+      "blackberries"
+    ],
+    "instructions": "Slowly shake in a shaker with ice, strain into a square whiskey glass. Top with fresh ice. Add the blackberries to garnish. Add flowers and a green leaf for a special look!",
+    "description": "Fresh, Summer, Colourful, Nature",
+    "image": "https://www.thecocktaildb.com/images/media/drink/lnjoc81619696191.jpg",
+    "glass": "Whiskey Glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Bourbon Sour",
+    "ingredients": [
+      "bourbon",
+      "lemon juice",
+      "sugar",
+      "orange",
+      "maraschino cherry"
+    ],
+    "instructions": "In a shaker half-filled with ice cubes, combine the bourbon, lemon juice, and sugar. Shake well. Strain into a whiskey sour glass, garnish with the orange slice and cherry.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/dms3io1504366318.jpg",
+    "glass": "Whiskey sour glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Allies Cocktail",
+    "ingredients": [
+      "dry vermouth",
+      "gin",
+      "kummel"
+    ],
+    "instructions": "Stir all ingredients with ice, strain contents into a cocktail glass, and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/qvprvp1483388104.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Frisco Sour",
+    "ingredients": [
+      "blended whiskey",
+      "benedictine",
+      "lemon",
+      "lime",
+      "lemon",
+      "lime"
+    ],
+    "instructions": "Shake all ingredients (except slices of lemon and lime) with ice and strain into a whiskey sour glass. Decorate with the slices of lemon and lime and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/acuvjz1582482022.jpg",
+    "glass": "Whiskey sour glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "French 75",
+    "ingredients": [
+      "gin",
+      "sugar",
+      "lemon juice",
+      "champagne",
+      "orange",
+      "maraschino cherry"
+    ],
+    "instructions": "Combine gin, sugar, and lemon juice in a cocktail shaker filled with ice. Shake vigorously and strain into a chilled champagne glass. Top up with Champagne. Stir gently.",
+    "description": "IBA,ContemporaryClassic",
+    "image": "https://www.thecocktaildb.com/images/media/drink/hrxfbl1606773109.jpg",
+    "glass": "Collins glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Creme de Menthe",
+    "ingredients": [
+      "sugar",
+      "water",
+      "grain alcohol",
+      "peppermint extract",
+      "food coloring"
+    ],
+    "instructions": "Bring sugar and water to a boil and simmer for 10 minutes. Cool. Add the remaining ingredients and stir. Cover and let ripen for 1 month.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/yxswtp1441253918.jpg",
+    "glass": "Collins Glass",
+    "category": "Homemade Liqueur",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Blackthorn",
+    "ingredients": [
+      "sweet vermouth",
+      "sloe gin",
+      "lemon peel"
+    ],
+    "instructions": "Stir sloe gin and vermouth with ice and strain into a cocktail glass. Add the twist of lemon peel and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/dgj92f1616098672.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Bumble Bee",
+    "ingredients": [
+      "baileys irish cream",
+      "kahlua",
+      "sambuca"
+    ],
+    "instructions": "This is a layered shot. First pour the Bailey's into the shot glass. Then take an upside down spoon and touch it to the inside wall of the glass. Carefully add the Kahlua. Repeat this process for the Sambuca. If done properly, the alcohol will stay separated and resemble a bumble bee. Enjoy!!!",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/uwqpvv1461866378.jpg",
+    "glass": "Shot glass",
+    "category": "Shot",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Blue Margarita",
+    "ingredients": [
+      "tequila",
+      "blue curacao",
+      "lime juice",
+      "salt"
+    ],
+    "instructions": "Rub rim of cocktail glass with lime juice. Dip rim in coarse salt. Shake tequila, blue curacao, and lime juice with ice, strain into the salt-rimmed glass, and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/bry4qh1582751040.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Pysch Vitamin Light",
+    "ingredients": [
+      "orange juice",
+      "apple juice",
+      "pineapple juice",
+      "ice"
+    ],
+    "instructions": "Shake with ice.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/xsqsxw1441553580.jpg",
+    "glass": "Collins Glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Non alcoholic"
+  },
+  {
+    "name": "Hawaiian Cocktail",
+    "ingredients": [
+      "gin",
+      "triple sec",
+      "pineapple juice"
+    ],
+    "instructions": "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/ujoh9x1504882987.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "747 Drink",
+    "ingredients": [
+      "vodka",
+      "roses sweetened lime juice",
+      "cranberry juice",
+      "sprite"
+    ],
+    "instructions": "Fill a Collins glass with ice.\r\nPour in vodka, lime cordial, and cranberry juice.\r\nFill up with Sprite.\r\nGarnish with a Lime wheel or some cranberries",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/i9suxb1582474926.jpg",
+    "glass": "Highball glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Tia-Maria",
+    "ingredients": [
+      "water",
+      "brown sugar",
+      "coffee",
+      "rum",
+      "vanilla extract"
+    ],
+    "instructions": "Boil water, sugar and coffe for 10 mins and let cool. Add rum and vanilla. Put in clean bottle(s) and leave for 1 week before using.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/sih81u1504367097.jpg",
+    "glass": "Collins Glass",
+    "category": "Homemade Liqueur",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Bacardi Cocktail",
+    "ingredients": [
+      "light rum",
+      "lime juice",
+      "sugar syrup",
+      "grenadine"
+    ],
+    "instructions": "Shake together with ice. Strain into glass and serve.",
+    "description": "IBA,Classic",
+    "image": "https://www.thecocktaildb.com/images/media/drink/n433t21504348259.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Imperial Fizz",
+    "ingredients": [
+      "light rum",
+      "blended whiskey",
+      "lemon",
+      "powdered sugar",
+      "carbonated water"
+    ],
+    "instructions": "Shake all ingredients (except carbonated water) with ice and strain into a highball glass over two ice cubes. Fill with carbonated water, stir, and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/zj1usl1504884548.jpg",
+    "glass": "Highball glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Thai Iced Coffee",
+    "ingredients": [
+      "coffee",
+      "sugar",
+      "cream",
+      "cardamom"
+    ],
+    "instructions": "Prepare a pot of coffee at a good European strength. In the ground coffee, add 2 or 3 freshly ground cardamom pods. Sweeten while hot, then cool quickly. Serve in highball glass over ice, with cream. To get the layered effect, place a spoon atop the coffee and pour the milk carefully into the spoon so that it floats on the top of the coffee.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/rqpypv1441245650.jpg",
+    "glass": "Highball glass",
+    "category": "Coffee / Tea",
+    "alcoholic": "Non alcoholic"
+  },
+  {
+    "name": "Port Wine Cocktail",
+    "ingredients": [
+      "port",
+      "brandy"
+    ],
+    "instructions": "Stir ingredients with ice, strain into a cocktail glass, and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/qruprq1441553976.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Boomerang",
+    "ingredients": [
+      "gin",
+      "dry vermouth",
+      "bitters",
+      "maraschino liqueur",
+      "maraschino cherry"
+    ],
+    "instructions": "In a mixing glass half-filled with ice cubes, combine the gin, vermouth, bitters, and maraschino liqueur. Stir well. Strain into a cocktail glass and garnish with the cherry.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/3m6yz81504389551.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "The Galah",
+    "ingredients": [
+      "dark rum",
+      "campari",
+      "creme de banane",
+      "pineapple juice",
+      "lime juice"
+    ],
+    "instructions": "Mix together the alcoholic portions and top with Pineapple and Lime juice.",
+    "description": "Dark",
+    "image": "https://www.thecocktaildb.com/images/media/drink/sy7y6r1614775067.jpg",
+    "glass": "Collins glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "French Negroni",
+    "ingredients": [
+      "gin",
+      "lillet",
+      "sweet vermouth",
+      "orange peel"
+    ],
+    "instructions": "Add ice to a shaker and pour in all ingredients.\nUsing a bar spoon, stir 40 to 45 revolutions or until thoroughly chilled.\nStrain into a martini glass or over ice into a rocks glass. Garnish with orange twist.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/x8lhp41513703167.jpg",
+    "glass": "Martini Glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Avalanche",
+    "ingredients": [
+      "crown royal",
+      "kahlua",
+      "cream"
+    ],
+    "instructions": "Mix in highball glass over ice, shake well.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/uppqty1472720165.jpg",
+    "glass": "Highball glass",
+    "category": "Shake",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Freddy Kruger",
+    "ingredients": [
+      "jägermeister",
+      "sambuca",
+      "vodka"
+    ],
+    "instructions": "make it an ample size shot!!",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/tuppuq1461866798.jpg",
+    "glass": "Shot glass",
+    "category": "Shot",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Classic Old-Fashioned",
+    "ingredients": [
+      "bitters",
+      "water",
+      "sugar",
+      "bourbon",
+      "orange",
+      "maraschino cherry"
+    ],
+    "instructions": "In an old-fashioned glass, muddle the bitters and water into the sugar cube, using the back of a teaspoon. Almost fill the glass with ice cubes and add the bourbon. Garnish with the orange slice and the cherry. Serve with a swizzle stick.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/w8cxqv1582485254.jpg",
+    "glass": "Old-fashioned glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Garibaldi Negroni",
+    "ingredients": [
+      "gin",
+      "campari",
+      "orange juice",
+      "orange peel"
+    ],
+    "instructions": "Mix together in a shaker and garnish with a simple orange slice. Fill your vitamin C and cocktail fix at the same time!",
+    "description": "Orange",
+    "image": "https://www.thecocktaildb.com/images/media/drink/kb4bjg1604179771.jpg",
+    "glass": "Highball glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Thai Coffee",
+    "ingredients": [
+      "coffee",
+      "coriander",
+      "cardamom",
+      "sugar",
+      "whipping cream",
+      "ice"
+    ],
+    "instructions": "Place the coffee and spices in the filter cone of your coffee maker. Brew coffee as usual, let it cool. In a tall glass, dissolve 1 or 2 teaspoons of sugar in an ounce of the coffee (it's easier to dissolve than if you put it right over ice). Add 5-6 ice cubes and pour coffee to within about 1 inch of the top of the glass. Rest a spoon on top of the coffee and slowly pour whipping cream into the spoon. This will make the cream float on top of the coffee rather than dispersing into it right away.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/wquwxs1441247025.jpg",
+    "glass": "Highball glass",
+    "category": "Coffee / Tea",
+    "alcoholic": "Non alcoholic"
+  },
+  {
+    "name": "Popped cherry",
+    "ingredients": [
+      "vodka",
+      "cherry liqueur",
+      "cranberry juice",
+      "orange juice"
+    ],
+    "instructions": "Served over ice in a tall glass with a popped cherry (can add more popped cherries if in the mood)!",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/sxvrwv1473344825.jpg",
+    "glass": "Highball glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Amaretto Mist",
+    "ingredients": [
+      "amaretto",
+      "lime"
+    ],
+    "instructions": "Pour amaretto in an old-fashioned glass over crushed ice. Add the wedge of lime and serve. (A wedge of lemon may be substituted for lime, if preferred.)",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/utpxxq1483388370.jpg",
+    "glass": "Old-fashioned glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Blue Lagoon",
+    "ingredients": [
+      "vodka",
+      "blue curacao",
+      "lemonade",
+      "cherry"
+    ],
+    "instructions": "Pour vodka and curacao over ice in a highball glass. Fill with lemonade, top with the cherry, and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/5wm4zo1582579154.jpg",
+    "glass": "Highball glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Death in the Afternoon",
+    "ingredients": [
+      "absinthe",
+      "champagne"
+    ],
+    "instructions": "Easy as you like, pour the absinthe into a chilled glass, top with champagne. Must be drunk mid afternoon for the optimum effect.",
+    "description": "Drunk",
+    "image": "https://www.thecocktaildb.com/images/media/drink/y7s3rh1598719574.jpg",
+    "glass": "Margarita glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "New York Sour",
+    "ingredients": [
+      "blended whiskey",
+      "lemon",
+      "sugar",
+      "red wine",
+      "lemon",
+      "cherry"
+    ],
+    "instructions": "Shake blended whiskey, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass. Float claret on top. Decorate with the half-slice of lemon and the cherry and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/61wgch1504882795.jpg",
+    "glass": "Whiskey sour glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Rum Toddy",
+    "ingredients": [
+      "rum",
+      "powdered sugar",
+      "lemon peel",
+      "water"
+    ],
+    "instructions": "Dissolve powdered sugar in water in an old-fashioned glass. Add rum and one ice cube and stir. Add the twist of lemon peel and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/athdk71504886286.jpg",
+    "glass": "Old-fashioned glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "A Furlong Too Late",
+    "ingredients": [
+      "light rum",
+      "ginger beer",
+      "lemon peel"
+    ],
+    "instructions": "Pour the rum and ginger beer into a highball glass almost filled with ice cubes. Stir well. Garnish with the lemon twist.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/ssxvww1472669166.jpg",
+    "glass": "Highball glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Martinez 2",
+    "ingredients": [
+      "gin",
+      "sweet vermouth",
+      "maraschino liqueur",
+      "angostura bitters"
+    ],
+    "instructions": "Add all ingredients to a mixing glass and fill with ice.\r\n\r\nStir until chilled, and strain into a chilled coupe glass.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/fs6kiq1513708455.jpg",
+    "glass": "Cocktail glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Buccaneer",
+    "ingredients": [
+      "corona",
+      "bacardi limon"
+    ],
+    "instructions": "Pour the corona into an 18oz beer glass pour the bacardi limon into the beer stir very gently",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/upvtyt1441249023.jpg",
+    "glass": "Beer pilsner",
+    "category": "Beer",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Allegheny",
+    "ingredients": [
+      "dry vermouth",
+      "bourbon",
+      "blackberry brandy",
+      "lemon juice",
+      "lemon peel"
+    ],
+    "instructions": "Shake all ingredients (except lemon peel) with ice and strain into a cocktail glass. Top with the twist of lemon peel and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/uwvyts1483387934.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "A.D.M. (After Dinner Mint)",
+    "ingredients": [
+      "white creme de menthe",
+      "southern comfort",
+      "vodka",
+      "hot chocolate"
+    ],
+    "instructions": "shake vigorously",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/ruxuvp1472669600.jpg",
+    "glass": "Irish coffee cup",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Melya",
+    "ingredients": [
+      "espresso",
+      "honey",
+      "cocoa powder"
+    ],
+    "instructions": "Brew espresso. In a coffee mug, place 1 teaspoon of unsweetened powdered cocoa, then cover a teaspoon with honey and drizzle it into the cup. Stir while the coffee brews, this is the fun part. The cocoa seems to coat the honey without mixing, so you get a dusty, sticky mass that looks as though it will never mix. Then all at once, presto! It looks like dark chocolate sauce. Pour hot espresso over the honey, stirring to dissolve. Serve with cream.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/xwtptq1441247579.jpg",
+    "glass": "Coffee mug",
+    "category": "Coffee / Tea",
+    "alcoholic": "Non alcoholic"
+  },
+  {
+    "name": "Surf City Lifesaver",
+    "ingredients": [
+      "ouzo",
+      "baileys irish cream",
+      "gin",
+      "grand marnier"
+    ],
+    "instructions": "Lots of ice and soda top up in tall glass with cherry and a grin.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/2rzfer1487602699.jpg",
+    "glass": "Highball glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Brandon and Will's Coke Float",
+    "ingredients": [
+      "vanilla ice-cream",
+      "coca-cola",
+      "bourbon"
+    ],
+    "instructions": "Scoop two large scoops of vanilla ice-cream into frosted beer mug. Next, add 2 ounces Maker's Mark. Then, pour in coke. Gently stir and enjoy.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/xspxyr1472719185.jpg",
+    "glass": "Beer mug",
+    "category": "Soft Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Cranberry Cordial",
+    "ingredients": [
+      "cranberries",
+      "sugar",
+      "light rum"
+    ],
+    "instructions": "Place the chopped cranberries in a 2 liter jar that has a tight-fitting lid. Add the sugar and rum. Adjust the lid securely and place the jar in a cool, dark place. Invert the jar and shake it every day for six weeks. Strain the cordial into bottles and seal with corks.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/qtspsx1472667392.jpg",
+    "glass": "Collins Glass",
+    "category": "Homemade Liqueur",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "New York Lemonade",
+    "ingredients": [
+      "absolut citron",
+      "grand marnier",
+      "lemon juice",
+      "club soda"
+    ],
+    "instructions": "Serve in a chilled cocktail glass. Lemon and sugar the rim. Stir and Strain.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/b3n0ge1503565473.jpg",
+    "glass": "Cocktail glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Kioki Coffee",
+    "ingredients": [
+      "kahlua",
+      "brandy",
+      "coffee"
+    ],
+    "instructions": "Stir. Add whipped cream to the top.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/uppqty1441247374.jpg",
+    "glass": "Coffee mug",
+    "category": "Coffee / Tea",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Pineapple Gingerale Smoothie",
+    "ingredients": [
+      "ginger",
+      "pineapple"
+    ],
+    "instructions": "Throw everything into a blender and liquify.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/eg9i1d1487603469.jpg",
+    "glass": "Highball Glass",
+    "category": "Other / Unknown",
+    "alcoholic": "Non alcoholic"
+  },
+  {
+    "name": "Bob Marley",
+    "ingredients": [
+      "midori melon liqueur",
+      "jägermeister",
+      "goldschlager"
+    ],
+    "instructions": "Layer in a 2 oz shot glass or pony glass",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/rrqrst1477140664.jpg",
+    "glass": "Shot glass",
+    "category": "Shot",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "151 Florida Bushwacker",
+    "ingredients": [
+      "malibu rum",
+      "light rum",
+      "151 proof rum",
+      "dark creme de cacao",
+      "cointreau",
+      "milk",
+      "coconut liqueur",
+      "vanilla ice-cream"
+    ],
+    "instructions": "Combine all ingredients. Blend until smooth. Garnish with chocolate shavings if desired.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/rvwrvv1468877323.jpg",
+    "glass": "Beer mug",
+    "category": "Shake",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Queen Bee",
+    "ingredients": [
+      "coffee brandy",
+      "lime vodka",
+      "sherry"
+    ],
+    "instructions": "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/rvvpxu1478963194.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Nuked Hot Chocolate",
+    "ingredients": [
+      "cocoa powder",
+      "sugar",
+      "vanilla extract",
+      "milk"
+    ],
+    "instructions": "Mix with a bit of milk (1 oz or so) in coffee mug. Nuke mug for about 30-50 seconds. Stir until the heated cocoa dissolves. Fill mug with milk. Nuke for 1-2 minutes, depending on wattage and preferences as to burnt mouth parts.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/xcu6nb1487603142.jpg",
+    "glass": "Coffee mug",
+    "category": "Cocoa",
+    "alcoholic": "Non alcoholic"
+  },
+  {
+    "name": "Adonis Cocktail",
+    "ingredients": [
+      "sweet vermouth",
+      "sherry",
+      "orange bitters"
+    ],
+    "instructions": "Stir all ingredients with ice, strain contents into a cocktail glass, and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/xrvruq1472812030.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Duchamp's Punch",
+    "ingredients": [
+      "pisco",
+      "lime juice",
+      "pineapple syrup",
+      "st. germain",
+      "angostura bitters",
+      "pepper",
+      "lavender"
+    ],
+    "instructions": "Shake all ingredients.\r\nDouble strain in a chilled double old fashioned glass with abig ice cube.\r\nGarnish with a couple of lavender sprigs",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/g51naw1485084685.jpg",
+    "glass": "Old-fashioned glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Mocha-Berry",
+    "ingredients": [
+      "coffee",
+      "chambord raspberry liqueur",
+      "cocoa powder",
+      "whipped cream"
+    ],
+    "instructions": "pour 6 oz. of coffee in a mug or Irish coffee cup. add coca mix and chambord, mix well and top off with whipped cream.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/vtwyyx1441246448.jpg",
+    "glass": "Irish coffee cup",
+    "category": "Coffee / Tea",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Orgasm",
+    "ingredients": [
+      "creme de cacao",
+      "amaretto",
+      "triple sec",
+      "vodka",
+      "light cream"
+    ],
+    "instructions": "Shake all ingredients with ice, strain into a chilled cocktail glass, and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/vr6kle1504886114.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Sweet Tooth",
+    "ingredients": [
+      "godiva liqueur",
+      "milk"
+    ],
+    "instructions": "Put 2 shots Godiva Liquour into a glass, add as much or as little milk as you would like.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/j6rq6h1503563821.jpg",
+    "glass": "Highball Glass",
+    "category": "Shake",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Mint Julep",
+    "ingredients": [
+      "mint",
+      "bourbon",
+      "powdered sugar",
+      "water"
+    ],
+    "instructions": "In a highball glass gently muddle the mint, sugar and water. Fill the glass with cracked ice, add Bourbon and stir well until the glass is well frosted. Garnish with a mint sprig.",
+    "description": "IBA,ContemporaryClassic",
+    "image": "https://www.thecocktaildb.com/images/media/drink/squyyq1439907312.jpg",
+    "glass": "Collins glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Oreo Mudslide",
+    "ingredients": [
+      "vodka",
+      "kahlua",
+      "baileys irish cream",
+      "vanilla ice-cream",
+      "oreo cookie"
+    ],
+    "instructions": "Blend Vodka, Kahlua, Bailey's, ice-cream and the Oreo well in a blender. Pour into a large frosted glass. Garnish with whipped cream and a cherry.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/tpwwut1468925017.jpg",
+    "glass": "Collins Glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Thai Iced Tea",
+    "ingredients": [
+      "tea",
+      "water",
+      "condensed milk",
+      "ice",
+      "mint"
+    ],
+    "instructions": "Combine Thai tea (i.e., the powder), boiling water, and sweetened condensed milk, stir until blended. Pour into 2 tall glasses filled with ice cubes. Garnish with mint leaves. Makes 2 servings.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/trvwpu1441245568.jpg",
+    "glass": "Highball glass",
+    "category": "Coffee / Tea",
+    "alcoholic": "Non alcoholic"
+  },
+  {
+    "name": "Gin Sling",
+    "ingredients": [
+      "gin",
+      "lemon",
+      "powdered sugar",
+      "water",
+      "orange peel"
+    ],
+    "instructions": "Dissolve powdered sugar in mixture of water and juice of lemon. Add gin. Pour into an old-fashioned glass over ice cubes and stir. Add the twist of orange peel and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/8cl9sm1582581761.jpg",
+    "glass": "Old-fashioned glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Mountain Bramble",
+    "ingredients": [
+      "gin",
+      "lemon juice",
+      "sugar syrup",
+      "blackberries",
+      "soda water",
+      "mint"
+    ],
+    "instructions": "Muddle the blackberries in a tumbler glass. Mix the Gin, lemon juice and sugar syrup in a shaker and strain over chopped ice. Top with Soda water and garnish with more blackberries and some mint",
+    "description": "Dark, Fruity",
+    "image": "https://www.thecocktaildb.com/images/media/drink/stwiva1619704025.jpg",
+    "glass": "Old-fashioned glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Harvey Wallbanger",
+    "ingredients": [
+      "vodka",
+      "galliano",
+      "orange juice"
+    ],
+    "instructions": "Stir the vodka and orange juice with ice in the glass, then float the Galliano on top. Garnish and serve.",
+    "description": "IBA,ContemporaryClassic",
+    "image": "https://www.thecocktaildb.com/images/media/drink/7os4gs1606854357.jpg",
+    "glass": "Collins glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Martini",
+    "ingredients": [
+      "gin",
+      "dry vermouth",
+      "olive"
+    ],
+    "instructions": "Straight: Pour all ingredients into mixing glass with ice cubes. Stir well. Strain in chilled martini cocktail glass. Squeeze oil from lemon peel onto the drink, or garnish with olive.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/71t8581504353095.jpg",
+    "glass": "Cocktail glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Whiskey Sour",
+    "ingredients": [
+      "blended whiskey",
+      "lemon",
+      "powdered sugar",
+      "cherry",
+      "lemon"
+    ],
+    "instructions": "Shake with ice. Strain into chilled glass, garnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice.",
+    "description": "IBA,Classic,Alcoholic,ContemporaryClassic",
+    "image": "https://www.thecocktaildb.com/images/media/drink/hbkfsh1589574990.jpg",
+    "glass": "Old-fashioned glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Gin Cooler",
+    "ingredients": [
+      "gin",
+      "carbonated water",
+      "powdered sugar",
+      "orange spiral",
+      "lemon peel"
+    ],
+    "instructions": "Stir powdered sugar and 2 oz. carbonated water in a collins glass. Fill glass with ice and add gin. Fill with carbonated water and stir. Add the lemon peel and the orange spiral so that the end of the orange spiral dangles over rim of glass.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/678xt11582481163.jpg",
+    "glass": "Collins glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Apricot punch",
+    "ingredients": [
+      "apricot brandy",
+      "champagne",
+      "vodka",
+      "7-up",
+      "orange juice"
+    ],
+    "instructions": "Pour all ingrediants into a large punch bowl. Add ice and 4 oranges that are peeled and divided.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/tuxxtp1472668667.jpg",
+    "glass": "Punch bowl",
+    "category": "Punch / Party Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Vermouth Cassis",
+    "ingredients": [
+      "dry vermouth",
+      "creme de cassis",
+      "carbonated water"
+    ],
+    "instructions": "Stir vermouth and creme de cassis in a highball glass with ice cubes. Fill with carbonated water, stir again, and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/tswpxx1441554674.jpg",
+    "glass": "Highball glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Manhattan",
+    "ingredients": [
+      "sweet vermouth",
+      "bourbon",
+      "angostura bitters",
+      "ice",
+      "maraschino cherry",
+      "orange peel"
+    ],
+    "instructions": "Stirred over ice, strained into a chilled glass, garnished, and served up.",
+    "description": "IBA,Classic,Alcoholic",
+    "image": "https://www.thecocktaildb.com/images/media/drink/yk70e31606771240.jpg",
+    "glass": "Cocktail glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Mimosa",
+    "ingredients": [
+      "champagne",
+      "orange juice"
+    ],
+    "instructions": "Ensure both ingredients are well chilled, then mix into the glass. Serve cold.",
+    "description": "IBA,ContemporaryClassic",
+    "image": "https://www.thecocktaildb.com/images/media/drink/juhcuu1504370685.jpg",
+    "glass": "Champagne flute",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Strawberry Daiquiri",
+    "ingredients": [
+      "strawberry schnapps",
+      "light rum",
+      "lime juice",
+      "powdered sugar",
+      "strawberries"
+    ],
+    "instructions": "Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/deu59m1504736135.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Zorbatini",
+    "ingredients": [
+      "vodka",
+      "ouzo"
+    ],
+    "instructions": "Prepare like a Martini. Garnish with a green olive.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/wtkqgb1485621155.jpg",
+    "glass": "Cocktail glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Fruit Cooler",
+    "ingredients": [
+      "apple juice",
+      "strawberries",
+      "sugar",
+      "lemon",
+      "apple",
+      "soda water",
+      "ice"
+    ],
+    "instructions": "Toss strawberries with sugar, and let sit overnight in refrigerator. Cut lemon, reserve two slices. Juice the rest. Mix together the lemon juice, strawberries, apple juice, and soda water. Add slices of lemon (decor, really). In glasses, put ice cubes, and a slice of apple. Pour drink in, and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/i3tfn31484430499.jpg",
+    "glass": "Highball Glass",
+    "category": "Other / Unknown",
+    "alcoholic": "Non alcoholic"
+  },
+  {
+    "name": "Angelica Liqueur",
+    "ingredients": [
+      "angelica root",
+      "almond",
+      "allspice",
+      "cinnamon",
+      "anise",
+      "coriander",
+      "marjoram leaves",
+      "vodka",
+      "sugar",
+      "water",
+      "food coloring",
+      "food coloring"
+    ],
+    "instructions": "Combine all herbs, nuts and spices with vodka in a 1 quart or larger aging container. Cap tightly and shake daily for 2 weeks. Strain through a fine muslin cloth or coffee filter, discarding solids. Clean out aging container. Place liquid back in container. Place sugar and water in saucepan and stir to combine over medium heat. When sugar is completely dissolved, set aside and let cool. When cool combine with food coloring and add to liqueur liquid. Cap and allow to age and mellow in a cool, dark place for one month.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/yuurps1472667672.jpg",
+    "glass": "Collins Glass",
+    "category": "Homemade Liqueur",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Gentleman's Club",
+    "ingredients": [
+      "gin",
+      "brandy",
+      "sweet vermouth",
+      "club soda"
+    ],
+    "instructions": "In an old-fashioned glass almost filled with ice cubes, combine all of the ingredients. Stir well.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/k2r7wv1582481454.jpg",
+    "glass": "Old-fashioned glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Sazerac",
+    "ingredients": [
+      "ricard",
+      "sugar",
+      "peychaud bitters",
+      "water",
+      "bourbon",
+      "lemon peel"
+    ],
+    "instructions": "Rinse a chilled old-fashioned glass with the absinthe, add crushed ice, and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the lemon peel for garnish.",
+    "description": "IBA,Classic",
+    "image": "https://www.thecocktaildb.com/images/media/drink/vvpxwy1439907208.jpg",
+    "glass": "Old-fashioned glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Strawberry Shivers",
+    "ingredients": [
+      "strawberries",
+      "honey",
+      "water"
+    ],
+    "instructions": "Place all ingredients in the blender jar - cover and whiz on medium speed until well blended. Pour in one tall, 2 medium or 3 small glasses and drink up.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/9h1vvt1487603404.jpg",
+    "glass": "Highball glass",
+    "category": "Other / Unknown",
+    "alcoholic": "Non alcoholic"
+  },
+  {
+    "name": "Bible Belt",
+    "ingredients": [
+      "southern comfort",
+      "triple sec",
+      "lime",
+      "sour mix"
+    ],
+    "instructions": "Mix all ingredients, and pour over ice.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/6bec6v1503563675.jpg",
+    "glass": "Highball glass",
+    "category": "Other / Unknown",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Irish Coffee",
+    "ingredients": [
+      "irish whiskey",
+      "coffee",
+      "sugar",
+      "whipped cream"
+    ],
+    "instructions": "Heat the coffee, whiskey and sugar; do not boil. Pour into glass and top with cream; serve hot.",
+    "description": "IBA,ContemporaryClassic",
+    "image": "https://www.thecocktaildb.com/images/media/drink/sywsqw1439906999.jpg",
+    "glass": "Irish coffee cup",
+    "category": "Coffee / Tea",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Bruised Heart",
+    "ingredients": [
+      "vodka",
+      "chambord raspberry liqueur",
+      "peachtree schnapps",
+      "cranberry juice"
+    ],
+    "instructions": "Pour all ingredients in a mixing tin over ice, stir, and strain into shot glass",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/7if5kq1503564209.jpg",
+    "glass": "Shot glass",
+    "category": "Shot",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Baby Eskimo",
+    "ingredients": [
+      "kahlua",
+      "milk",
+      "vanilla ice-cream"
+    ],
+    "instructions": "Leave ice-cream out for about 10 minutes. Add ingredients in order, stir with chopstick (butter knife or spoon works too). Consume immediately and often. Nice and light, great for following a heavy drink.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/wywrtw1472720227.jpg",
+    "glass": "Collins Glass",
+    "category": "Shake",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Lone Tree Cooler",
+    "ingredients": [
+      "carbonated water",
+      "gin",
+      "dry vermouth",
+      "powdered sugar",
+      "orange spiral",
+      "lemon peel"
+    ],
+    "instructions": "Stir powdered sugar and 2 oz. carbonated water in a collins glass. Fill glass with ice, add gin and vermouth, and stir. Fill with carbonated water and stir again. Add the twist of lemon peel and the orange spiral so that the end dangles over rim of glass.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/wsyqry1479298485.jpg",
+    "glass": "Collins glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Lassi Raita",
+    "ingredients": [
+      "yoghurt",
+      "ice",
+      "sugar",
+      "lime",
+      "salt"
+    ],
+    "instructions": "Blend the yoghurt and ice cubes together, until the yoghurt becomes more liquid. Add sugar to taste. The lemon/lime is optional but it gives it a slightly tart taste. Dash of salt. Raita is also good for the summer. Instead of having a traditional salad you can make raita instead.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/s4x0qj1487603933.jpg",
+    "glass": "Highball Glass",
+    "category": "Other / Unknown",
+    "alcoholic": "Non alcoholic"
+  },
+  {
+    "name": "Jewel Of The Nile",
+    "ingredients": [
+      "gin",
+      "green chartreuse",
+      "yellow chartreuse"
+    ],
+    "instructions": "In a mixing glass half-filled with ice cubes, combine all of the ingredients. Stir well. Strain into a cocktail glass.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/hx4nrb1504884947.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Happy Skipper",
+    "ingredients": [
+      "spiced rum",
+      "ginger ale",
+      "lime",
+      "ice"
+    ],
+    "instructions": "Pour Captain Morgan's Spiced Rum over ice, fill glass to top with Ginger Ale. Garnish with lime. Tastes like a cream soda. Named for the Gilligan's Island reference (\"The Captain\" *in* \"Ginger\" is a Happy Skipper!)",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/42w2g41487602448.jpg",
+    "glass": "Highball glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Cranberry Punch",
+    "ingredients": [
+      "cranberry juice",
+      "sugar",
+      "pineapple juice",
+      "almond flavoring",
+      "ginger ale"
+    ],
+    "instructions": "Combine first four ingredients. Stir until sugar is dissolved, chill. Then add ginger ale just before serving. Add ice ring to keep punch cold.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/mzgaqu1504389248.jpg",
+    "glass": "Punch Bowl",
+    "category": "Punch / Party Drink",
+    "alcoholic": "Non alcoholic"
+  },
+  {
+    "name": "English Rose Cocktail",
+    "ingredients": [
+      "apricot brandy",
+      "gin",
+      "dry vermouth",
+      "grenadine",
+      "lemon juice",
+      "cherry"
+    ],
+    "instructions": "Rub rim of cocktail glass with lemon juice and dip rim of glass in powdered sugar. Shake all ingredients (except cherry) with ice and strain into sugar-rimmed glass. Top with the cherry and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/yxwrpp1441208697.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "After Supper Cocktail",
+    "ingredients": [
+      "triple sec",
+      "apricot brandy",
+      "lemon juice"
+    ],
+    "instructions": "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/quyxwu1483387610.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Casa Blanca",
+    "ingredients": [
+      "light rum",
+      "triple sec",
+      "lime juice",
+      "maraschino liqueur"
+    ],
+    "instructions": "Shake all ingredients with ice, strain into a cocktail glass, and serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/usspxq1441553762.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Vodka Lemon",
+    "ingredients": [
+      "vodka",
+      "lemon juice",
+      "lemon peel",
+      "ice"
+    ],
+    "instructions": "The vodka lemon is prepared directly in a highball glass or in a large tumbler: put 6-7 ice cubes in the glass, pour the vodka, lemonade and mix with a bar spoon. Finally decorate with a slice of lemon and, if you prefer, add a few mint leaves. Your vodka lemon is ready to be served.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/mql55h1643820632.jpg",
+    "glass": "Highball glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Porto flip",
+    "ingredients": [
+      "brandy",
+      "port",
+      "egg yolk"
+    ],
+    "instructions": "Shake ingredients together in a mixer with ice. Strain into glass, garnish and serve.",
+    "description": "IBA,Classic",
+    "image": "https://www.thecocktaildb.com/images/media/drink/64x5j41504351518.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Negroni",
+    "ingredients": [
+      "gin",
+      "campari",
+      "sweet vermouth"
+    ],
+    "instructions": "Stir into glass over ice, garnish and serve.",
+    "description": "IBA,Classic",
+    "image": "https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg",
+    "glass": "Old-fashioned glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Daiquiri",
+    "ingredients": [
+      "light rum",
+      "lime",
+      "powdered sugar"
+    ],
+    "instructions": "Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass.",
+    "description": "IBA,Classic,Beach",
+    "image": "https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg",
+    "glass": "Cocktail glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Gagliardo",
+    "ingredients": [
+      "peach vodka",
+      "lemon juice",
+      "galliano",
+      "sirup of roses"
+    ],
+    "instructions": "Shake well and serve in a cocktail glass. This is a home cocktail of American/Internet Bar del Pozzo, Pavia, Italy.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/lyloe91487602877.jpg",
+    "glass": "Cocktail glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "69 Special",
+    "ingredients": [
+      "gin",
+      "7-up",
+      "lemon juice"
+    ],
+    "instructions": "Pour 2 oz. gin. Add 4 oz. 7-up. Add Lemon Juice for flavor. If you are weak, top up glass with more 7-Up.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/vqyxqx1472669095.jpg",
+    "glass": "Collins Glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Caipirissima",
+    "ingredients": [
+      "lime",
+      "sugar",
+      "white rum",
+      "ice"
+    ],
+    "instructions": "Same as Caipirinha but instead of cachaca you add WHITE RUM. It's great!!!!!!!!",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/yd47111503565515.jpg",
+    "glass": "Collins Glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Jam Donut",
+    "ingredients": [
+      "baileys irish cream",
+      "chambord raspberry liqueur",
+      "sugar syrup",
+      "sugar"
+    ],
+    "instructions": "Coat the rim of a shot glass with sugar using sugar syrup to stick. Add the Chambord raspberry liqueur to the shot glass, and carefully layer the Baileys Irish Cream on top. Serve.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/uuytrp1474039804.jpg",
+    "glass": "Shot glass",
+    "category": "Shot",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Orange Scented Hot Chocolate",
+    "ingredients": [
+      "milk",
+      "chocolate",
+      "orange peel",
+      "espresso",
+      "nutmeg"
+    ],
+    "instructions": "Combine all ingredients in heavy medium saucepan. Stir over low heat until chocolate melts. Increase heat and bring just to a boil, stirring often. Remove from heat and whisk untily frothy. Return to heat and bring to boil again. Remove from heat, whisk until frothy. Repeat heating and whisking once again. Discard orange peel. (Can be prepared 2 hours ahead. Let stand at room temperature. Before serving, bring just to boil, remove from heat and whisk until frothy.) Pour hot chocolate into coffee mugs. Makes 2 servings.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/hdzwrh1487603131.jpg",
+    "glass": "Coffee mug",
+    "category": "Cocoa",
+    "alcoholic": "Non alcoholic"
+  },
+  {
+    "name": "Lord And Lady",
+    "ingredients": [
+      "dark rum",
+      "tia maria"
+    ],
+    "instructions": "Pour the rum and Tia Maria into an old-fashioned glass almost filled with ice cubes. Stir well.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/quwrys1468923219.jpg",
+    "glass": "Old-fashioned glass",
+    "category": "Ordinary Drink",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Aviation",
+    "ingredients": [
+      "gin",
+      "lemon juice",
+      "maraschino liqueur"
+    ],
+    "instructions": "Add all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass. Garnish with a cherry.",
+    "description": "IBA,Classic",
+    "image": "https://www.thecocktaildb.com/images/media/drink/trbplb1606855233.jpg",
+    "glass": "Cocktail glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Fruit Shake",
+    "ingredients": [
+      "yoghurt",
+      "banana",
+      "orange juice",
+      "fruit",
+      "ice"
+    ],
+    "instructions": "Blend til smooth.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/q0fg2m1484430704.jpg",
+    "glass": "Highball Glass",
+    "category": "Other / Unknown",
+    "alcoholic": "Non alcoholic"
+  },
+  {
+    "name": "Army special",
+    "ingredients": [
+      "vodka",
+      "gin",
+      "lime juice cordial",
+      "ice"
+    ],
+    "instructions": "Pour Vodka, Gin and lime cordial into glass, and top up with crushed ice. Wait for ice to melt slightly and sip without a straw.",
+    "description": "",
+    "image": "https://www.thecocktaildb.com/images/media/drink/55muhh1493068062.jpg",
+    "glass": "Cocktail glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  }
+]
