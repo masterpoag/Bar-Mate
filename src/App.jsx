@@ -5,6 +5,7 @@ import BarStockPage from "./pages/BarStockPage";
 import CocktailsPage from "./pages/CocktailsPage";
 import cocktailsData from "./data/cocktails.json";
 import SearchCocktailsPage from "./pages/SearchCocktailsPage";
+import HomePage from "./pages/HomePage";
 
 export default function App() {
   // Load from cookies or defaults
@@ -37,7 +38,7 @@ export default function App() {
   return (
     <Router>
       <nav style={{ display: "flex", padding: "1rem", alignItems: "center" }}>
-        <Link to="/" style={{ marginRight: "1rem" }}>Bar Stock</Link>
+        <Link to="/bar" style={{ marginRight: "1rem" }}>Bar Stock</Link>
         <Link to="/cocktails" style={{ marginRight: "1rem" }}>Cocktails</Link>
         <Link to="/search" style={{ marginRight: "1rem" }}>Search All Cocktails</Link>
 
@@ -58,10 +59,13 @@ export default function App() {
           {darkMode ? "🌞" : "🌙"}
         </button>
       </nav>
-
       <Routes>
+      <Route
+        path="/"
+        element={<HomePage darkMode={darkMode} />}
+      /> 
         <Route
-          path="/"
+          path="/bar"
           element={
             <BarStockPage
               barStock={barStock}
