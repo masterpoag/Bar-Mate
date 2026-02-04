@@ -5,18 +5,19 @@ import CocktailCard from "./components/CocktailCard";
 
 function App() {
   const [selectedIngredients, setSelectedIngredients] = useState([]);
+  const allIngredients = Array.from(
+  new Set(cocktailsData.flatMap(c => c.ingredients))
+).sort();
+  const [cocktailSearch, setCocktailSearch] = useState("");
+  const [ingredientSearch, setIngredientSearch] = useState("");
+  const filteredIngredients = allIngredients.filter(i =>
+  i.toLowerCase().includes(ingredientSearch.toLowerCase())
+);
 
-  const allIngredients = [
-    "tequila",
-    "vodka",
-    "gin",
-    "rum",
-    "triple sec",
-    "lime juice",
-    "tonic water"
-  ];
+  
 
-  const possibleCocktails = cocktailsData.map(cocktail => {
+  const possibleCocktails = cocktailsData
+  .map(cocktail => {
     const missingIngredients = cocktail.ingredients.filter(
       i => !selectedIngredients.includes(i)
     );
@@ -24,7 +25,12 @@ function App() {
       ...cocktail,
       missingIngredients
     };
-  }).filter(cocktail => cocktail.missingIngredients.length <= 1); // allow 0 or 1 missing
+  })
+  .filter(cocktail => 
+    cocktail.missingIngredients.length <= 1 &&
+    cocktail.name.toLowerCase().includes(cocktailSearch.toLowerCase())
+  );
+
 
   function toggleIngredient(ingredient) {
     setSelectedIngredients(prev =>
@@ -38,19 +44,38 @@ function App() {
     <div style={{ padding: "2rem", fontFamily: "Arial, sans-serif", background: "#f5f5f5" }}>
       <h1>🍸 Bar Mate</h1>
 
+      <div style={{ marginBottom: "1rem" }}>
+  <input
+    type="text"
+    placeholder="Search cocktails..."
+    value={cocktailSearch}
+    onChange={e => setCocktailSearch(e.target.value)}
+    style={{ padding: "0.5rem", width: "100%", marginBottom: "0.5rem" }}
+  />
+
+  <input
+    type="text"
+    placeholder="Search ingredients..."
+    value={ingredientSearch}
+    onChange={e => setIngredientSearch(e.target.value)}
+    style={{ padding: "0.5rem", width: "100%" }}
+  />
+</div>
+
       <h2>Ingredients</h2>
       <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "2rem" }}>
-        {allIngredients.map(ingredient => (
-          <label key={ingredient} style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-            <input
-              type="checkbox"
-              checked={selectedIngredients.includes(ingredient)}
-              onChange={() => toggleIngredient(ingredient)}
-            />
-            {ingredient}
-          </label>
-        ))}
-      </div>
+  {filteredIngredients.map(ingredient => (
+    <label key={ingredient} style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+      <input
+        type="checkbox"
+        checked={selectedIngredients.includes(ingredient)}
+        onChange={() => toggleIngredient(ingredient)}
+      />
+      {ingredient}
+    </label>
+  ))}
+</div>
+
 
       <h2>Possible Cocktails</h2>
       {possibleCocktails.length === 0 && <p>No matches yet</p>}
