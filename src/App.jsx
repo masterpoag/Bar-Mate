@@ -12,11 +12,23 @@ function App() {
 
 const [cocktailSearch, setCocktailSearch] = useState("");
   const [ingredientSearch, setIngredientSearch] = useState("");
-  const filteredIngredients = allIngredients.filter(i =>
+  const filteredIngredients = smartIngredients.filter(i =>
   i.toLowerCase().includes(ingredientSearch.toLowerCase())
 );
 
-  
+
+  const baseIngredients = [
+  "vodka",
+  "gin",
+  "rum",
+  "tequila",
+  "triple sec",
+  "lime juice",
+  "tonic water",
+  "orange juice",
+  "sugar",
+  "cola"
+];
 
   const possibleCocktails = cocktailsData.map(cocktail => {
   const missingIngredients = cocktail.ingredients.filter(
@@ -25,18 +37,23 @@ const [cocktailSearch, setCocktailSearch] = useState("");
   return { ...cocktail, missingIngredients };
 }).filter(c => c.missingIngredients.length <= 1);
 
-// Compute smart ingredient list
-const smartIngredientsSet = new Set();
+
+// Ingredients we can show (start with base)
+let smartIngredientsSet = new Set(baseIngredients);
 
 // Loop through cocktails that can be made with 0 or 1 missing ingredients
 possibleCocktails.forEach(cocktail => {
   cocktail.ingredients.forEach(i => {
+    // Only add ingredients if they’re not already selected
     if (!selectedIngredients.includes(i)) {
       smartIngredientsSet.add(i);
     }
   });
 });
 
+
+
+// Convert to array and sort
 const smartIngredients = Array.from(smartIngredientsSet).sort();
 
 
@@ -67,7 +84,7 @@ const smartIngredients = Array.from(smartIngredientsSet).sort();
 
       <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginBottom: "2rem" }}>
   {smartIngredients.map(ingredient => (
-    <label key={ingredient} style={{ display: "flex", alignItems: "center", gap: "0.25rem", border: "1px solid #ccc", padding: "0.25rem 0.5rem", borderRadius: "5px", background: "#f9f9f9", cursor: "pointer" }}>
+    <label key={ingredient} style={{ display: "flex", alignItems: "center", gap: "0.25rem", border: "1px solid #ccc", padding: "0.25rem 0.5rem", borderRadius: "5px", background: selectedIngredients.includes(ingredient) ? "#d4edda" : "#f9f9f9", cursor: "pointer" }}>
       <input
         type="checkbox"
         checked={selectedIngredients.includes(ingredient)}
@@ -83,6 +100,7 @@ const smartIngredients = Array.from(smartIngredientsSet).sort();
     </label>
   ))}
 </div>
+
 
 
 
