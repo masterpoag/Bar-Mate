@@ -8,7 +8,9 @@ function App() {
   const allIngredients = Array.from(
   new Set(cocktailsData.flatMap(c => c.ingredients))
 ).sort();
-  const [cocktailSearch, setCocktailSearch] = useState("");
+  
+
+const [cocktailSearch, setCocktailSearch] = useState("");
   const [ingredientSearch, setIngredientSearch] = useState("");
   const filteredIngredients = allIngredients.filter(i =>
   i.toLowerCase().includes(ingredientSearch.toLowerCase())
@@ -16,20 +18,26 @@ function App() {
 
   
 
-  const possibleCocktails = cocktailsData
-  .map(cocktail => {
-    const missingIngredients = cocktail.ingredients.filter(
-      i => !selectedIngredients.includes(i)
-    );
-    return {
-      ...cocktail,
-      missingIngredients
-    };
-  })
-  .filter(cocktail => 
-    cocktail.missingIngredients.length <= 1 &&
-    cocktail.name.toLowerCase().includes(cocktailSearch.toLowerCase())
+  const possibleCocktails = cocktailsData.map(cocktail => {
+  const missingIngredients = cocktail.ingredients.filter(
+    i => !selectedIngredients.includes(i)
   );
+  return { ...cocktail, missingIngredients };
+}).filter(c => c.missingIngredients.length <= 1);
+
+// Compute smart ingredient list
+const smartIngredientsSet = new Set();
+
+// Loop through cocktails that can be made with 0 or 1 missing ingredients
+possibleCocktails.forEach(cocktail => {
+  cocktail.ingredients.forEach(i => {
+    if (!selectedIngredients.includes(i)) {
+      smartIngredientsSet.add(i);
+    }
+  });
+});
+
+const smartIngredients = Array.from(smartIngredientsSet).sort();
 
 
   function toggleIngredient(ingredient) {
@@ -57,18 +65,25 @@ function App() {
     style={{ padding: "0.5rem", width: "100%" }}
   />
 
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "2rem" }}>
-  {filteredIngredients.map(ingredient => (
-    <label key={ingredient} style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginBottom: "2rem" }}>
+  {smartIngredients.map(ingredient => (
+    <label key={ingredient} style={{ display: "flex", alignItems: "center", gap: "0.25rem", border: "1px solid #ccc", padding: "0.25rem 0.5rem", borderRadius: "5px", background: "#f9f9f9", cursor: "pointer" }}>
       <input
         type="checkbox"
         checked={selectedIngredients.includes(ingredient)}
-        onChange={() => toggleIngredient(ingredient)}
+        onChange={() =>
+          setSelectedIngredients(prev =>
+            prev.includes(ingredient)
+              ? prev.filter(i => i !== ingredient)
+              : [...prev, ingredient]
+          )
+        }
       />
-      {ingredient}
+      <span style={{ textTransform: "capitalize", fontWeight: "500" }}>{ingredient}</span>
     </label>
   ))}
 </div>
+
 
 
       <h2>Possible Cocktails</h2>
