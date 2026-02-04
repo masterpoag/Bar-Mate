@@ -32,24 +32,30 @@ export default function CocktailCard({ cocktail, darkMode }) {
     fontWeight: "bold",
   };
 
+
+  const missing = cocktail.missingIngredients || [];
+
   return (
     <div style={cardStyle}>
       {cocktail.image && <img src={cocktail.image} alt={cocktail.name} style={imgStyle} />}
       <div style={contentStyle}>
         <h3>{cocktail.name}</h3>
+
         {cocktail.instructions && (
           <p>
             <strong>Instructions:</strong> {cocktail.instructions}
           </p>
         )}
+
         {cocktail.ingredients && (
           <p>
             <strong>Ingredients:</strong> {cocktail.ingredients.join(", ")}
           </p>
         )}
-        {cocktail.missingIngredients.length > 0 && (
+
+        {missing.length > 0 && (
           <p style={missingStyle}>
-            <strong>Missing:</strong> {cocktail.missingIngredients.join(", ")}
+            <strong>Missing:</strong> {missing.join(", ")}
           </p>
         )}
       </div>

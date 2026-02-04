@@ -38,8 +38,8 @@ export default function App() {
     <Router>
       <nav style={{ display: "flex", padding: "1rem", alignItems: "center" }}>
         <Link to="/" style={{ marginRight: "1rem" }}>Bar Stock</Link>
-        <Link to="/cocktails">Cocktails You Can Make</Link>
-        <Link to="/search">Search Cocktails</Link>
+        <Link to="/cocktails" style={{ marginRight: "1rem" }}>Cocktails</Link>
+        <Link to="/search" style={{ marginRight: "1rem" }}>Search All Cocktails</Link>
 
         <button
           onClick={() => setDarkMode(prev => !prev)}
