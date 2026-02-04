@@ -31,20 +31,12 @@ export default function CocktailsPage({ barStock, cocktailsData, darkMode }) {
     });
   }, [possibleCocktails]);
 
-  // Filter cocktails based on search input and prioritize ones you can make
-const filteredCocktails = useMemo(() => {
-  // Start with possibleCocktails (already has missingIngredients)
-  let results = possibleCocktails;
-
-  // Apply search if there is one
-  if (search) {
-    const fuseResults = fuse.search(search);
-    results = fuseResults.map(r => r.item);
-  }
-
-  // Sort so cocktails with fewer missing ingredients come first
-  return results.sort((a, b) => a.missingIngredients.length - b.missingIngredients.length);
-}, [search, fuse, possibleCocktails]);
+  // Filter cocktails based on search input
+  const filteredCocktails = useMemo(() => {
+    if (!search) return possibleCocktails;
+    const results = fuse.search(search);
+    return results.map(r => r.item);
+  }, [search, fuse, possibleCocktails]);
 
 
 
