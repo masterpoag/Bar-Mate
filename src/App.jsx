@@ -27,10 +27,21 @@ function App() {
           <Link to="/cocktails" style={linkStyle}>🍹 Cocktails</Link>
           <button
             onClick={() => setDarkMode(prev => !prev)}
-            style={{ marginLeft: "auto" }}
+            style={{
+              marginLeft: "auto",
+              padding: "0.5rem 1rem",
+              borderRadius: "8px",
+              border: "none",
+              cursor: "pointer",
+              fontWeight: "bold",
+              background: darkMode ? "#333" : "#e0e0e0", // match page theme
+              color: darkMode ? "#f5f5f5" : "#121212",
+              transition: "all 0.3s",
+            }}
           >
-            {darkMode ? "🌞 Light Mode" : "🌙 Dark Mode"}
+            {darkMode ? "🌞" : "🌙"}
           </button>
+
         </nav>
 
         <Routes>
