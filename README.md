@@ -12,7 +12,7 @@ This project is completely free to use, and contributions are very welcome!
 ---
 ## Live Server
 
-You can use this website for free with no add at [https://bar.ravstormdev.top]
+You can use this website for free with no add at https://bar.ravstormdev.top
 
 ---
 
