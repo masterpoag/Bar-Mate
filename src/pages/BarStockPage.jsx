@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 export default function BarStockPage({ barStock, setBarStock, darkMode }) {
   const [input, setInput] = useState("");
 

@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import CocktailCard from "../components/CocktailCard";
 
 export default function CocktailsPage({ barStock, cocktailsData, darkMode }) {
