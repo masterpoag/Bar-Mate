@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Margarita",
+    "ingredients": ["tequila", "triple sec", "lime juice"]
+  },
+  {
+    "name": "Gin & Tonic",
+    "ingredients": ["gin", "tonic water"]
+  }
+]
