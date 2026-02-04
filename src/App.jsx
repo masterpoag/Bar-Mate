@@ -90,6 +90,7 @@ export default function App() {
           element={
             <SearchCocktailsPage
               cocktailsData={cocktailsData}
+              barStock={barStock}
               darkMode={darkMode}
             />
           }

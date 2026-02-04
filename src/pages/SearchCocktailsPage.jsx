@@ -2,27 +2,37 @@ import React, { useState, useMemo } from "react";
 import CocktailCard from "../components/CocktailCard";
 import Fuse from "fuse.js";
 
-export default function SearchCocktailsPage({ cocktailsData, darkMode }) {
+export default function SearchCocktailsPage({ cocktailsData, barStock, darkMode }) {
   const [search, setSearch] = useState("");
 
   if (!cocktailsData) return <p>Loading cocktails...</p>;
 
-  // 1️⃣ Set up Fuse.js for fuzzy searching by name or ingredients
-  const fuse = useMemo(() => {
-    return new Fuse(cocktailsData, {
-      keys: ["name", "ingredients"],
-      threshold: 0.4, // adjust sensitivity
+  // Add missingIngredients to each cocktail (for display)
+  const cocktailsWithMissing = useMemo(() => {
+    return cocktailsData.map(cocktail => {
+      const missingIngredients = cocktail.ingredients
+        .filter(i => !barStock.includes(i.name.toLowerCase()))
+        .map(i => i.name);
+      return { ...cocktail, missingIngredients };
     });
-  }, [cocktailsData]);
+  }, [cocktailsData, barStock]);
 
-  // 2️⃣ Filter cocktails based on search input
+  // fuzzy searching
+  const fuse = useMemo(() => {
+    return new Fuse(cocktailsWithMissing, {
+      keys: ["name", "ingredients.name"], // search by cocktail name or ingredient names
+      threshold: 0.4,
+    });
+  }, [cocktailsWithMissing]);
+
+  // Filter cocktails based on search input (but never filter by missing ingredients)
   const filteredCocktails = useMemo(() => {
-    if (!search) return cocktailsData; // show all if empty
+    if (!search) return cocktailsWithMissing; 
     const results = fuse.search(search);
     return results.map(r => r.item);
-  }, [search, fuse, cocktailsData]);
+  }, [search, fuse, cocktailsWithMissing]);
 
-  // 3️⃣ Styles
+  // 4️⃣ Styles
   const containerStyle = {
     minHeight: "100vh",
     width: "100vw",
