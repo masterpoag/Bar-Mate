@@ -5,7 +5,7 @@ import BarStockPage from "./pages/BarStockPage";
 import CocktailsPage from "./pages/CocktailsPage";
 import cocktailsData from "./data/cocktails.json";
 import SearchCocktailsPage from "./pages/SearchCocktailsPage";
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/Homepage";
 
 export default function App() {
   // Load from cookies or defaults
