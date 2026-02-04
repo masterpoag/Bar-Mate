@@ -1,10 +1,32 @@
 [
   {
     "name": "Margarita",
-    "ingredients": ["tequila", "triple sec", "lime juice"]
+    "ingredients": ["tequila", "triple sec", "lime juice"],
+    "instructions": "Shake with ice and strain into a salt-rimmed glass.",
+    "description": "A classic tangy cocktail with tequila and lime.",
+    "image": "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg",
+    "glass": "Cocktail glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
   },
   {
     "name": "Gin & Tonic",
-    "ingredients": ["gin", "tonic water"]
+    "ingredients": ["gin", "tonic water"],
+    "instructions": "Build over ice and garnish with a lime wedge.",
+    "description": "A refreshing and simple highball cocktail.",
+    "image": "https://www.thecocktaildb.com/images/media/drink/zqcdkk1504389401.jpg",
+    "glass": "Highball glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
+  },
+  {
+    "name": "Vodka Gimlet",
+    "ingredients": ["vodka", "lime juice"],
+    "instructions": "Shake with ice and strain into a chilled glass.",
+    "description": "A crisp, citrusy cocktail that’s easy to make.",
+    "image": "https://www.thecocktaildb.com/images/media/drink/3M6wnT1504884666.jpg",
+    "glass": "Cocktail glass",
+    "category": "Cocktail",
+    "alcoholic": "Alcoholic"
   }
 ]

@@ -1,19 +1,28 @@
 export default function CocktailCard({ cocktail }) {
   return (
     <div style={cardStyle}>
+      {cocktail.image && (
+        <img
+          src={cocktail.image}
+          alt={cocktail.name}
+          style={{ width: "100%", borderRadius: "8px", marginBottom: "0.5rem" }}
+        />
+      )}
       <h3>{cocktail.name}</h3>
+      {cocktail.description && <p>{cocktail.description}</p>}
       <p>
-        <strong>Ingredients:</strong>{" "}
-        {cocktail.ingredients.join(", ")}
+        <strong>Ingredients:</strong> {cocktail.ingredients.join(", ")}
       </p>
       {cocktail.instructions && (
         <p><strong>Instructions:</strong> {cocktail.instructions}</p>
       )}
+      {cocktail.glass && <p><strong>Glass:</strong> {cocktail.glass}</p>}
+      {cocktail.category && <p><strong>Category:</strong> {cocktail.category}</p>}
+      {cocktail.alcoholic && <p><strong>Alcoholic:</strong> {cocktail.alcoholic}</p>}
     </div>
   );
 }
 
-// Simple inline style for now
 const cardStyle = {
   border: "1px solid #ccc",
   borderRadius: "8px",
