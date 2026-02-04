@@ -44,15 +44,11 @@ function App() {
     <div style={{ padding: "2rem", fontFamily: "Arial, sans-serif", background: "#f5f5f5" }}>
       <h1>🍸 Bar Mate</h1>
 
-      <div style={{ marginBottom: "1rem" }}>
-  <input
-    type="text"
-    placeholder="Search cocktails..."
-    value={cocktailSearch}
-    onChange={e => setCocktailSearch(e.target.value)}
-    style={{ padding: "0.5rem", width: "100%", marginBottom: "0.5rem" }}
-  />
+      
 
+
+      <h2>Ingredients</h2>
+      <div style={{ marginBottom: "1rem" }}></div>
   <input
     type="text"
     placeholder="Search ingredients..."
@@ -60,9 +56,7 @@ function App() {
     onChange={e => setIngredientSearch(e.target.value)}
     style={{ padding: "0.5rem", width: "100%" }}
   />
-</div>
 
-      <h2>Ingredients</h2>
       <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "2rem" }}>
   {filteredIngredients.map(ingredient => (
     <label key={ingredient} style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
@@ -78,6 +72,15 @@ function App() {
 
 
       <h2>Possible Cocktails</h2>
+      <div style={{ marginBottom: "1rem" }}>
+  <input
+    type="text"
+    placeholder="Search cocktails..."
+    value={cocktailSearch}
+    onChange={e => setCocktailSearch(e.target.value)}
+    style={{ padding: "0.5rem", width: "100%", marginBottom: "0.5rem" }}
+  />
+</div>
       {possibleCocktails.length === 0 && <p>No matches yet</p>}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "1rem" }}>
         {possibleCocktails.map(cocktail => (
