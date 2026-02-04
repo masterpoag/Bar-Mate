@@ -12,9 +12,7 @@ function App() {
 
 const [cocktailSearch, setCocktailSearch] = useState("");
   const [ingredientSearch, setIngredientSearch] = useState("");
-  const filteredIngredients = smartIngredients.filter(i =>
-  i.toLowerCase().includes(ingredientSearch.toLowerCase())
-);
+  
 
 
   const baseIngredients = [
@@ -64,6 +62,10 @@ const smartIngredients = Array.from(smartIngredientsSet).sort();
         : [...prev, ingredient]
     );
   }
+
+  const filteredIngredients = smartIngredients.filter(i =>
+  i.toLowerCase().includes(ingredientSearch.toLowerCase())
+);
 
   return (
     <div style={{ padding: "2rem", fontFamily: "Arial, sans-serif", background: "#f5f5f5" }}>
