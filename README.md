@@ -42,11 +42,15 @@ npm run dev -- --host --port {PORT}
 ```
 
 The app should now be running at http://localhost:{PORT}.
-🍸 Adding Cocktails
+
+---
+
+## 🍸 Adding Cocktails
 
 You can fetch random cocktails from TheCocktailDB API using the provided Python script:
-
+```bash
 python fetch_cocktails.py
+```
 
 This script will save cocktails to cocktails.json including:
 
@@ -64,7 +68,7 @@ This script will save cocktails to cocktails.json including:
 
     Alcoholic status
 
-💡 Contribution
+## 💡 Contribution
 
 Contributions are welcome! You can:
 
