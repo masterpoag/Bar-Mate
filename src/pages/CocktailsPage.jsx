@@ -7,37 +7,37 @@ export default function CocktailsPage({ barStock, cocktailsData, darkMode }) {
 
   if (!cocktailsData) return <p>Loading cocktails...</p>;
 
-  // 1️⃣ Determine cocktails you can make or almost make
   const possibleCocktails = useMemo(() => {
-    return cocktailsData
-      .map(cocktail => {
-        const missingIngredients = cocktail.ingredients
-          .filter(i => !barStock.includes(i.name.toLowerCase()))
-          .map(i => i.name);
-        return { ...cocktail, missingIngredients };
-      })
-      .filter(c => c.missingIngredients.length <= 1); // ✅ only 0 or 1 missing
-  }, [cocktailsData, barStock]);
+  return cocktailsData
+    .map(cocktail => {
+      const missingIngredients = cocktail.ingredients
+        .filter(i => !barStock.includes(i.name.toLowerCase()))
+        .map(i => i.name);
+      return { ...cocktail, missingIngredients };
+    })
+    .filter(c => c.missingIngredients.length <= 1)
+    .sort((a, b) => a.missingIngredients.length - b.missingIngredients.length);
+}, [cocktailsData, barStock]);
 
-  // 2️⃣ Set up Fuse.js for fuzzy searching by cocktail name or ingredient names
+
+  // Set up Fuse.js for fuzzy searching by cocktail name or ingredient names
   const fuse = useMemo(() => {
     return new Fuse(possibleCocktails, {
       keys: [
         "name",
-        "ingredients.name", // search by ingredient names
+        "ingredients.name",
       ],
       threshold: 0.4,
     });
   }, [possibleCocktails]);
 
-  // 3️⃣ Filter cocktails based on search input
+  // Filter cocktails based on search input
   const filteredCocktails = useMemo(() => {
     if (!search) return possibleCocktails;
     const results = fuse.search(search);
     return results.map(r => r.item);
   }, [search, fuse, possibleCocktails]);
 
-  // 4️⃣ Styles
   const containerStyle = {
     minHeight: "100vh",
     width: "100vw",
