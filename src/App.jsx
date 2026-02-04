@@ -16,11 +16,15 @@ function App() {
     "tonic water"
   ];
 
-  const possibleCocktails = cocktailsData.filter(cocktail =>
-    cocktail.ingredients.every(ingredient =>
-      selectedIngredients.includes(ingredient)
-    )
-  );
+  const possibleCocktails = cocktailsData.map(cocktail => {
+    const missingIngredients = cocktail.ingredients.filter(
+      i => !selectedIngredients.includes(i)
+    );
+    return {
+      ...cocktail,
+      missingIngredients
+    };
+  }).filter(cocktail => cocktail.missingIngredients.length <= 1); // allow 0 or 1 missing
 
   function toggleIngredient(ingredient) {
     setSelectedIngredients(prev =>
@@ -35,22 +39,26 @@ function App() {
       <h1>🍸 Bar Mate</h1>
 
       <h2>Ingredients</h2>
-      {allIngredients.map(ingredient => (
-        <label key={ingredient} style={{ display: "block", marginBottom: "0.25rem" }}>
-          <input
-            type="checkbox"
-            checked={selectedIngredients.includes(ingredient)}
-            onChange={() => toggleIngredient(ingredient)}
-          />
-          {ingredient}
-        </label>
-      ))}
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "2rem" }}>
+        {allIngredients.map(ingredient => (
+          <label key={ingredient} style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+            <input
+              type="checkbox"
+              checked={selectedIngredients.includes(ingredient)}
+              onChange={() => toggleIngredient(ingredient)}
+            />
+            {ingredient}
+          </label>
+        ))}
+      </div>
 
       <h2>Possible Cocktails</h2>
       {possibleCocktails.length === 0 && <p>No matches yet</p>}
-      {possibleCocktails.map(cocktail => (
-        <CocktailCard key={cocktail.name} cocktail={cocktail} />
-      ))}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "1rem" }}>
+        {possibleCocktails.map(cocktail => (
+          <CocktailCard key={cocktail.name} cocktail={cocktail} />
+        ))}
+      </div>
     </div>
   );
 }
