@@ -59,7 +59,8 @@ export default function BarStockPage({ barStock, setBarStock, darkMode, cocktail
 
   return (
     <div>
-      <h1>🍾 Your Bar Stock</h1>
+      <h1 style={{ marginTop: 0, marginBottom: "1rem" }}>🍾 Your Bar Stock</h1>
+
 
       {/* Fuzzy search input */}
       <input
