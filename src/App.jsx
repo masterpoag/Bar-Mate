@@ -7,15 +7,16 @@ import cocktailsData from "./data/cocktails.json";
 function App() {
   const [barStock, setBarStock] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
-
-  const navStyle = { display: "flex", gap: "1rem", marginBottom: "1rem" };
-  const linkStyle = { textDecoration: "none", fontWeight: "bold" };
-
   useEffect(() => {
     document.body.style.background = darkMode ? "#121212" : "#f5f5f5";
     document.body.style.color = darkMode ? "#f5f5f5" : "#121212";
     document.body.style.transition = "all 0.3s";
   }, [darkMode]);
+
+  const navStyle = { display: "flex", gap: "1rem", marginBottom: "1rem" };
+  const linkStyle = { textDecoration: "none", fontWeight: "bold" };
+
+  
 
   
   return (
