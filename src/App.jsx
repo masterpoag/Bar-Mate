@@ -31,25 +31,34 @@ function App() {
 
   return (
     <Router>
-      <div style={appStyle}>
-        <nav style={navStyle}>
-          <Link to="/" style={linkStyle}>🍾 Bar Stock</Link>
-          <Link to="/cocktails" style={linkStyle}>🍹 Cocktails</Link>
-          <button
-            onClick={() => setDarkMode(prev => !prev)}
-            style={{ marginLeft: "auto", padding: "0.25rem 0.5rem", cursor: "pointer" }}
-          >
-            {darkMode ? "🌞 Light Mode" : "🌙 Dark Mode"}
-          </button>
-        </nav>
-
+      <div style={{ padding: "1rem" }}>
         <Routes>
-          <Route path="/" element={<BarStockPage barStock={barStock} setBarStock={setBarStock} darkMode={darkMode} />} />
-          <Route path="/cocktails" element={<CocktailsPage barStock={barStock} cocktailsData={cocktailsData} darkMode={darkMode} />} />
+          <Route
+            path="/"
+            element={
+              <BarStockPage
+                barStock={barStock}
+                setBarStock={setBarStock}
+                darkMode={darkMode}
+                cocktailsData={cocktailsData} // ✅ pass the data
+              />
+            }
+          />
+          <Route
+            path="/cocktails"
+            element={
+              <CocktailsPage
+                barStock={barStock}
+                cocktailsData={cocktailsData} // ✅ also here
+                darkMode={darkMode}
+              />
+            }
+          />
         </Routes>
       </div>
     </Router>
   );
 }
+
 
 export default App;
