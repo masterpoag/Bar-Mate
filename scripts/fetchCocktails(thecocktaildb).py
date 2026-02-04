@@ -3,7 +3,7 @@ import json
 import os
 
 API_URL = "https://www.thecocktaildb.com/api/json/v1/1/random.php"
-JSON_FILE = "cocktails.json"
+JSON_FILE = "src/data/cocktails.json"
 
 def fetch_random_cocktail():
     response = requests.get(API_URL)
@@ -16,12 +16,16 @@ def fetch_random_cocktail():
 
     drink = drinks[0]
 
-    # Collect ingredients
+    # Collect ingredients with measurements
     ingredients = []
     for i in range(1, 16):
-        ingredient = drink.get(f"strIngredient{i}")
-        if ingredient:
-            ingredients.append(ingredient.lower())
+        name = drink.get(f"strIngredient{i}")
+        measure = drink.get(f"strMeasure{i}")
+        if name:
+            ingredients.append({
+                "name": name.strip(),
+                "amount": measure.strip() if measure else ""
+            })
 
     cocktail = {
         "name": drink.get("strDrink"),

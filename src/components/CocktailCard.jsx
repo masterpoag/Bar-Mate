@@ -32,7 +32,6 @@ export default function CocktailCard({ cocktail, darkMode }) {
     fontWeight: "bold",
   };
 
-
   const missing = cocktail.missingIngredients || [];
 
   return (
@@ -48,9 +47,16 @@ export default function CocktailCard({ cocktail, darkMode }) {
         )}
 
         {cocktail.ingredients && (
-          <p>
-            <strong>Ingredients:</strong> {cocktail.ingredients.join(", ")}
-          </p>
+          <div>
+            <strong>Ingredients:</strong>
+            <ul style={{ margin: 0, paddingLeft: "1.2rem" }}>
+              {cocktail.ingredients.map((ing, idx) => (
+                <li key={idx}>
+                  {ing.name} {ing.amount ? `- ${ing.amount}` : ""}
+                </li>
+              ))}
+            </ul>
+          </div>
         )}
 
         {missing.length > 0 && (
