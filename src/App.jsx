@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import BarStockPage from "./pages/BarStockPage";
-import CocktailsPage from "./pages/CocktailsPage";
+import BarStockPage from "./pages/bar";
+import CocktailsPage from "./pages/cocktails";
 import cocktailsData from "./data/cocktails.json";
-import SearchCocktailsPage from "./pages/SearchCocktailsPage";
-import HomePage from "./pages/Homepage";
+import SearchCocktailsPage from "./pages/search";
+import HomePage from "./pages";
 
 
 export default function App() {
