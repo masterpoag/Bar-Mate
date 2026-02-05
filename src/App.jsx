@@ -126,11 +126,6 @@ export default function App() {
             />
           }
         />
-        <Route
-          path="/add-drinks"
-          element={<UserDrinksPage darkMode={darkMode} />}
-        />
-
       </Routes>
     </Router>
   );
