@@ -103,7 +103,7 @@ export default function App() {
         <Link to="/bar" style={linkStyle}>Bar Stock</Link>
         <Link to="/cocktails" style={linkStyle}>Cocktails</Link>
         <Link to="/search" style={linkStyle}>Search All Cocktails</Link>
-        <Link to="/adddrink" style={linkStyle}>Add Drink</Link>
+        <Link to="/add-drinks" style={linkStyle}>Add Drink</Link>
 
         {/* Measurement buttons */}
         <div style={{ display: "flex", marginLeft: "1rem" }}>
@@ -164,7 +164,7 @@ export default function App() {
           }
         />
         <Route
-          path="/user-drinks"
+          path="/add-drinks"
           element={<UserDrinksPage darkMode={darkMode} />}
         />
 
