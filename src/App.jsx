@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Cookies from "js-cookie";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
 import BarStockPage from "./pages/bar";
 import CocktailsPage from "./pages/cocktails";
 import cocktailsData from "./data/cocktails.json";
@@ -99,9 +99,26 @@ export default function App() {
     <Router>
       <nav style={navStyle}>
         {/* Navigation links */}
-        <Link to="/bar" style={linkStyle}>Bar Stock</Link>
-        <Link to="/cocktails" style={linkStyle}>Cocktails</Link>
-        <Link to="/search" style={linkStyle}>Search All Cocktails</Link>
+        <NavLink to="/bar" style={({ isActive }) => ({
+          ...linkStyle,
+          color: isActive ? "#ff6f61" : linkStyle.color
+        })}>
+          Bar Stock
+        </NavLink>
+
+        <NavLink to="/cocktails" style={({ isActive }) => ({
+          ...linkStyle,
+          color: isActive ? "#ff6f61" : linkStyle.color
+        })}>
+          Cocktails
+        </NavLink>
+
+        <NavLink to="/search" style={({ isActive }) => ({
+          ...linkStyle,
+          color: isActive ? "#ff6f61" : linkStyle.color
+        })}>
+          Search All Cocktails
+        </NavLink>
 
         {/* Measurement buttons */}
         <div style={{ display: "flex", marginLeft: "1rem" }}>
