@@ -1,9 +1,9 @@
-const conversionRates = {
-  oz: 1,
-  ml: 29.5735,
-  cl: 2.95735,
-  tbsp: 2,   // 1 tbsp ≈ 0.625 oz
-  tsp: 6,  // 1 tsp ≈ 0.2083 oz
+const toMl = {
+  ml: 1,
+  cl: 10,          // 1 cl = 10 ml
+  oz: 29.5735,     // 1 fl oz = 29.5735 ml
+  tbsp: 14.7868,   // 1 tbsp = 14.7868 ml
+  tsp: 4.92892,    // 1 tsp = 4.92892 ml
 };
 
 // Units that are "measurable" and can be converted
@@ -40,16 +40,19 @@ export function parseAmount(amountStr) {
 export function convertAmount(amountStr, toUnit) {
   const { value, unit, raw } = parseAmount(amountStr);
 
-  // Not measurable → return original string
-  if (value == null || !measurableUnits.includes(unit) || !measurableUnits.includes(toUnit)) {
+  if (
+    value == null ||
+    !toMl[unit] ||
+    !toMl[toUnit]
+  ) {
     return raw;
   }
 
-  // Convert to base unit (oz)
-  const inOz = value * (conversionRates[unit] || 1);
+  // Convert unit → ml
+  const inMl = value * toMl[unit];
 
-  // Convert to target unit
-  const converted = inOz / (conversionRates[toUnit] || 1);
+  // Convert ml → target
+  const converted = inMl / toMl[toUnit];
 
   return Math.round(converted * 100) / 100;
 }
