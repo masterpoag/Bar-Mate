@@ -10,30 +10,33 @@ const toMl = {
 const measurableUnits = Object.keys(conversionRates);
 
 // Parse amount string like "1 oz", "1/2 oz", "1 1/2 oz"
-export function parseAmount(amountStr) {
-  if (!amountStr) return { value: null, unit: null, raw: amountStr };
+export function parseAmount(str) {
+  str = str.trim();
+  const match = str.match(/^(\d+\s\d+\/\d+|\d+\/\d+|\d*\.?\d+)\s*(\w+)$/);
+  if (!match) return { value: null, unit: null, raw: str };
 
-  const regex = /^(\d+\s\d+\/\d+|\d+\/\d+|\d+(\.\d+)?)\s*(\w+)?/i;
-  const match = amountStr.trim().match(regex);
+  let [_, numStr, unit] = match;
 
-  if (!match) return { value: null, unit: null, raw: amountStr };
-
-  let [_, num, , unit] = match;
-
-  // Handle fractions like "1/2" or "1 1/2"
   let value;
-  if (num.includes(" ")) {
-    const [whole, fraction] = num.split(" ");
-    const [numerator, denominator] = fraction.split("/");
-    value = parseInt(whole) + parseInt(numerator) / parseInt(denominator);
-  } else if (num.includes("/")) {
-    const [numerator, denominator] = num.split("/");
-    value = parseInt(numerator) / parseInt(denominator);
+  if (numStr.includes(" ")) {
+    // Mixed number, e.g., "1 1/2"
+    const [whole, fraction] = numStr.split(" ");
+    const [numerator, denominator] = fraction.split("/").map(Number);
+    value = Number(whole) + numerator / denominator;
+  } else if (numStr.includes("/")) {
+    // Simple fraction, e.g., "3/4"
+    const [numerator, denominator] = numStr.split("/").map(Number);
+    value = numerator / denominator;
   } else {
-    value = parseFloat(num);
+    // Decimal or whole number
+    value = parseFloat(numStr);
   }
 
-  return { value, unit: unit ? unit.toLowerCase() : "oz", raw: amountStr };
+  return {
+    value,
+    unit: unit.toLowerCase(),
+    raw: str,
+  };
 }
 
 // Convert parsed amount to target unit, only if measurable
