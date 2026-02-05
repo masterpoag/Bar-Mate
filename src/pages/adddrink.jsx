@@ -62,13 +62,13 @@ export default function UserDrinksPage({ darkMode }) {
     }
   };
 
-//   const pageStyle = {
-//     minHeight: "100vh",
-//     display: "flex",
-//     justifyContent: "center",
-//     alignItems: "center",
-//     background: darkMode ? "#121212" : "#f5f5f5",
-//   };
+  const pageStyle = {
+    minHeight: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    background: darkMode ? "#121212" : "#f5f5f5",
+  };
 
   const cardStyle = {
     width: "100%",
@@ -104,7 +104,7 @@ export default function UserDrinksPage({ darkMode }) {
   };
 
   return (
-    <div>
+    <div style={pageStyle}>
       <div style={cardStyle}>
         <h2 style={{ textAlign: "center" }}>Add a User Drink</h2>
         {submitted && (
