@@ -6,6 +6,7 @@ import CocktailsPage from "./pages/cocktails";
 import cocktailsData from "./data/cocktails.json";
 import SearchCocktailsPage from "./pages/search";
 import HomePage from "./pages";
+import UserDrinksPage from "./pages/adddrink";
 
 const units = ["oz", "ml", "cl", "tbsp", "tsp"];
 
