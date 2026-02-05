@@ -62,14 +62,13 @@ export default function UserDrinksPage({ darkMode }) {
     }
   };
 
-  const pageStyle = {
-    minHeight: "100vh",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    background: darkMode ? "#121212" : "#f5f5f5",
-    padding: "2rem",
-  };
+//   const pageStyle = {
+//     minHeight: "100vh",
+//     display: "flex",
+//     justifyContent: "center",
+//     alignItems: "center",
+//     background: darkMode ? "#121212" : "#f5f5f5",
+//   };
 
   const cardStyle = {
     width: "100%",
