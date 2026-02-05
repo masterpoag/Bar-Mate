@@ -2,8 +2,8 @@ const conversionRates = {
   oz: 1,
   ml: 29.5735,
   cl: 2.95735,
-  tbsp: 0.625,   // 1 tbsp ≈ 0.625 oz
-  tsp: 0.20833,  // 1 tsp ≈ 0.2083 oz
+  tbsp: 2,   // 1 tbsp ≈ 0.625 oz
+  tsp: 6,  // 1 tsp ≈ 0.2083 oz
 };
 
 // Units that are "measurable" and can be converted
