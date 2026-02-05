@@ -112,23 +112,23 @@
         "ingredients": [
             {
                 "name": "Blue Curacao",
-                "amount": ""
+                "amount": "1 part"
             },
             {
                 "name": "Blueberry schnapps",
-                "amount": ""
+                "amount": "1 part"
             },
             {
                 "name": "Vodka",
-                "amount": ""
+                "amount": "1 part"
             },
             {
                 "name": "Sour mix",
-                "amount": ""
+                "amount": "1 part"
             },
             {
                 "name": "7-Up",
-                "amount": ""
+                "amount": "1 part"
             }
         ],
         "instructions": "Mix equal amounts into a glass with ice.",
@@ -186,23 +186,23 @@
         "ingredients": [
             {
                 "name": "Dark Rum",
-                "amount": "4.5 cL"
+                "amount": "45 ml"
             },
             {
                 "name": "Orange Juice",
-                "amount": "3 cl"
+                "amount": "30 ml"
             },
             {
                 "name": "Pineapple Juice",
-                "amount": "3.5 cl"
+                "amount": "30 ml"
             },
             {
                 "name": "Grenadine",
-                "amount": "1 cl"
+                "amount": "10 ml"
             },
             {
                 "name": "Simple Syrup",
-                "amount": "1 cl"
+                "amount": "10 ml"
             },
             {
                 "name": "Angostura Bitters",
@@ -1038,11 +1038,11 @@
         "ingredients": [
             {
                 "name": "Vodka",
-                "amount": "4 cl"
+                "amount": "40 ml"
             },
             {
                 "name": "Tonic Water",
-                "amount": "10 cl"
+                "amount": "100 ml"
             },
             {
                 "name": "Lemon Peel",
@@ -1061,15 +1061,15 @@
         "ingredients": [
             {
                 "name": "White Rum",
-                "amount": "6 cl"
+                "amount": "60 ml"
             },
             {
                 "name": "Honey",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Lemon Juice",
-                "amount": "2 cl"
+                "amount": "20 ml"
             }
         ],
         "instructions": "Shake ingredients with crushed ice\r\n",
@@ -1103,11 +1103,11 @@
         "ingredients": [
             {
                 "name": "Vodka",
-                "amount": "5 cl"
+                "amount": "50 ml"
             },
             {
                 "name": "Lemon Juice",
-                "amount": "7 cl"
+                "amount": "70 ml"
             },
             {
                 "name": "Lemon Peel",
@@ -1192,15 +1192,15 @@
             },
             {
                 "name": "Orange juice",
-                "amount": ""
+                "amount": "splash"
             },
             {
                 "name": "Grenadine",
-                "amount": ""
+                "amount": "splash"
             },
             {
                 "name": "Cherries",
-                "amount": ""
+                "amount": "splash"
             }
         ],
         "instructions": "Fill glass with ice and add shots of Bacardi and Malibu. Add splash of pineapple juice and top with orange juice. Add grenadine for color and garnish with cherries.",
@@ -1639,11 +1639,11 @@
         "ingredients": [
             {
                 "name": "Vodka",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Creme de Banane",
-                "amount": "1 cl"
+                "amount": "10 ml"
             },
             {
                 "name": "Orange juice",
@@ -1750,19 +1750,19 @@
         "ingredients": [
             {
                 "name": "Gin",
-                "amount": "4.5 cL"
+                "amount": "45 ml"
             },
             {
                 "name": "Lemon Juice",
-                "amount": "3 cl"
+                "amount": "30 ml"
             },
             {
                 "name": "Simple Syrup",
-                "amount": "3 cl"
+                "amount": "30 ml"
             },
             {
                 "name": "Cream",
-                "amount": "6 cl"
+                "amount": "60 ml"
             },
             {
                 "name": "Egg White",
@@ -1774,7 +1774,7 @@
             },
             {
                 "name": "Soda Water",
-                "amount": "2 cl"
+                "amount": "20 ml"
             }
         ],
         "instructions": "Prepare all the ingredients on the counter to be able to work well and quickly, especially the cream and egg white.\r\n\r\nPour all the ingredients into a shaker.\r\n\r\nShake vigorously for 1 minute: cream and egg white must be mixed perfectly, so don't rush.\r\n\r\nNow open the shaker and put some ice and shake for 1-2 minutes. It depends on how long you can resist!\r\n\r\nPour into a highball glass, add a splash of soda and garnish to taste.\r\n\r\nRamos Gin Fizz was once drunk as an invigorating drink or even as a breakfast, try it as an aperitif and after dinner and you will discover a little gem now lost.",
@@ -2012,7 +2012,7 @@
             },
             {
                 "name": "Aquavit",
-                "amount": "4 cl"
+                "amount": "40 ml"
             },
             {
                 "name": "Sugar",
@@ -2922,11 +2922,11 @@
         "ingredients": [
             {
                 "name": "Prosecco",
-                "amount": "6 cl"
+                "amount": "60 ml"
             },
             {
                 "name": "Aperol",
-                "amount": "4 cl"
+                "amount": "40 ml"
             },
             {
                 "name": "Soda Water",
@@ -3223,7 +3223,7 @@
         "ingredients": [
             {
                 "name": "Vodka",
-                "amount": "4 cl"
+                "amount": "40 ml"
             },
             {
                 "name": "Lime juice",
@@ -3446,11 +3446,11 @@
         "ingredients": [
             {
                 "name": "Whisky",
-                "amount": "4 cl"
+                "amount": "40 ml"
             },
             {
                 "name": "Baileys irish cream",
-                "amount": "8 cl"
+                "amount": "80 ml"
             },
             {
                 "name": "Coffee",
@@ -3704,15 +3704,15 @@
         "ingredients": [
             {
                 "name": "Orange juice",
-                "amount": "4 cl"
+                "amount": "40 ml"
             },
             {
                 "name": "Grapefruit juice",
-                "amount": "3 cl"
+                "amount": "30 ml"
             },
             {
                 "name": "Apple juice",
-                "amount": "1 cl"
+                "amount": "10 ml"
             },
             {
                 "name": "Maraschino cherry",
@@ -4044,15 +4044,15 @@
         "ingredients": [
             {
                 "name": "Amaretto",
-                "amount": "4 cl"
+                "amount": "40 ml"
             },
             {
                 "name": "Orange Juice",
-                "amount": "6 cl"
+                "amount": "60 ml"
             },
             {
                 "name": "White Wine",
-                "amount": "15 cl"
+                "amount": "150 ml"
             },
             {
                 "name": "Orange Peel",
@@ -4299,15 +4299,15 @@
         "ingredients": [
             {
                 "name": "Lemon juice",
-                "amount": "5 cl"
+                "amount": "50 ml"
             },
             {
                 "name": "Orange juice",
-                "amount": "15 cl"
+                "amount": "150 ml"
             },
             {
                 "name": "Simple Syrup",
-                "amount": "2-3 cl"
+                "amount": "20-30 ml"
             },
             {
                 "name": "Soda water",
@@ -4742,11 +4742,11 @@
         "ingredients": [
             {
                 "name": "Cointreau",
-                "amount": "5 cl"
+                "amount": "50 ml"
             },
             {
                 "name": "Lemon juice",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Ice",
@@ -4827,7 +4827,7 @@
             },
             {
                 "name": "Lemon juice",
-                "amount": "3 cl"
+                "amount": "30 ml"
             },
             {
                 "name": "Dark rum",
@@ -5097,11 +5097,11 @@
         "ingredients": [
             {
                 "name": "Vodka",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Creme de Banane",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Grenadine",
@@ -6026,11 +6026,11 @@
         "ingredients": [
             {
                 "name": "Gin",
-                "amount": "4 cl"
+                "amount": "40 ml"
             },
             {
                 "name": "Tonic Water",
-                "amount": "10 cl"
+                "amount": "100 ml"
             },
             {
                 "name": "Lemon Peel",
@@ -6053,15 +6053,15 @@
         "ingredients": [
             {
                 "name": "Sambuca",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Baileys irish cream",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "White Creme de Menthe",
-                "amount": "2 cl"
+                "amount": "20 ml"
             }
         ],
         "instructions": "add all and pour black coffee and add whipped cream on top.",
@@ -6095,15 +6095,15 @@
         "ingredients": [
             {
                 "name": "Rum",
-                "amount": "4.5 cl"
+                "amount": "45 ml"
             },
             {
                 "name": "Galliano",
-                "amount": "1.5 cl"
+                "amount": "150 ml"
             },
             {
                 "name": "Pineapple Juice",
-                "amount": "6 cl"
+                "amount": "60 ml"
             },
             {
                 "name": "Lime Juice",
@@ -6172,19 +6172,19 @@
         "ingredients": [
             {
                 "name": "White Rum",
-                "amount": "3 cl"
+                "amount": "30 ml"
             },
             {
                 "name": "Galliano",
-                "amount": "1.5 cl"
+                "amount": "150 ml"
             },
             {
                 "name": "Triple Sec",
-                "amount": "1.5 cl"
+                "amount": "15 ml"
             },
             {
                 "name": "Lime Juice",
-                "amount": "1.5 cl"
+                "amount": "15 ml"
             }
         ],
         "instructions": "Shake and strain into a chilled cocktail glass",
@@ -6453,19 +6453,19 @@
         "ingredients": [
             {
                 "name": "Vodka",
-                "amount": "2 cl Smirnoff"
+                "amount": "20 ml Smirnoff"
             },
             {
                 "name": "Southern Comfort",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Passion fruit syrup",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Sweet and sour",
-                "amount": "6 cl"
+                "amount": "60 ml"
             },
             {
                 "name": "Club soda",
@@ -6600,15 +6600,15 @@
         "ingredients": [
             {
                 "name": "Vodka",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Coconut liqueur",
-                "amount": "1 cl"
+                "amount": "10 ml"
             },
             {
                 "name": "Blue Curacao",
-                "amount": "1 cl"
+                "amount": "10 ml"
             },
             {
                 "name": "Sprite",
@@ -6670,7 +6670,7 @@
             },
             {
                 "name": "Vodka",
-                "amount": "20 cl"
+                "amount": "200 ml"
             }
         ],
         "instructions": "Tip the cherry juice, orange peel, chilli, cinnamon sticks, cloves and ginger into a large saucepan. Simmer for 5 mins, then turn off the heat. Leave to cool, then chill for at least 4 hrs, or up to 2 days – the longer you leave it the more intense the flavours. If serving to young children, take the chilli out after a few hours.\r\n\r\nWhen you’re ready to serve, pour the juice into a jug. Serve in glass bottles or glasses and pop a straw in each. If you're adding vodka, do so at this stage. Dangle a fangs sweet from each glass.",
@@ -6685,11 +6685,11 @@
         "ingredients": [
             {
                 "name": "Kahlua",
-                "amount": "1 cl"
+                "amount": "10 ml"
             },
             {
                 "name": "Baileys irish cream",
-                "amount": "1 cl"
+                "amount": "10 ml"
             },
             {
                 "name": "Frangelico",
@@ -6697,7 +6697,7 @@
             },
             {
                 "name": "Coffee",
-                "amount": "4 cl hot"
+                "amount": "40 ml hot"
             },
             {
                 "name": "Cream",
@@ -6786,7 +6786,7 @@
         "ingredients": [
             {
                 "name": "Cognac",
-                "amount": "4 cl"
+                "amount": "40 ml"
             },
             {
                 "name": "Ginger Beer",
@@ -7142,7 +7142,7 @@
             },
             {
                 "name": "Passion fruit juice",
-                "amount": "4 cl"
+                "amount": "40 ml"
             },
             {
                 "name": "Ginger ale",
@@ -7446,7 +7446,7 @@
         "ingredients": [
             {
                 "name": "Amaretto",
-                "amount": "1 cl"
+                "amount": "10 ml"
             },
             {
                 "name": "Orange juice",
@@ -7454,7 +7454,7 @@
             },
             {
                 "name": "Grenadine",
-                "amount": "1/4 cl"
+                "amount": "2.5 ml"
             }
         ],
         "instructions": "Mix together the amaretto and orange juice. Pour into glass and then add the grenadine untill you see the sunrise.",
@@ -8150,7 +8150,7 @@
         "ingredients": [
             {
                 "name": "gin",
-                "amount": "6 cl"
+                "amount": "60 ml"
             },
             {
                 "name": "Peach Bitters",
@@ -8347,7 +8347,7 @@
         "ingredients": [
             {
                 "name": "Spiced rum",
-                "amount": "1 1/2 cl"
+                "amount": "15 ml"
             },
             {
                 "name": "Ginger ale",
@@ -8447,15 +8447,15 @@
         "ingredients": [
             {
                 "name": "Gold rum",
-                "amount": "6 cl"
+                "amount": "60 ml"
             },
             {
                 "name": "Orange Juice",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Lime Juice",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Triple Sec",
@@ -8598,19 +8598,19 @@
         "ingredients": [
             {
                 "name": "Grenadine",
-                "amount": "1 cl"
+                "amount": "10 ml"
             },
             {
                 "name": "Orange juice",
-                "amount": "1 cl"
+                "amount": "10 ml"
             },
             {
                 "name": "Pineapple juice",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Cream",
-                "amount": "4 cl"
+                "amount": "40 ml"
             }
         ],
         "instructions": "Shake well, strain into a large cocktail glass.",
@@ -8625,7 +8625,7 @@
         "ingredients": [
             {
                 "name": "Vodka",
-                "amount": "5 cl"
+                "amount": "50 ml"
             },
             {
                 "name": "Lime",
@@ -8637,7 +8637,7 @@
             },
             {
                 "name": "Tonic water",
-                "amount": "1 dl Schweppes"
+                "amount": "top"
             },
             {
                 "name": "Ice",
@@ -9080,19 +9080,19 @@
         "ingredients": [
             {
                 "name": "Cranberry vodka",
-                "amount": "4 cl"
+                "amount": "40 ml"
             },
             {
                 "name": "Apfelkorn",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Schweppes Russchian",
-                "amount": "7 cl"
+                "amount": "70 ml"
             },
             {
                 "name": "Apple juice",
-                "amount": "8 cl"
+                "amount": "80 ml"
             },
             {
                 "name": "Ice",
@@ -9532,7 +9532,7 @@
         "ingredients": [
             {
                 "name": "Absolut Kurant",
-                "amount": "4 cl"
+                "amount": "40 ml"
             },
             {
                 "name": "Tea",
@@ -9555,11 +9555,11 @@
         "ingredients": [
             {
                 "name": "Vermouth",
-                "amount": "4 cl"
+                "amount": "40 ml"
             },
             {
                 "name": "Apple juice",
-                "amount": "16 cl"
+                "amount": "160 ml"
             }
         ],
         "instructions": "Serve without ice. At least the juice shold have room temperature.",
@@ -9640,15 +9640,15 @@
         "ingredients": [
             {
                 "name": "Lime juice",
-                "amount": "4 cl"
+                "amount": "40 ml"
             },
             {
                 "name": "Gin",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Aperol",
-                "amount": "4 cl"
+                "amount": "40 ml"
             }
         ],
         "instructions": "Shake with ice and strain into cocktail glass.",
@@ -9925,19 +9925,19 @@
         "ingredients": [
             {
                 "name": "Vodka",
-                "amount": "3 cl"
+                "amount": "30 ml"
             },
             {
                 "name": "Passoa",
-                "amount": "3 cl"
+                "amount": "30 ml"
             },
             {
                 "name": "Passion fruit juice",
-                "amount": "1 cl"
+                "amount": "10 ml"
             },
             {
                 "name": "Lime",
-                "amount": "1 cl"
+                "amount": "10 ml"
             },
             {
                 "name": "Prosecco",
@@ -9991,7 +9991,7 @@
             },
             {
                 "name": "Elderflower cordial",
-                "amount": "3 cl"
+                "amount": "30 ml"
             }
         ],
         "instructions": "Take the glass and muddle the lime in it. Fill the glass with crushed ice and add the Cachaca. Stir well and top with some more crushed ice. Garnish with lime and enjoy!",
@@ -10311,7 +10311,7 @@
             },
             {
                 "name": "Rum",
-                "amount": "20 cl"
+                "amount": "200 ml"
             },
             {
                 "name": "Lime Juice",
@@ -10319,7 +10319,7 @@
             },
             {
                 "name": "Champagne",
-                "amount": "6 cl"
+                "amount": "60 ml"
             },
             {
                 "name": "Orange spiral",
@@ -10477,11 +10477,11 @@
         "ingredients": [
             {
                 "name": "Ricard",
-                "amount": "3 cl"
+                "amount": "30 ml"
             },
             {
                 "name": "Orgeat Syrup",
-                "amount": "1 cl"
+                "amount": "10 ml"
             },
             {
                 "name": "Water",
@@ -10500,11 +10500,11 @@
         "ingredients": [
             {
                 "name": "Gin",
-                "amount": "6 cl"
+                "amount": "60 ml"
             },
             {
                 "name": "Lemon Juice",
-                "amount": "8 cl"
+                "amount": "80 ml"
             },
             {
                 "name": "Lemon Peel",
@@ -11164,19 +11164,19 @@
         "ingredients": [
             {
                 "name": "Pisco",
-                "amount": "5 cl"
+                "amount": "50 ml"
             },
             {
                 "name": "Lime Juice",
-                "amount": "2.5 cl"
+                "amount": "25 ml"
             },
             {
                 "name": "Pineapple Syrup",
-                "amount": "2.5 cl"
+                "amount": "25 ml"
             },
             {
                 "name": "St. Germain",
-                "amount": "1.5 cl"
+                "amount": "15 ml"
             },
             {
                 "name": "Angostura Bitters",
@@ -11775,19 +11775,19 @@
         "ingredients": [
             {
                 "name": "Malibu rum",
-                "amount": "1 1/2 cl"
+                "amount": "15 ml"
             },
             {
                 "name": "Peach schnapps",
-                "amount": "1 1/2 cl"
+                "amount": "15 ml"
             },
             {
                 "name": "Blue Curacao",
-                "amount": "1 1/2 cl"
+                "amount": "15 ml"
             },
             {
                 "name": "Sweet and sour",
-                "amount": "3 cl"
+                "amount": "30 ml"
             }
         ],
         "instructions": "Serve in an old fashioned glass.",
@@ -11982,15 +11982,15 @@
         "ingredients": [
             {
                 "name": "Gin",
-                "amount": "5 cl"
+                "amount": "50 ml"
             },
             {
                 "name": "Lime Juice",
-                "amount": "2 cl"
+                "amount": "20 ml"
             },
             {
                 "name": "Ginger Beer",
-                "amount": "10 cl"
+                "amount": "100 ml"
             },
             {
                 "name": "Cucumber",
@@ -12163,7 +12163,7 @@
             },
             {
                 "name": "Campari",
-                "amount": "1 1/2 cl"
+                "amount": "15 ml"
             }
         ],
         "instructions": "Use a 15 oz glass. Add Campari first. Fill with beer.",
