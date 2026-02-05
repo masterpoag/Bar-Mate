@@ -52,17 +52,15 @@ export default function HomePage({ darkMode }) {
         This is an open source project that I'm hosting for free. You can explore cocktails, 
         search by ingredients, and see what you can make with your bar stock.
       </p>
-      {/* <p style={paragraphStyle}>
-        If you like this project and want to support it, you can{" "}
-        <a
-          href="https://www.paypal.com/donate" // replace with your actual donation link
-          target="_blank"
-          rel="noopener noreferrer"
-          style={linkStyle}
-        >
-          donate
-        </a>.
-      </p> */}
+      <p style={paragraphStyle}>
+        If you like this project and want to support it, you can
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="3EXGUDRBN3G5S" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+
+      </p>
       <p style={paragraphStyle}>
         You can also contribute to this project by clicking the button below.
       </p>
