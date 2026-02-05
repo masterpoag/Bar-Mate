@@ -354,7 +354,7 @@
         "name": "Old Fashioned",
         "ingredients": [
             {
-                "name": "Bourbon or Rye Whiskey",
+                "name": "Bourbon",
                 "amount": "45 ml"
             },
             {
@@ -1661,7 +1661,7 @@
         "name": "Mimosa",
         "ingredients": [
             {
-                "name": "Freshly Squeezed  Orange Juice",
+                "name": "Orange Juice",
                 "amount": "75 ml"
             },
             {
@@ -1680,7 +1680,7 @@
         "name": "Boulevardier",
         "ingredients": [
             {
-                "name": "Bourbon or Rye Whiskey",
+                "name": "Bourbon",
                 "amount": "45 ml"
             },
             {
@@ -5035,7 +5035,7 @@
                 "amount": "2 Dashes"
             },
             {
-                "name": "Brut Champagne or Prosecco",
+                "name": "Brut Champagne",
                 "amount": "60 ml"
             }
         ],
@@ -5747,8 +5747,8 @@
                 "amount": "20 ml"
             },
             {
-                "name": "Few Drops of Egg White (Optional)",
-                "amount": "Few Drops"
+                "name": "Few Drops of Egg White",
+                "amount": "Few Drops (Optional)"
             }
         ],
         "instructions": "Pour all ingredients into cocktail shaker filled with ice. Shake well. Strain into cobbler glass. If served “On the rocks”, strain ingredients into old fashioned glass filled with ice. NOTE:If egg white is used shake little harder to release and incorporate the foam from the egg white. Garnish with half orange slice and maraschino cherry, optionally use orange zest.",
@@ -7180,8 +7180,8 @@
                 "amount": "22.5 ml"
             },
             {
-                "name": "2-3 quarter size sliced fresh ginger",
-                "amount": "2-3 quarter size sliced fresh ginger"
+                "name": "Ginger",
+                "amount": "2-3 quarter size sliced"
             }
         ],
         "instructions": "Muddle fresh ginger in a shaker and add the remaining ingredients except for the Islay single malt whisky. Fill the shaker with ice and shake. Fine train into a chilled Old Fashioned glass with ice. Float the single malt whisky on top. Garnish with candied ginger slices.",
@@ -11260,7 +11260,7 @@
         "name": "New York Sour",
         "ingredients": [
             {
-                "name": "Rye Whiskey or Bourbon",
+                "name": "Rye Whiskey",
                 "amount": "60 ml"
             },
             {
@@ -11276,7 +11276,7 @@
                 "amount": "Few Drops"
             },
             {
-                "name": "Red wine (Shiraz or Malbech)",
+                "name": "Red wine",
                 "amount": "15 ml"
             }
         ],
@@ -11539,7 +11539,7 @@
                 "amount": "60 ml"
             },
             {
-                "name": "1 Lime cut into small wedges",
+                "name": "Lime",
                 "amount": "1 Lime cut into small wedges"
             },
             {
@@ -11574,8 +11574,8 @@
                 "amount": "2 dashes"
             },
             {
-                "name": "Tabasco, Celery Salt, Pepper (Up to taste)",
-                "amount": "Up to taste ml"
+                "name": "Tabasco, Celery Salt, Pepper",
+                "amount": "Up to taste"
             }
         ],
         "instructions": "Stir gently all the ingredients in a mixing glass with ice, pour into rocks glass. NOTE:If requested served with ice, pour into highball glass. Celery, lemon wedge (Optional).",
@@ -13291,12 +13291,12 @@
                 "amount": "2 dashes"
             },
             {
-                "name": "Grand Marnier (optional)",
-                "amount": "Few drops"
+                "name": "Grand Marnier",
+                "amount": "Few drops (optional)"
             },
             {
-                "name": "1 sugar cube",
-                "amount": "1 ml"
+                "name": "Sugar Cube",
+                "amount": "1 Cube"
             }
         ],
         "instructions": "Place the sugar cube with 2 dashes of bitters in a large Champagne glass, add the cognac. Pour gently chilled Champagne. Garnish with orange zest and maraschino cherry.",
@@ -13426,8 +13426,8 @@
                 "amount": "50 ml"
             },
             {
-                "name": "Fill up with Cola",
-                "amount": "Fill up with Cola ml"
+                "name": "Cola",
+                "amount": "Fill up with Cola"
             }
         ],
         "instructions": "Pour the Fernet Branca into a double old fashioned glass with ice, fill the glass up with Cola. Gently stir. N/A",
@@ -13445,7 +13445,7 @@
                 "amount": "45 ml"
             },
             {
-                "name": "Freshly Squeezed Orange Juice",
+                "name": "Orange Juice",
                 "amount": "120 ml"
             }
         ],
@@ -13464,7 +13464,7 @@
                 "amount": "60 ml"
             },
             {
-                "name": "Freshly Squeezed Lemon Juice",
+                "name": "Lemon Juice",
                 "amount": "22.5 ml"
             },
             {
@@ -13596,7 +13596,7 @@
                 "amount": "1 Bar Spoon"
             },
             {
-                "name": "Fresh Lime Juice",
+                "name": "Lime Juice",
                 "amount": "22.5 ml"
             },
             {
@@ -13604,8 +13604,8 @@
                 "amount": "15 ml"
             },
             {
-                "name": "Few Drops of Egg White (Optional)",
-                "amount": "Few Drops"
+                "name": "Egg White ",
+                "amount": "Few Drops (Optional)"
             }
         ],
         "instructions": "Pour all ingredients into the shaker. Shake vigorously with ice. Strain into a chilled cocktail glass, or “on the rocks” in a traditional clay or terracotta mug. N/A",
@@ -13658,7 +13658,7 @@
                 "amount": "45 ml"
             },
             {
-                "name": "Freshly Squeezed Lime juice",
+                "name": "Lime Juice",
                 "amount": "15 ml"
             },
             {
@@ -13770,7 +13770,7 @@
                 "amount": "20 ml"
             },
             {
-                "name": "Freshly Squeezed Lime Juice",
+                "name": "Lime Juice",
                 "amount": "15 ml"
             }
         ],
@@ -14052,8 +14052,8 @@
                 "amount": "15 ml"
             },
             {
-                "name": "Angostura (Optional)",
-                "amount": "2 Drops"
+                "name": "Angostura",
+                "amount": "2 Drops (Optional)"
             }
         ],
         "instructions": "Combine all the ingredients into a rocks glass, add ice and stir briefly. Garnish with a orange twist.",
@@ -14257,7 +14257,7 @@
         "name": "Suffering Bastard",
         "ingredients": [
             {
-                "name": "Cognac or Brandy",
+                "name": "Cognac",
                 "amount": "30 ml"
             },
             {
@@ -14420,7 +14420,7 @@
                 "amount": "22.5 ml"
             },
             {
-                "name": "Honey mix (replace water with chamomile)*",
+                "name": "Honey mix",
                 "amount": "15 ml"
             },
             {
@@ -14428,8 +14428,8 @@
                 "amount": "15 ml"
             },
             {
-                "name": "Few Drops of Egg White (Optional)",
-                "amount": "Few Drops"
+                "name": "Few Drops of Egg White",
+                "amount": "Few Drops (Optional)"
             }
         ],
         "instructions": "Pour all ingredients into the shaker. Shake vigorously with ice. Strain into a chilled small tumbler glass filled with ice. NOTE:*If desired water can be replaced by chamomile infusion in the honey mix. Garnish with lemon zest and white grapes.",
