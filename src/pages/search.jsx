@@ -2,7 +2,7 @@ import React, { useState, useMemo } from "react";
 import CocktailCard from "../components/CocktailCard";
 import Fuse from "fuse.js";
 
-export default function SearchCocktailsPage({ cocktailsData, barStock, darkMode }) {
+export default function SearchCocktailsPage({ cocktailsData, barStock, darkMode, unit }) {
   const [search, setSearch] = useState("");
 
   if (!cocktailsData) return <p>Loading cocktails...</p>;
