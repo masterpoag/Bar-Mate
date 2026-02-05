@@ -88,7 +88,7 @@ export default function CocktailsPage({ barStock, cocktailsData, darkMode }) {
 
       <div style={gridStyle}>
         {filteredCocktails.map(c => (
-          <CocktailCard key={c.name} cocktail={c} darkMode={darkMode} />
+          <CocktailCard key={c.name} cocktail={c} darkMode={darkMode} unit={unit} />
         ))}
       </div>
     </div>

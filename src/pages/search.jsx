@@ -80,7 +80,7 @@ export default function SearchCocktailsPage({ cocktailsData, barStock, darkMode 
 
       <div style={gridStyle}>
         {filteredCocktails.map(c => (
-          <CocktailCard key={c.name} cocktail={c} darkMode={darkMode} />
+          <CocktailCard key={c.name} cocktail={c} darkMode={darkMode} unit={unit} />
         ))}
       </div>
     </div>

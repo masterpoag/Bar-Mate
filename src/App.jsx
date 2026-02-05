@@ -100,7 +100,7 @@ export default function App() {
               setBarStock={setBarStock}
               darkMode={darkMode}
               cocktailsData={cocktailsData}
-              unit={unit} // pass unit down
+              unit={unit}
             />
           }
         />
@@ -111,7 +111,7 @@ export default function App() {
               barStock={barStock}
               cocktailsData={cocktailsData}
               darkMode={darkMode}
-              unit={unit} // pass unit down
+              unit={unit}
             />
           }
         />
@@ -122,7 +122,7 @@ export default function App() {
               cocktailsData={cocktailsData}
               barStock={barStock}
               darkMode={darkMode}
-              unit={unit} // pass unit down
+              unit={unit}
             />
           }
         />
