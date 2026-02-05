@@ -55,7 +55,7 @@ The app should now be running at http://localhost:{PORT}.
 
 You can fetch random cocktails from TheCocktailDB API using the provided Python script:
 ```bash
-python fetch_cocktails.py
+python fetchCocktails(thecocktaildb).py
 ```
 
 This script will save cocktails to cocktails.json including:
