@@ -358,8 +358,8 @@
                 "amount": "45 ml"
             },
             {
-                "name": "1 Sugar Cube",
-                "amount": "1 ml"
+                "name": "Sugar Cube",
+                "amount": "1 Cube"
             },
             {
                 "name": "Angostura Bitters",
@@ -13152,8 +13152,8 @@
                 "amount": "30 ml"
             },
             {
-                "name": "A splash of Soda Water",
-                "amount": "A splash of Soda Water"
+                "name": "Soda Water",
+                "amount": "A splash"
             }
         ],
         "instructions": "Mix the ingredients directly in an old fashioned glass filled with ice cubes. Add a splash of Soda Water. Stir gently. Garnish with half orange slice and a lemon zest.",
