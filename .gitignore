@@ -25,3 +25,7 @@ dist-ssr
 
 # Json Files
 /src/data/cocktails_temp.json
+
+# Temporary folder
+/temp/*
+/temp/**/*
