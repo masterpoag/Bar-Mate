@@ -49,22 +49,28 @@ export default function CocktailCard({ cocktail, darkMode, unit }) {
         )}
 
         {cocktail.ingredients && (
-          <div>
-            <strong>Ingredients:</strong>
-            <ul style={{ margin: 0, paddingLeft: "1.2rem" }}>
-              {cocktail.ingredients.map((ing, idx) => {
-                const displayAmount = ing.amount
-                  ? convertAmount(ing.amount, unit)
-                  : "";
-                return (
-                  <li key={idx}>
-                    {ing.name} {displayAmount ? `- ${displayAmount}` : ""}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        )}
+  <div>
+    <strong>Ingredients:</strong>
+    <ul style={{ margin: 0, paddingLeft: "1.2rem" }}>
+      {cocktail.ingredients.map((ing, idx) => {
+        // Convert amount and add the unit if it's measurable
+        let displayAmount = "";
+        if (ing.amount) {
+          const converted = convertAmount(ing.amount, unit);
+          // Only add the unit if it's a number (convertAmount returns original string for non-measurable)
+          displayAmount = isNaN(Number(converted)) ? converted : `${converted} ${unit}`;
+        }
+
+        return (
+          <li key={idx}>
+            {ing.name} {displayAmount ? `- ${displayAmount}` : ""}
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+)}
+
 
         {missing.length > 0 && (
           <p style={missingStyle}>
