@@ -104,7 +104,7 @@ export default function UserDrinksPage({ darkMode }) {
   };
 
   return (
-    <div style={pageStyle}>
+    <div>
       <div style={cardStyle}>
         <h2 style={{ textAlign: "center" }}>Add a User Drink</h2>
         {submitted && (
