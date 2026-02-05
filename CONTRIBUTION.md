@@ -106,5 +106,7 @@ Wait For Me To Test and Approve It
 ## Goal of This Project
 
 Accuracy over quantity
+
 Quality over spam
+
 Real cocktails only
