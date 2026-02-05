@@ -42,7 +42,7 @@ export default function UserDrinksPage({ darkMode }) {
     };
 
     try {
-      const res = await fetch("http://localhost:3001/api/user-drinks", {
+      const res = await fetch("http://173.235.48.60:3001/api/user-drinks", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newDrink),
