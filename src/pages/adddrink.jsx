@@ -16,14 +16,13 @@ export default function UserDrinksPage({ darkMode }) {
   };
 
   const updateIngredient = (index, field, value) => {
-    const newIngredients = [...ingredients];
-    newIngredients[index][field] = value;
-    setIngredients(newIngredients);
+    const updated = [...ingredients];
+    updated[index][field] = value;
+    setIngredients(updated);
   };
 
   const removeIngredient = (index) => {
-    const newIngredients = ingredients.filter((_, i) => i !== index);
-    setIngredients(newIngredients);
+    setIngredients(ingredients.filter((_, i) => i !== index));
   };
 
   const handleSubmit = async (e) => {
@@ -32,14 +31,14 @@ export default function UserDrinksPage({ darkMode }) {
     const newDrink = {
       name: name.trim(),
       ingredients: ingredients
-        .filter((ing) => ing.name.trim() !== "")
-        .map((ing) => ({ name: ing.name.trim(), amount: ing.amount.trim() })),
+        .filter((i) => i.name.trim() !== "")
+        .map((i) => ({ name: i.name.trim(), amount: i.amount.trim() })),
       instructions: instructions.trim(),
       image: image.trim(),
       description: description.trim(),
       glass: glass.trim(),
-      category: category.trim(),
-      alcoholic: alcoholic.trim(),
+      category: category.trim() || "Cocktail",
+      alcoholic: alcoholic.trim() || "Alcoholic",
     };
 
     try {
@@ -49,8 +48,6 @@ export default function UserDrinksPage({ darkMode }) {
         body: JSON.stringify(newDrink),
       });
 
-      const data = await res.json();
-
       if (res.ok) {
         setSubmitted(true);
         setName("");
@@ -58,139 +55,150 @@ export default function UserDrinksPage({ darkMode }) {
         setImage("");
         setDescription("");
         setGlass("");
-        setCategory("Cocktail");
-        setAlcoholic("Alcoholic");
         setIngredients([{ name: "", amount: "" }]);
-      } else {
-        alert(data.message);
       }
     } catch (err) {
-      console.error(err);
-      alert("Failed to save drink. Is the server running?");
+      alert("Server not running.");
     }
   };
 
-  const formStyle = {
-    maxWidth: "600px",
-    margin: "1rem auto",
-    padding: "1rem",
-    background: darkMode ? "#1e1e1e" : "#fff",
-    color: darkMode ? "#f5f5f5" : "#121212",
-    borderRadius: "8px",
+  const pageStyle = {
+    minHeight: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    background: darkMode ? "#121212" : "#f5f5f5",
+    padding: "2rem",
+  };
+
+  const cardStyle = {
+    width: "100%",
+    maxWidth: "700px",
+    padding: "2rem",
+    borderRadius: "12px",
+    background: darkMode ? "#1e1e1e" : "#ffffff",
     boxShadow: darkMode
-      ? "0 2px 6px rgba(0,0,0,0.7)"
-      : "0 2px 6px rgba(0,0,0,0.1)",
+      ? "0 4px 12px rgba(0,0,0,0.6)"
+      : "0 4px 12px rgba(0,0,0,0.1)",
+    color: darkMode ? "#f1f1f1" : "#111",
   };
 
   const inputStyle = {
     width: "100%",
-    padding: "0.5rem",
-    marginBottom: "0.5rem",
-    borderRadius: "6px",
-    border: "1px solid #ccc",
+    padding: "0.6rem",
+    marginBottom: "0.8rem",
+    borderRadius: "8px",
+    border: darkMode ? "1px solid #444" : "1px solid #ccc",
+    background: darkMode ? "#2a2a2a" : "#fff",
+    color: darkMode ? "#f1f1f1" : "#111",
   };
 
   const buttonStyle = {
-    padding: "0.5rem 1rem",
-    borderRadius: "6px",
+    padding: "0.6rem 1.2rem",
+    borderRadius: "8px",
     border: "none",
     cursor: "pointer",
     fontWeight: "bold",
+    marginTop: "0.5rem",
     background: darkMode ? "#ff6f61" : "#1976d2",
     color: "#fff",
-    marginRight: "0.5rem",
-    marginTop: "0.5rem",
   };
 
   return (
-    <div style={formStyle}>
-      <h2>Add a User Drink</h2>
-      {submitted && <p style={{ color: "limegreen" }}>Drink added to temp JSON!</p>}
-      <form onSubmit={handleSubmit}>
-        <input
-          style={inputStyle}
-          placeholder="Drink Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-        <input
-          style={inputStyle}
-          placeholder="Image URL (optional)"
-          value={image}
-          onChange={(e) => setImage(e.target.value)}
-        />
-        <textarea
-          style={inputStyle}
-          placeholder="Instructions"
-          value={instructions}
-          onChange={(e) => setInstructions(e.target.value)}
-          rows={3}
-          required
-        />
-        <input
-          style={inputStyle}
-          placeholder="Description (optional)"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
-        <input
-          style={inputStyle}
-          placeholder="Glass (optional)"
-          value={glass}
-          onChange={(e) => setGlass(e.target.value)}
-        />
-        <input
-          style={inputStyle}
-          placeholder="Category (default: Cocktail)"
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-        />
-        <input
-          style={inputStyle}
-          placeholder="Alcoholic (default: Alcoholic)"
-          value={alcoholic}
-          onChange={(e) => setAlcoholic(e.target.value)}
-        />
+    <div style={pageStyle}>
+      <div style={cardStyle}>
+        <h2 style={{ textAlign: "center" }}>Add a User Drink</h2>
+        {submitted && (
+          <p style={{ color: "limegreen", textAlign: "center" }}>
+            Drink added to temp JSON!
+          </p>
+        )}
 
-        <h4>Ingredients</h4>
-        {ingredients.map((ing, idx) => (
-          <div
-            key={idx}
-            style={{ display: "flex", gap: "0.5rem", marginBottom: "0.5rem" }}
-          >
-            <input
-              style={{ ...inputStyle, flex: 2 }}
-              placeholder="Ingredient Name"
-              value={ing.name}
-              onChange={(e) => updateIngredient(idx, "name", e.target.value)}
-              required
-            />
-            <input
-              style={{ ...inputStyle, flex: 1 }}
-              placeholder="Amount (e.g., 1 oz)"
-              value={ing.amount}
-              onChange={(e) => updateIngredient(idx, "amount", e.target.value)}
-            />
-            {ingredients.length > 1 && (
-              <button
-                type="button"
-                style={buttonStyle}
-                onClick={() => removeIngredient(idx)}
-              >
-                ❌
-              </button>
-            )}
-          </div>
-        ))}
-        <button type="button" style={buttonStyle} onClick={addIngredient}>
-          ➕ Add Ingredient
-        </button>
-        <br />
-        <button type="submit" style={buttonStyle}>
-          Submit Drink
-        </button>
-      </form>
+        <form onSubmit={handleSubmit}>
+          <input
+            style={inputStyle}
+            placeholder="Drink Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+
+          <input
+            style={inputStyle}
+            placeholder="Image URL (optional)"
+            value={image}
+            onChange={(e) => setImage(e.target.value)}
+          />
+
+          <textarea
+            style={inputStyle}
+            rows={3}
+            placeholder="Instructions"
+            value={instructions}
+            onChange={(e) => setInstructions(e.target.value)}
+            required
+          />
+
+          <input
+            style={inputStyle}
+            placeholder="Description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+
+          <input
+            style={inputStyle}
+            placeholder="Glass"
+            value={glass}
+            onChange={(e) => setGlass(e.target.value)}
+          />
+
+          <h4>Ingredients</h4>
+          {ingredients.map((ing, idx) => (
+            <div
+              key={idx}
+              style={{ display: "flex", gap: "0.5rem", marginBottom: "0.5rem" }}
+            >
+              <input
+                style={{ ...inputStyle, flex: 2 }}
+                placeholder="Ingredient"
+                value={ing.name}
+                onChange={(e) =>
+                  updateIngredient(idx, "name", e.target.value)
+                }
+                required
+              />
+              <input
+                style={{ ...inputStyle, flex: 1 }}
+                placeholder="Amount"
+                value={ing.amount}
+                onChange={(e) =>
+                  updateIngredient(idx, "amount", e.target.value)
+                }
+              />
+              {ingredients.length > 1 && (
+                <button
+                  type="button"
+                  style={buttonStyle}
+                  onClick={() => removeIngredient(idx)}
+                >
+                  ❌
+                </button>
+              )}
+            </div>
+          ))}
+
+          <button type="button" style={buttonStyle} onClick={addIngredient}>
+            ➕ Add Ingredient
+          </button>
+
+          <br />
+
+          <button type="submit" style={buttonStyle}>
+            Submit Drink
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
