@@ -7,6 +7,8 @@ import cocktailsData from "./data/cocktails.json";
 import SearchCocktailsPage from "./pages/search";
 import HomePage from "./pages";
 
+const units = ["oz", "ml", "cl", "tbsp", "tsp"];
+
 export default function App() {
   // Load from cookies or defaults
   const [barStock, setBarStock] = useState(() => {
@@ -19,23 +21,20 @@ export default function App() {
     return saved === "true" ? true : false;
   });
 
-  // New: unit state (oz, ml, cl, tbsp, tsp)
   const [unit, setUnit] = useState(() => {
     const saved = Cookies.get("unit");
     return saved || "oz";
   });
 
-  // Save to cookies whenever barStock changes
+  // Save cookies
   useEffect(() => {
     Cookies.set("barStock", JSON.stringify(barStock), { expires: 7 });
   }, [barStock]);
 
-  // Save darkMode to cookies
   useEffect(() => {
     Cookies.set("darkMode", darkMode, { expires: 30 });
   }, [darkMode]);
 
-  // Save unit to cookies
   useEffect(() => {
     Cookies.set("unit", unit, { expires: 30 });
   }, [unit]);
@@ -46,45 +45,81 @@ export default function App() {
     document.body.style.color = darkMode ? "#f5f5f5" : "#121212";
   }, [darkMode]);
 
+  const navStyle = {
+    display: "flex",
+    flexWrap: "wrap",
+    alignItems: "center",
+    padding: "1rem",
+    gap: "0.5rem",
+    background: darkMode ? "#1e1e1e" : "#fff",
+    boxShadow: darkMode
+      ? "0 2px 6px rgba(0,0,0,0.7)"
+      : "0 2px 6px rgba(0,0,0,0.1)",
+    borderRadius: "8px",
+    margin: "0.5rem",
+  };
+
+  const linkStyle = {
+    textDecoration: "none",
+    padding: "0.5rem 1rem",
+    borderRadius: "6px",
+    background: darkMode ? "#333" : "#e0e0e0",
+    color: darkMode ? "#f5f5f5" : "#121212",
+    fontWeight: "bold",
+    transition: "all 0.3s",
+  };
+
+  const unitButtonStyle = (u) => ({
+    padding: "0.4rem 0.8rem",
+    margin: "0 0.2rem",
+    borderRadius: "6px",
+    border: "none",
+    cursor: "pointer",
+    fontWeight: unit === u ? "bold" : "normal",
+    background: unit === u
+      ? darkMode ? "#ff6f61" : "#1976d2"
+      : darkMode ? "#333" : "#e0e0e0",
+    color: unit === u ? "#fff" : darkMode ? "#f5f5f5" : "#121212",
+    transition: "all 0.3s",
+  });
+
+  const darkModeButtonStyle = {
+    padding: "0.5rem 1rem",
+    borderRadius: "8px",
+    border: "none",
+    cursor: "pointer",
+    fontWeight: "bold",
+    background: darkMode ? "#333" : "#e0e0e0",
+    color: darkMode ? "#f5f5f5" : "#121212",
+    transition: "all 0.3s",
+    marginLeft: "auto",
+  };
+
   return (
     <Router>
-      <nav style={{ display: "flex", padding: "1rem", alignItems: "center" }}>
-        <Link to="/bar" style={{ marginRight: "1rem" }}>Bar Stock</Link>
-        <Link to="/cocktails" style={{ marginRight: "1rem" }}>Cocktails</Link>
-        <Link to="/search" style={{ marginRight: "1rem" }}>Search All Cocktails</Link>
+      <nav style={navStyle}>
+        {/* Navigation links */}
+        <Link to="/bar" style={linkStyle}>Bar Stock</Link>
+        <Link to="/cocktails" style={linkStyle}>Cocktails</Link>
+        <Link to="/search" style={linkStyle}>Search All Cocktails</Link>
 
-        {/* Unit selector */}
-        <select
-          value={unit}
-          onChange={(e) => setUnit(e.target.value)}
-          style={{
-            marginLeft: "1rem",
-            padding: "0.4rem 0.6rem",
-            borderRadius: "6px",
-            border: "1px solid #ccc",
-            cursor: "pointer",
-          }}
-        >
-          <option value="oz">oz</option>
-          <option value="ml">ml</option>
-          <option value="cl">cl</option>
-          <option value="tbsp">tbsp</option>
-          <option value="tsp">tsp</option>
-        </select>
+        {/* Measurement buttons */}
+        <div style={{ display: "flex", marginLeft: "1rem" }}>
+          {units.map((u) => (
+            <button
+              key={u}
+              style={unitButtonStyle(u)}
+              onClick={() => setUnit(u)}
+            >
+              {u}
+            </button>
+          ))}
+        </div>
 
+        {/* Dark mode toggle */}
         <button
           onClick={() => setDarkMode(prev => !prev)}
-          style={{
-            marginLeft: "auto",
-            padding: "0.5rem 1rem",
-            borderRadius: "8px",
-            border: "none",
-            cursor: "pointer",
-            fontWeight: "bold",
-            background: darkMode ? "#333" : "#e0e0e0",
-            color: darkMode ? "#f5f5f5" : "#121212",
-            transition: "all 0.3s",
-          }}
+          style={darkModeButtonStyle}
         >
           {darkMode ? "🌞" : "🌙"}
         </button>
