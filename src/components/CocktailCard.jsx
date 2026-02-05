@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { convertAmount } from "../util/unitConverter";
 
-export default function CocktailCard({ cocktail, darkMode }) {
-  const [unit, setUnit] = useState("oz");
+export default function CocktailCard({ cocktail, darkMode, unit }) {
   const cardStyle = {
     borderRadius: "10px",
     overflow: "hidden",
@@ -42,18 +41,6 @@ export default function CocktailCard({ cocktail, darkMode }) {
       <div style={contentStyle}>
         <h3>{cocktail.name}</h3>
 
-        <div style={{ marginBottom: "0.5rem" }}>
-          <label>
-            Unit:{" "}
-            <select value={unit} onChange={e => setUnit(e.target.value)}>
-              <option value="oz">oz</option>
-              <option value="ml">ml</option>
-              <option value="cl">cl</option>
-              <option value="tbsp">tbsp</option>
-              <option value="tsp">tsp</option>
-            </select>
-          </label>
-        </div>
 
         {cocktail.instructions && (
           <p>
