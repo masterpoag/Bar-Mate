@@ -1,6 +1,6 @@
 const toMl = {
   ml: 1,
-  cl: 10,          // 1 cl = 10 ml
+  cl: .1,          // 1 cl = 10 ml
   oz: 29.5735,     // 1 fl oz = 29.5735 ml
   tbsp: 14.7868,   // 1 tbsp = 14.7868 ml
   tsp: 4.92892,    // 1 tsp = 4.92892 ml
