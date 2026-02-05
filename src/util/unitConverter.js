@@ -6,8 +6,6 @@ const toMl = {
   tsp: 4.92892,    // 1 tsp = 4.92892 ml
 };
 
-// Units that are "measurable" and can be converted
-const measurableUnits = Object.keys(conversionRates);
 
 // Parse amount string like "1 oz", "1/2 oz", "1 1/2 oz"
 export function parseAmount(str) {
