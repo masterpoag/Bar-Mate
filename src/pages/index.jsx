@@ -64,15 +64,7 @@ export default function HomePage({ darkMode }) {
         </a>.
       </p> */}
       <p style={paragraphStyle}>
-        You can also contribute to this project on{" "}
-        <a
-          href="https://github.com/masterpoag/Bar-Mate/tree/main" // replace with your GitHub URL
-          target="_blank"
-          rel="noopener noreferrer"
-          style={linkStyle}
-        >
-          GitHub
-        </a>.
+        You can also contribute to this project by clicking the button below.
       </p>
       <a
         href="https://github.com/masterpoag/Bar-Mate/tree/main"
