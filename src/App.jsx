@@ -7,7 +7,6 @@ import cocktailsData from "./data/cocktails.json";
 import SearchCocktailsPage from "./pages/search";
 import HomePage from "./pages";
 
-
 export default function App() {
   // Load from cookies or defaults
   const [barStock, setBarStock] = useState(() => {
@@ -20,15 +19,26 @@ export default function App() {
     return saved === "true" ? true : false;
   });
 
+  // New: unit state (oz, ml, cl, tbsp, tsp)
+  const [unit, setUnit] = useState(() => {
+    const saved = Cookies.get("unit");
+    return saved || "oz";
+  });
+
   // Save to cookies whenever barStock changes
   useEffect(() => {
-    Cookies.set("barStock", JSON.stringify(barStock), { expires: 7 }); // 7 days
+    Cookies.set("barStock", JSON.stringify(barStock), { expires: 7 });
   }, [barStock]);
 
   // Save darkMode to cookies
   useEffect(() => {
-    Cookies.set("darkMode", darkMode, { expires: 30 }); // 30 days
+    Cookies.set("darkMode", darkMode, { expires: 30 });
   }, [darkMode]);
+
+  // Save unit to cookies
+  useEffect(() => {
+    Cookies.set("unit", unit, { expires: 30 });
+  }, [unit]);
 
   // Apply dark/light mode to body
   useEffect(() => {
@@ -42,6 +52,25 @@ export default function App() {
         <Link to="/bar" style={{ marginRight: "1rem" }}>Bar Stock</Link>
         <Link to="/cocktails" style={{ marginRight: "1rem" }}>Cocktails</Link>
         <Link to="/search" style={{ marginRight: "1rem" }}>Search All Cocktails</Link>
+
+        {/* Unit selector */}
+        <select
+          value={unit}
+          onChange={(e) => setUnit(e.target.value)}
+          style={{
+            marginLeft: "1rem",
+            padding: "0.4rem 0.6rem",
+            borderRadius: "6px",
+            border: "1px solid #ccc",
+            cursor: "pointer",
+          }}
+        >
+          <option value="oz">oz</option>
+          <option value="ml">ml</option>
+          <option value="cl">cl</option>
+          <option value="tbsp">tbsp</option>
+          <option value="tsp">tsp</option>
+        </select>
 
         <button
           onClick={() => setDarkMode(prev => !prev)}
@@ -60,11 +89,9 @@ export default function App() {
           {darkMode ? "🌞" : "🌙"}
         </button>
       </nav>
+
       <Routes>
-      <Route
-        path="/"
-        element={<HomePage darkMode={darkMode} />}
-      /> 
+        <Route path="/" element={<HomePage darkMode={darkMode} />} /> 
         <Route
           path="/bar"
           element={
@@ -73,6 +100,7 @@ export default function App() {
               setBarStock={setBarStock}
               darkMode={darkMode}
               cocktailsData={cocktailsData}
+              unit={unit} // pass unit down
             />
           }
         />
@@ -83,6 +111,7 @@ export default function App() {
               barStock={barStock}
               cocktailsData={cocktailsData}
               darkMode={darkMode}
+              unit={unit} // pass unit down
             />
           }
         />
@@ -93,10 +122,10 @@ export default function App() {
               cocktailsData={cocktailsData}
               barStock={barStock}
               darkMode={darkMode}
+              unit={unit} // pass unit down
             />
           }
         />
-        
       </Routes>
     </Router>
   );

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import { convertAmount } from "../utils/unitConverter";
 
 export default function CocktailCard({ cocktail, darkMode }) {
+  const [unit, setUnit] = useState("oz");
   const cardStyle = {
     borderRadius: "10px",
     overflow: "hidden",
@@ -40,6 +42,19 @@ export default function CocktailCard({ cocktail, darkMode }) {
       <div style={contentStyle}>
         <h3>{cocktail.name}</h3>
 
+        <div style={{ marginBottom: "0.5rem" }}>
+          <label>
+            Unit:{" "}
+            <select value={unit} onChange={e => setUnit(e.target.value)}>
+              <option value="oz">oz</option>
+              <option value="ml">ml</option>
+              <option value="cl">cl</option>
+              <option value="tbsp">tbsp</option>
+              <option value="tsp">tsp</option>
+            </select>
+          </label>
+        </div>
+
         {cocktail.instructions && (
           <p>
             <strong>Instructions:</strong> {cocktail.instructions}
@@ -50,11 +65,16 @@ export default function CocktailCard({ cocktail, darkMode }) {
           <div>
             <strong>Ingredients:</strong>
             <ul style={{ margin: 0, paddingLeft: "1.2rem" }}>
-              {cocktail.ingredients.map((ing, idx) => (
-                <li key={idx}>
-                  {ing.name} {ing.amount ? `- ${ing.amount}` : ""}
-                </li>
-              ))}
+              {cocktail.ingredients.map((ing, idx) => {
+                const displayAmount = ing.amount
+                  ? convertAmount(ing.amount, unit)
+                  : "";
+                return (
+                  <li key={idx}>
+                    {ing.name} {displayAmount ? `- ${displayAmount}` : ""}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         )}
