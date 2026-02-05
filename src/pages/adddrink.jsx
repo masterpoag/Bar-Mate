@@ -70,11 +70,11 @@ export default function UserDrinksPage({ darkMode }) {
     background: darkMode ? "#121212" : "#f5f5f5",
     padding: "2rem",
   };
-
-  const cardStyle = {
+    const cardStyle = {
     width: "100%",
     maxWidth: "700px",
-    padding: "2rem",
+    marginTop: "2rem",
+    padding: "1rem",
     borderRadius: "12px",
     background: darkMode ? "#1e1e1e" : "#ffffff",
     boxShadow: darkMode
