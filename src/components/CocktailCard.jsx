@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { convertAmount } from "../utils/unitConverter";
+import { convertAmount } from "../util/unitConverter";
 
 export default function CocktailCard({ cocktail, darkMode }) {
   const [unit, setUnit] = useState("oz");
