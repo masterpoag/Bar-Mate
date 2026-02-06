@@ -70,8 +70,7 @@ Create file named .env in the root and have it point to your mongoDB with MONGO_
 3. Populate the database: 
 
 ```bash
-cd backend
-node migrate.js
+node backend/migrate.js
 ```
 
 4. Finally Run
