@@ -1,28 +1,32 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import path from "path";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
 import drinksRoute from "./routes/drinks.js";
 
-dotenv.config();
+dotenv.config({
+  path: join(process.cwd(), "backend/.env"),
+});
 
 await mongoose.connect(process.env.MONGO_URI);
 
 const app = express();
 app.use(express.json());
 
-// API
+// API routes
 app.use("/api/drinks", drinksRoute);
 
 // Serve React build
-const __dirname = new URL('.', import.meta.url).pathname;
-app.use(express.static(path.join(__dirname, "../dist")));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+app.use(express.static(join(__dirname, "../dist")));
 
-app.get("/:any(.*)", (req, res) => {
-  res.sendFile(path.join(__dirname, "../dist/index.html"));
+// SPA fallback
+app.use((req, res) => {
+  res.sendFile(join(__dirname, "../dist/index.html"));
 });
 
-
 app.listen(5000, () => {
-  console.log("Server running on http://localhost:5000");
+  console.log("API running on http://localhost:5000");
 });
