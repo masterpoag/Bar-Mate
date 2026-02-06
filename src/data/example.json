@@ -1,0 +1,35 @@
+{
+  "name": "Example Cocktail Name",
+  "ingredients": [
+    {
+      "name": "Base Spirit (e.g. Gin, Vodka, Rum)",
+      "amount": "45 ml"
+    },
+    {
+      "name": "Liqueur or Modifier (e.g. Triple Sec)",
+      "amount": "15 ml"
+    },
+    {
+      "name": "Juice or Mixer (e.g. Lime Juice)",
+      "amount": "22.5 ml"
+    },
+    {
+      "name": "Sweetener (e.g. Simple Syrup)",
+      "amount": "7.5 ml"
+    },
+    {
+      "name": "Non-measurable ingredient (e.g. Salt)",
+      "amount": "1 dash"
+    },
+    {
+      "name": "Garnish or preparation modifier",
+      "amount": "Top with soda"
+    }
+  ],
+  "instructions": "Describe clearly how to make the drink. Shaking, stirring, layering, garnish, glassware, etc.",
+  "description": "Optional short description of the cocktail, history, or flavor profile.",
+  "image": "https://example.com/drink-image.png",
+  "glass": "Cocktail glass",
+  "category": "Category of drink (e.g. Sour, Shot, Highball, IBA Official)",
+  "alcoholic": "Alcoholic or Non alcoholic"
+}
