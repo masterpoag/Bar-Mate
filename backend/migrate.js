@@ -62,9 +62,8 @@ async function migrate() {
             alcoholic: drink.alcoholic || "",
           },
         },
-        { upsert: true }       // create if doesn't exist
+        { upsert: true }        // create if doesn't exist
       );
-
       console.log(`✔ Migrated: ${drink.name}`);
     }
 
