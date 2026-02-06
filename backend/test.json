@@ -1,0 +1,14 @@
+[
+  {
+    "name": "White Russian",
+    "ingredients": [
+      { "name": "Vodka", "amount": 5, "unit": "cl" },
+      { "name": "Kahlua", "amount": 1, "unit": "cl" }
+    ],
+    "instructions": "Shake with ice...",
+    "glass": "Old Fashioned",
+    "tags": ["sweet", "coffee"],
+    "image": "/images/white-russian.png"
+  }
+]
+
