@@ -1,73 +1,34 @@
-import express from "express";
-import UserDrink from "../models/UserDrink.js";
-import slugify from "slugify"; // optional for unique slugs
+app.post("/api/userDrinks", async (req, res) => {
+  const { name, ingredients, instructions, description, image, createdBy } = req.body;
 
-const router = express.Router();
+  if (!name || !ingredients || !Array.isArray(ingredients) || ingredients.length === 0 || !createdBy || !image) {
+    return res.status(400).json({ error: "Missing required fields: name, ingredients, photo link, or your name." });
+  }
 
-// Submit a new user drink
-router.post("/", async (req, res) => {
   try {
-    const { name, ingredients, instructions, description, image, createdBy } = req.body;
-
-    if (!name || !ingredients || ingredients.length === 0) {
-      return res.status(400).json({ message: "Name and at least one ingredient are required." });
-    }
-
-    const slug = slugify(name, { lower: true, strict: true });
-
-    const newDrink = new UserDrink({
+    const drink = new Drink({
       name,
-      slug,
-      ingredients,
-      instructions,
-      description,
-      image: image || "",
+      slug: name.toLowerCase().replace(/\s+/g, "-"),
+      ingredients: ingredients.map(i => ({
+        name: i.name.toLowerCase(),
+        amount: i.amount ? Number(i.amount) : undefined,
+        unit: i.unit || "",
+        modifier: i.modifier || "",
+      })),
+      instructions: instructions || "",
+      description: description || "",
+      image,
       glass: "",
       category: "",
       alcoholic: "",
-      createdBy: createdBy || "anonymous",
+      createdBy,
     });
 
-    await newDrink.save();
+    await drink.save(); // <-- this actually inserts into MongoDB
 
-    res.status(201).json({ message: "Drink submitted successfully!" });
+    res.status(201).json({ message: "Drink submitted successfully", drink });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: "Failed to submit drink." });
+    res.status(500).json({ error: "Failed to submit drink" });
   }
 });
-
-// Get all user-submitted drinks (for admin review)
-router.get("/", async (req, res) => {
-  try {
-    const drinks = await UserDrink.find().sort({ submittedAt: -1 });
-    res.json(drinks);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: "Failed to fetch drinks." });
-  }
-});
-
-// Approve a drink
-router.post("/:id/approve", async (req, res) => {
-  try {
-    const drink = await UserDrink.findByIdAndUpdate(req.params.id, { approved: true }, { new: true });
-    res.json(drink);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: "Failed to approve drink." });
-  }
-});
-
-// Delete a drink
-router.delete("/:id", async (req, res) => {
-  try {
-    await UserDrink.findByIdAndDelete(req.params.id);
-    res.json({ message: "Drink deleted." });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: "Failed to delete drink." });
-  }
-});
-
-export default router;

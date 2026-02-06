@@ -4,6 +4,8 @@ import dotenv from "dotenv";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 import drinksRoute from "./routes/drinks.js";
+import Drink from "./models/Drink.js"; 
+
 
 dotenv.config();
 
