@@ -4,22 +4,22 @@ const ingredientSchema = new mongoose.Schema({
   name: { type: String, required: true },
   amount: Number,
   unit: String,
-  modifier: String
+  modifier: String,
 });
 
 const userDrinkSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  slug: { type: String, required: true, unique: true },
+  slug: { type: String, required: true, unique: true }, // optional: auto-generate from name
   ingredients: [ingredientSchema],
   instructions: String,
   description: String,
   image: String,
-  glass: String,
-  category: String,
-  alcoholic: String,
-  status: { type: String, default: "pending" }, // pending, accepted, rejected
+  glass: { type: String, default: "" },       // blank by default
+  category: { type: String, default: "" },    // blank by default
+  alcoholic: { type: String, default: "" },   // blank by default
   createdBy: String,
-  createdAt: { type: Date, default: Date.now }
+  approved: { type: Boolean, default: false },
+  submittedAt: { type: Date, default: Date.now },
 });
 
-export default mongoose.models.UserDrink || mongoose.model("UserDrink", userDrinkSchema);
+export default mongoose.model("UserDrink", userDrinkSchema);
