@@ -18,9 +18,10 @@ app.use("/api/drinks", drinksRoute);
 const __dirname = new URL('.', import.meta.url).pathname;
 app.use(express.static(path.join(__dirname, "../dist")));
 
-app.get("*", (req, res) => {
+app.get("/:any(.*)", (req, res) => {
   res.sendFile(path.join(__dirname, "../dist/index.html"));
 });
+
 
 app.listen(5000, () => {
   console.log("Server running on http://localhost:5000");
