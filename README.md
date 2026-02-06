@@ -38,6 +38,8 @@ You can use this website for free with no ads at https://bar.ravstormdev.top
 
 ## 📦 Installation
 
+### Easiest
+
 1. Clone the repository:
 
 ```bash
@@ -49,49 +51,39 @@ npm run dev -- --host --port {PORT}
 
 The app should now be running at http://localhost:{PORT}.
 
+### Harder (Requires MongoDB)
 ---
 
-## 🍸 Adding Cocktails
+1. Clone the repository:
 
-You can fetch random cocktails from TheCocktailDB API using the provided Python script:
 ```bash
-python fetchCocktails(thecocktaildb).py
+git clone -b json-only-branch https://github.com/masterpoag/Bar-Mate.git
+cd Bar-Mate
+npm install
 ```
 
-This script will save cocktails to cocktails.json including:
+2. Create your .env:
 
-    Name
+Create file named .env in the root and have it point to your mongoDB with MONGO_URI=
 
-    Ingredients and measurements
 
-    Instructions
+3. Populate the database: 
 
-    Image
+```bash
+cd backend
+node migrate.js
+```
 
-    Glass type
+4. Finally Run
+```bash
+npm run dev:full
+```
 
-    Category
+The app should now be running at http://localhost:7687.
+The API should now be running on http://localhost:5000.
 
-    Alcoholic status
+---
 
 ## 💡 Contribution
 
-Contributions are welcome! You can:
-
-    Suggest new features
-
-    Fix bugs
-
-    Add more cocktails
-
-    Improve UI/UX
-
-To contribute:
-
-    Fork the repository
-
-    Create a new branch
-
-    Make your changes
-
-    Submit a pull request
+Contributions are welcome! Head to [CONTRIBUTION.md](https://github.com/masterpoag/Bar-Mate/blob/main/CONTRIBUTION.md) for more information.
