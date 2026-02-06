@@ -17,7 +17,7 @@ export function convertAmount(amount, fromUnit, toUnit) {
     !toMl[toUnit]
   ) {
     // If conversion is not possible, return the original amount with its unit
-    return `${amount} ${fromUnit || ""}`.trim();
+    return `${amount} ${fromUnit || ""}`;
   }
 
   // Convert from source unit → ml
