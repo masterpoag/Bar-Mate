@@ -127,7 +127,7 @@ export default function SubmitDrinkPage({ user, darkMode }) {
       </div>
 
       {/* Ingredients */}
-      <div style={sectionStyle}>
+      <div>
         <h3>Ingredients</h3>
         <div style={ingredientContainer}>
           <input style={ingredientInputStyle} placeholder="Name" value={currentIngredient.name} onChange={(e) => setCurrentIngredient({ ...currentIngredient, name: e.target.value })} />
