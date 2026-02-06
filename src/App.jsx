@@ -5,7 +5,7 @@ import BarStockPage from "./pages/bar";
 import CocktailsPage from "./pages/cocktails";
 import SearchCocktailsPage from "./pages/search";
 import HomePage from "./pages";
-import SubmitDrinkPage from "./pages/submitDrink";
+import SubmitDrinkPage from "./pages/submit-drink";
 
 const units = ["oz", "ml", "cl", "tbsp", "tsp"];
 

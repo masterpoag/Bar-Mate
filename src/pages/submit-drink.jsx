@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function SubmitDrinkPage({ user }) {
+export default function SubmitDrinkPage({ user, darkMode }) {
   const [name, setName] = useState("");
   const [userName, setUserName] = useState(user?.username || "");
   const [photo, setPhoto] = useState(""); // Photo link
@@ -16,7 +16,9 @@ export default function SubmitDrinkPage({ user }) {
     setCurrentIngredient({ name: "", amount: "", unit: "", modifier: "" });
   };
 
-  const removeIngredient = idx => setIngredients(ingredients.filter((_, i) => i !== idx));
+  const removeIngredient = (idx) => {
+    setIngredients(ingredients.filter((_, i) => i !== idx));
+  };
 
   const submitDrink = async () => {
     // Validate required fields
@@ -124,13 +126,26 @@ export default function SubmitDrinkPage({ user }) {
         <button onClick={addIngredient}>Add Ingredient</button>
       </div>
 
-      <ul>
-        {ingredients.map((i, idx) => (
-          <li key={idx}>
-            {i.name} {i.amount} {i.unit} {i.modifier} <button onClick={() => removeIngredient(idx)}>Remove</button>
-          </li>
-        ))}
-      </ul>
+      {/* Ingredients */}
+      <div style={sectionStyle}>
+        <h3>Ingredients</h3>
+        <div style={ingredientContainer}>
+          <input style={ingredientInputStyle} placeholder="Name" value={currentIngredient.name} onChange={(e) => setCurrentIngredient({ ...currentIngredient, name: e.target.value })} />
+          <input style={{ ...ingredientInputStyle, maxWidth: "70px" }} placeholder="Amount" value={currentIngredient.amount} onChange={(e) => setCurrentIngredient({ ...currentIngredient, amount: e.target.value })} />
+          <input style={{ ...ingredientInputStyle, maxWidth: "70px" }} placeholder="Unit" value={currentIngredient.unit} onChange={(e) => setCurrentIngredient({ ...currentIngredient, unit: e.target.value })} />
+          <input style={ingredientInputStyle} placeholder="Modifier" value={currentIngredient.modifier} onChange={(e) => setCurrentIngredient({ ...currentIngredient, modifier: e.target.value })} />
+          <button style={addButtonStyle} onClick={addIngredient}>Add</button>
+        </div>
+
+        <ul style={ingredientListStyle}>
+          {ingredients.map((i, idx) => (
+            <li key={idx} style={{ marginBottom: "0.3rem" }}>
+              {i.name} {i.amount} {i.unit} {i.modifier}
+              <button style={removeButtonStyle} onClick={() => removeIngredient(idx)}>Remove</button>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <button onClick={submitDrink} style={{ marginTop: "1rem", padding: "0.5rem 1rem" }}>
         Submit Drink
@@ -138,3 +153,4 @@ export default function SubmitDrinkPage({ user }) {
     </div>
   );
 }
+
