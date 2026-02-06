@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { convertAmount } from "../util/unitConverter";
 
-export default function CocktailCard({ cocktail, darkMode, unit }) {
+export default function CocktailCard({ cocktail, darkMode, unit: targetUnit }) {
   const cardStyle = {
     borderRadius: "10px",
     overflow: "hidden",
@@ -37,10 +37,12 @@ export default function CocktailCard({ cocktail, darkMode, unit }) {
 
   return (
     <div style={cardStyle}>
-      {cocktail.image && <img src={cocktail.image} alt={cocktail.name} style={imgStyle} />}
+      {cocktail.image && (
+        <img src={cocktail.image} alt={cocktail.name} style={imgStyle} />
+      )}
+
       <div style={contentStyle}>
         <h3>{cocktail.name}</h3>
-
 
         {cocktail.instructions && (
           <p>
@@ -49,28 +51,29 @@ export default function CocktailCard({ cocktail, darkMode, unit }) {
         )}
 
         {cocktail.ingredients && (
-  <div>
-    <strong>Ingredients:</strong>
-    <ul style={{ margin: 0, paddingLeft: "1.2rem" }}>
-      {cocktail.ingredients.map((ing, idx) => {
-        // Convert amount and add the unit if it's measurable
-        let displayAmount = "";
-        if (ing.amount) {
-          const converted = convertAmount(ing.amount, unit);
-          // Only add the unit if it's a number (convertAmount returns original string for non-measurable)
-          displayAmount = isNaN(Number(converted)) ? converted : `${converted} ${unit}`;
-        }
+          <div>
+            <strong>Ingredients:</strong>
+            <ul style={{ margin: 0, paddingLeft: "1.2rem" }}>
+              {cocktail.ingredients.map((ing, idx) => {
+                // Convert amount to target unit if numeric
+                let displayAmount = "";
+                if (typeof ing.amount === "number") {
+                  const converted = convertAmount(ing.amount, ing.unit, targetUnit);
+                  displayAmount = `${converted} ${targetUnit}`;
+                }
 
-        return (
-          <li key={idx}>
-            {ing.name} {displayAmount ? `- ${displayAmount}` : ""}
-          </li>
-        );
-      })}
-    </ul>
-  </div>
-)}
+                // Include modifier if present
+                const modifierText = ing.modifier ? ` (${ing.modifier})` : "";
 
+                return (
+                  <li key={idx}>
+                    {ing.name} {displayAmount}{modifierText}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
 
         {missing.length > 0 && (
           <p style={missingStyle}>
