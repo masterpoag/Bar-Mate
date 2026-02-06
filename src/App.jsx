@@ -152,6 +152,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<HomePage darkMode={darkMode} />} /> 
+        <Route path="/submit-drink" element={<SubmitDrinkPage darkMode={darkMode} />} /> 
         <Route
           path="/bar"
           element={
