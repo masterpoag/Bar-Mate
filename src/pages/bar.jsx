@@ -3,37 +3,53 @@ import React, { useState, useMemo } from "react";
 export default function BarStockPage({ barStock, setBarStock, darkMode, cocktailsData }) {
   const [search, setSearch] = useState("");
 
-  // Collect all unique ingredient names (strings) from cocktails
-  const allIngredients = useMemo(() => {
-    const ingredientsSet = new Set();
-    cocktailsData.forEach(cocktail => {
-      cocktail.ingredients.forEach(i => {
-        if (i?.name) ingredientsSet.add(i.name.toLowerCase());
-      });
+// Count how many times each ingredient appears
+const ingredientCounts = useMemo(() => {
+  const counts = {};
+  cocktailsData.forEach(cocktail => {
+    cocktail.ingredients.forEach(i => {
+      if (i?.name) {
+        const name = i.name.toLowerCase();
+        counts[name] = (counts[name] || 0) + 1;
+      }
     });
-    return Array.from(ingredientsSet);
-  }, [cocktailsData]);
+  });
+  return counts;
+}, [cocktailsData]);
 
-  // Filter ingredients based on search input and sort selected first
-  const filteredIngredients = useMemo(() => {
-    return allIngredients
-      .filter(i => i.includes(search.toLowerCase()))
-      .sort((a, b) => {
-        const aSelected = barStock.includes(a) ? 0 : 1;
-        const bSelected = barStock.includes(b) ? 0 : 1;
-        if (aSelected !== bSelected) return aSelected - bSelected;
-        return a.localeCompare(b);
-      });
-  }, [allIngredients, search, barStock]);
+// Collect all unique ingredient names
+const allIngredients = useMemo(() => {
+  return Object.keys(ingredientCounts);
+}, [ingredientCounts]);
 
-  // Toggle ingredient in bar stock
-  const toggleIngredient = (ing) => {
-    if (barStock.includes(ing)) {
-      setBarStock(barStock.filter(i => i !== ing));
-    } else {
-      setBarStock([...barStock, ing]);
-    }
-  };
+// Filter ingredients based on search input and sort
+const filteredIngredients = useMemo(() => {
+  return allIngredients
+    .filter(i => i.includes(search.toLowerCase()))
+    .sort((a, b) => {
+      // Selected ingredients come first
+      const aSelected = barStock.includes(a) ? 0 : 1;
+      const bSelected = barStock.includes(b) ? 0 : 1;
+      if (aSelected !== bSelected) return aSelected - bSelected;
+
+      // Then sort by frequency descending
+      const countDiff = (ingredientCounts[b] || 0) - (ingredientCounts[a] || 0);
+      if (countDiff !== 0) return countDiff;
+
+      // Finally alphabetically
+      return a.localeCompare(b);
+    });
+}, [allIngredients, search, barStock, ingredientCounts]);
+
+// Toggle ingredient in bar stock
+const toggleIngredient = (ing) => {
+  if (barStock.includes(ing)) {
+    setBarStock(barStock.filter(i => i !== ing));
+  } else {
+    setBarStock([...barStock, ing]);
+  }
+};
+
 
   // Badge styling
   const badgeStyle = (ing) => ({
