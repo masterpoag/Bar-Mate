@@ -21,7 +21,6 @@ export default function SubmitDrinkPage({ user, darkMode }) {
   };
 
   const submitDrink = async () => {
-    // Validate required fields
     if (!name || !userName || !photo || ingredients.length === 0) {
       setMessage("Please provide your name, drink name, photo link, and at least one ingredient.");
       return;
@@ -43,13 +42,8 @@ export default function SubmitDrinkPage({ user, darkMode }) {
 
       if (res.ok) {
         setMessage("Drink submitted! Awaiting approval.");
-        // Clear all fields
-        setName("");
-        setUserName(user?.username || "");
-        setPhoto("");
-        setIngredients([]);
-        setInstructions("");
-        setDescription("");
+        setName(""); setUserName(user?.username || ""); setPhoto("");
+        setIngredients([]); setInstructions(""); setDescription("");
       } else {
         const data = await res.json();
         setMessage(data.message || "Failed to submit drink.");
@@ -60,8 +54,65 @@ export default function SubmitDrinkPage({ user, darkMode }) {
     }
   };
 
+  // Styles
+  const containerStyle = {
+    minHeight: "100vh",
+    padding: "2rem",
+    background: darkMode ? "#121212" : "#f5f5f5",
+    color: darkMode ? "#f5f5f5" : "#121212",
+    transition: "all 0.3s",
+    boxSizing: "border-box",
+  };
+
+  const inputStyle = {
+    display: "block",
+    marginBottom: "0.5rem",
+    padding: "0.5rem",
+    width: "100%",
+    borderRadius: "4px",
+    border: darkMode ? "1px solid #555" : "1px solid #ccc",
+    background: darkMode ? "#1e1e1e" : "#fff",
+    color: darkMode ? "#f5f5f5" : "#121212",
+  };
+
+  const ingredientContainerStyle = {
+    display: "flex",
+    flexWrap: "wrap",
+    gap: "0.3rem",
+    alignItems: "center",
+    marginBottom: "1rem",
+  };
+
+  const ingredientInputStyle = {
+    padding: "0.3rem",
+    borderRadius: "4px",
+    border: darkMode ? "1px solid #555" : "1px solid #ccc",
+    background: darkMode ? "#1e1e1e" : "#fff",
+    color: darkMode ? "#f5f5f5" : "#121212",
+  };
+
+  const addButtonStyle = {
+    padding: "0.3rem 0.6rem",
+    borderRadius: "4px",
+    border: "none",
+    cursor: "pointer",
+    background: darkMode ? "#ff6f61" : "#1976d2",
+    color: "#fff",
+    fontWeight: "bold",
+  };
+
+  const removeButtonStyle = {
+    marginLeft: "0.5rem",
+    padding: "0.2rem 0.4rem",
+    borderRadius: "4px",
+    border: "none",
+    cursor: "pointer",
+    background: "#e53935",
+    color: "#fff",
+  };
+
   return (
-    <div style={{ padding: "1rem" }}>
+    <div style={containerStyle}>
       <h1>Submit a New Drink</h1>
       {message && <p style={{ fontWeight: "bold" }}>{message}</p>}
 
@@ -70,74 +121,65 @@ export default function SubmitDrinkPage({ user, darkMode }) {
         placeholder="Your Name"
         value={userName}
         onChange={e => setUserName(e.target.value)}
-        style={{ display: "block", marginBottom: "0.5rem", padding: "0.5rem", width: "100%" }}
+        style={inputStyle}
       />
       <input
         placeholder="Drink Name"
         value={name}
         onChange={e => setName(e.target.value)}
-        style={{ display: "block", marginBottom: "0.5rem", padding: "0.5rem", width: "100%" }}
+        style={inputStyle}
       />
       <input
         placeholder="Photo Link (required)"
         value={photo}
         onChange={e => setPhoto(e.target.value)}
-        style={{ display: "block", marginBottom: "0.5rem", padding: "0.5rem", width: "100%" }}
+        style={inputStyle}
       />
       <textarea
         placeholder="Instructions"
         value={instructions}
         onChange={e => setInstructions(e.target.value)}
-        style={{ display: "block", marginBottom: "0.5rem", padding: "0.5rem", width: "100%" }}
+        style={inputStyle}
       />
       <textarea
         placeholder="Description"
         value={description}
         onChange={e => setDescription(e.target.value)}
-        style={{ display: "block", marginBottom: "0.5rem", padding: "0.5rem", width: "100%" }}
+        style={inputStyle}
       />
-
-      {/* Ingredients */}
-      <div style={{ marginBottom: "1rem" }}>
-        <input
-          placeholder="Ingredient Name"
-          value={currentIngredient.name}
-          onChange={e => setCurrentIngredient({ ...currentIngredient, name: e.target.value })}
-          style={{ marginRight: "0.3rem" }}
-        />
-        <input
-          placeholder="Amount"
-          value={currentIngredient.amount}
-          onChange={e => setCurrentIngredient({ ...currentIngredient, amount: e.target.value })}
-          style={{ marginRight: "0.3rem", width: "60px" }}
-        />
-        <input
-          placeholder="Unit"
-          value={currentIngredient.unit}
-          onChange={e => setCurrentIngredient({ ...currentIngredient, unit: e.target.value })}
-          style={{ marginRight: "0.3rem", width: "60px" }}
-        />
-        <input
-          placeholder="Modifier"
-          value={currentIngredient.modifier}
-          onChange={e => setCurrentIngredient({ ...currentIngredient, modifier: e.target.value })}
-          style={{ marginRight: "0.3rem", width: "100px" }}
-        />
-        <button onClick={addIngredient}>Add Ingredient</button>
-      </div>
 
       {/* Ingredients */}
       <div>
         <h3>Ingredients</h3>
-        <div style={ingredientContainer}>
-          <input style={ingredientInputStyle} placeholder="Name" value={currentIngredient.name} onChange={(e) => setCurrentIngredient({ ...currentIngredient, name: e.target.value })} />
-          <input style={{ ...ingredientInputStyle, maxWidth: "70px" }} placeholder="Amount" value={currentIngredient.amount} onChange={(e) => setCurrentIngredient({ ...currentIngredient, amount: e.target.value })} />
-          <input style={{ ...ingredientInputStyle, maxWidth: "70px" }} placeholder="Unit" value={currentIngredient.unit} onChange={(e) => setCurrentIngredient({ ...currentIngredient, unit: e.target.value })} />
-          <input style={ingredientInputStyle} placeholder="Modifier" value={currentIngredient.modifier} onChange={(e) => setCurrentIngredient({ ...currentIngredient, modifier: e.target.value })} />
+        <div style={ingredientContainerStyle}>
+          <input
+            placeholder="Name"
+            value={currentIngredient.name}
+            onChange={e => setCurrentIngredient({ ...currentIngredient, name: e.target.value })}
+            style={{ ...ingredientInputStyle, flex: "2" }}
+          />
+          <input
+            placeholder="Amount"
+            value={currentIngredient.amount}
+            onChange={e => setCurrentIngredient({ ...currentIngredient, amount: e.target.value })}
+            style={{ ...ingredientInputStyle, flex: "1", maxWidth: "70px" }}
+          />
+          <input
+            placeholder="Unit"
+            value={currentIngredient.unit}
+            onChange={e => setCurrentIngredient({ ...currentIngredient, unit: e.target.value })}
+            style={{ ...ingredientInputStyle, flex: "1", maxWidth: "70px" }}
+          />
+          <input
+            placeholder="Modifier"
+            value={currentIngredient.modifier}
+            onChange={e => setCurrentIngredient({ ...currentIngredient, modifier: e.target.value })}
+            style={{ ...ingredientInputStyle, flex: "1" }}
+          />
           <button style={addButtonStyle} onClick={addIngredient}>Add</button>
         </div>
 
-        <ul style={ingredientListStyle}>
+        <ul>
           {ingredients.map((i, idx) => (
             <li key={idx} style={{ marginBottom: "0.3rem" }}>
               {i.name} {i.amount} {i.unit} {i.modifier}
@@ -147,10 +189,9 @@ export default function SubmitDrinkPage({ user, darkMode }) {
         </ul>
       </div>
 
-      <button onClick={submitDrink} style={{ marginTop: "1rem", padding: "0.5rem 1rem" }}>
+      <button onClick={submitDrink} style={{ marginTop: "1rem", padding: "0.5rem 1rem", borderRadius: "4px", border: "none", background: darkMode ? "#ff6f61" : "#1976d2", color: "#fff", fontWeight: "bold", cursor: "pointer" }}>
         Submit Drink
       </button>
     </div>
   );
 }
-
