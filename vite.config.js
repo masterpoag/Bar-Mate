@@ -5,6 +5,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    allowedHosts: ["bar.ravstormdev.top"]
+    allowedHosts: ["bar.ravstormdev.top"],
+    proxy: {
+      "/api": "http://localhost:5000", // <-- forward all /api requests to backend
+    },
   }
+    
 })
