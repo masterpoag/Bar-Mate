@@ -5,9 +5,7 @@ import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 import drinksRoute from "./routes/drinks.js";
 
-dotenv.config({
-  path: join(process.cwd(), "backend/.env"),
-});
+dotenv.config();
 
 await mongoose.connect(process.env.MONGO_URI);
 
