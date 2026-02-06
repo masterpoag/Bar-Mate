@@ -3,13 +3,13 @@ import Cookies from "js-cookie";
 import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
 import BarStockPage from "./pages/bar";
 import CocktailsPage from "./pages/cocktails";
-import cocktailsData from "./data/cocktails.json";
 import SearchCocktailsPage from "./pages/search";
 import HomePage from "./pages";
 
 const units = ["oz", "ml", "cl", "tbsp", "tsp"];
 
 export default function App() {
+  const [drinks, setDrinks] = useState([]);
   // Load from cookies or defaults
   const [barStock, setBarStock] = useState(() => {
     const saved = Cookies.get("barStock");
@@ -44,6 +44,14 @@ export default function App() {
     document.body.style.background = darkMode ? "#121212" : "#f5f5f5";
     document.body.style.color = darkMode ? "#f5f5f5" : "#121212";
   }, [darkMode]);
+
+  useEffect(() => {
+  fetch("/api/drinks")
+    .then(res => res.json())
+    .then(data => setDrinks(data))
+    .catch(err => console.error("Failed to load drinks:", err));
+  }, []);
+
 
   const navStyle = {
     display: "flex",
@@ -151,7 +159,7 @@ export default function App() {
               barStock={barStock}
               setBarStock={setBarStock}
               darkMode={darkMode}
-              cocktailsData={cocktailsData}
+              cocktailsData={drinks}
               unit={unit}
             />
           }
@@ -161,7 +169,7 @@ export default function App() {
           element={
             <CocktailsPage
               barStock={barStock}
-              cocktailsData={cocktailsData}
+              cocktailsData={drinks}
               darkMode={darkMode}
               unit={unit}
             />
@@ -171,7 +179,7 @@ export default function App() {
           path="/search"
           element={
             <SearchCocktailsPage
-              cocktailsData={cocktailsData}
+              cocktailsData={drinks}
               barStock={barStock}
               darkMode={darkMode}
               unit={unit}
