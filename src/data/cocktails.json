@@ -13724,41 +13724,6 @@
         "alcoholic": "Alcoholic"
     },
     {
-        "name": "Mai-Tai",
-        "ingredients": [
-            {
-                "name": "Amber Jamaican Rum",
-                "amount": "30 ml"
-            },
-            {
-                "name": "Martinique Molasses Rhum*",
-                "amount": "30 ml"
-            },
-            {
-                "name": "Orange Curacao",
-                "amount": "15 ml"
-            },
-            {
-                "name": "Orgeat Syrup (Almond)",
-                "amount": "15 ml"
-            },
-            {
-                "name": "Fresh Squeezed Lime Juice",
-                "amount": "30 ml"
-            },
-            {
-                "name": "Simple Syrup",
-                "amount": "7.5 ml"
-            }
-        ],
-        "instructions": "Add all ingredients into a shaker with ice. Shake and pour into a double rocks glass or an highball glass. * The Martinique molasses rum used by Trader Vic was not an Agricole Rhum but a type of “rummy” from molasses. Garnish with pineapple spear, mint leaves and lime peel.",
-        "description": "N/A",
-        "image": "https://iba-world.com/wp-content/uploads/2024/07/iba-cocktail-contemporary-classics-mai-tai-6695cdc169ea3.webp",
-        "glass": "N/A",
-        "category": "IBA Official",
-        "alcoholic": "Alcoholic"
-    },
-    {
         "name": "Margarita",
         "ingredients": [
             {
