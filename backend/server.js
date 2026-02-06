@@ -10,10 +10,12 @@ dotenv.config();
 await mongoose.connect(process.env.MONGO_URI);
 
 const app = express();
+app.use("/api/drinks", drinksRoute);
+
 app.use(express.json());
 
 // API routes
-app.use("/api/drinks", drinksRoute);
+
 
 // Serve React build
 const __filename = fileURLToPath(import.meta.url);

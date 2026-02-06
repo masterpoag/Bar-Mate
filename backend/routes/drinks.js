@@ -1,18 +1,16 @@
 import express from "express";
-import Drink from "../models/Drink.js";
+import Drink from "../models/Drink.js"; // your MongoDB Mongoose model
 
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  const drinks = await Drink.find();
-  res.json(drinks);
-});
-
-router.get("/search/:name", async (req, res) => {
-  const drinks = await Drink.find({
-    name: { $regex: req.params.name, $options: "i" }
-  });
-  res.json(drinks);
+  try {
+    const drinks = await Drink.find(); // fetch all drinks
+    res.json(drinks); // send JSON to frontend
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: err.message });
+  }
 });
 
 export default router;
