@@ -75,4 +75,56 @@ async function migrate() {
   }
 }
 
-migrate();
+function round2(value) {
+  if (typeof value !== "number") return value;
+  return Math.round(value * 100) / 100;
+}
+
+async function fixAmounts() {
+  const drinks = await Drink.find({});
+  let updatedDrinks = 0;
+  let updatedIngredients = 0;
+
+  for (const drink of drinks) {
+    let changed = false;
+
+    drink.ingredients = drink.ingredients.map(ing => {
+      const rounded = round2(ing.amount);
+
+      if (rounded !== ing.amount) {
+        changed = true;
+        updatedIngredients++;
+        ing.amount = rounded;
+      }
+
+      return ing;
+    });
+
+    if (changed) {
+      await drink.save();
+      updatedDrinks++;
+      console.log(`✔ Fixed: ${drink.name}`);
+    }
+  }
+
+  console.log(`Ingredients rounded: ${updatedIngredients}`);
+  console.log(`Drinks updated: ${updatedDrinks}`);
+}
+
+async function main() {
+  try {
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log("✅ Connected to MongoDB");
+
+    // await migrate();      
+    await fixAmounts();
+
+    console.log("🎉 All done!");
+    process.exit(0);
+  } catch (err) {
+    console.error("❌ Error:", err);
+    process.exit(1);
+  }
+}
+
+main();
