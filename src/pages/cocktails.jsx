@@ -7,38 +7,38 @@ export default function CocktailsPage({ barStock, cocktailsData, darkMode, unit 
 
   if (!cocktailsData) return <p>Loading cocktails...</p>;
 
+  // 🔥 DO NOT CLONE — mutate originals
   const possibleCocktails = useMemo(() => {
-  return cocktailsData
-    .map(cocktail => {
+    cocktailsData.forEach(cocktail => {
       const missingIngredients = cocktail.ingredients
         .filter(i => !barStock.includes(i.name.toLowerCase()))
         .map(i => i.name);
-      return { ...cocktail, missingIngredients };
-    })
-    .filter(c => c.missingIngredients.length <= 1)
-    .sort((a, b) => a.missingIngredients.length - b.missingIngredients.length);
-}, [cocktailsData, barStock]);
 
+      cocktail.missingIngredients = missingIngredients;
+    });
 
-  // Set up Fuse.js for fuzzy searching by cocktail name or ingredient names
+    return cocktailsData
+      .filter(c => c.missingIngredients.length <= 1)
+      .sort((a, b) => a.missingIngredients.length - b.missingIngredients.length);
+  }, [cocktailsData, barStock]);
+
+  // 🔥 Fuse built on SAME references
   const fuse = useMemo(() => {
     return new Fuse(possibleCocktails, {
+      threshold: 0.3,
+      ignoreLocation: true,
+      minMatchCharLength: 2,
       keys: [
-        "name",
-        "ingredients.name",
+        { name: "name", weight: 0.7 },
+        { name: "ingredients.name", weight: 0.3 },
       ],
-      threshold: 0.4,
     });
   }, [possibleCocktails]);
 
-  // Filter cocktails based on search input
   const filteredCocktails = useMemo(() => {
     if (!search) return possibleCocktails;
-    const results = fuse.search(search);
-    return results.map(r => r.item);
+    return fuse.search(search).map(r => r.item);
   }, [search, fuse, possibleCocktails]);
-
-
 
   const containerStyle = {
     minHeight: "100vh",
@@ -47,7 +47,6 @@ export default function CocktailsPage({ barStock, cocktailsData, darkMode, unit 
     boxSizing: "border-box",
     background: darkMode ? "#121212" : "#f5f5f5",
     color: darkMode ? "#f5f5f5" : "#121212",
-    transition: "all 0.3s",
   };
 
   const gridStyle = {
@@ -62,16 +61,12 @@ export default function CocktailsPage({ barStock, cocktailsData, darkMode, unit 
     width: "100%",
     maxWidth: "300px",
     marginBottom: "1rem",
-    border: darkMode ? "1px solid #555" : "1px solid #ccc",
-    background: darkMode ? "#1e1e1e" : "#fff",
-    color: darkMode ? "#f5f5f5" : "#121212",
   };
 
   return (
     <div style={containerStyle}>
-      <h1 style={{ marginTop: 0, marginBottom: "1rem" }}>🍹 Cocktails You Can Make</h1>
+      <h1>🍹 Cocktails You Can Make</h1>
 
-      {/* Fuzzy search input */}
       <input
         type="text"
         placeholder="Search cocktails..."
@@ -88,7 +83,7 @@ export default function CocktailsPage({ barStock, cocktailsData, darkMode, unit 
 
       <div style={gridStyle}>
         {filteredCocktails.map(c => (
-          <CocktailCard key={c.name} cocktail={c} darkMode={darkMode} unit={unit} />
+          <CocktailCard key={c.slug} cocktail={c} darkMode={darkMode} unit={unit} />
         ))}
       </div>
     </div>

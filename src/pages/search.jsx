@@ -7,40 +7,37 @@ export default function SearchCocktailsPage({ cocktailsData, barStock, darkMode,
 
   if (!cocktailsData) return <p>Loading cocktails...</p>;
 
-  // Add missingIngredients to each cocktail (for display)
   const cocktailsWithMissing = useMemo(() => {
     return cocktailsData.map(cocktail => {
       const missingIngredients = cocktail.ingredients
         .filter(i => !barStock.includes(i.name.toLowerCase()))
         .map(i => i.name);
-      return { ...cocktail, missingIngredients };
+
+      return {
+        ...cocktail,
+        missingIngredients,
+      };
     });
   }, [cocktailsData, barStock]);
 
-  // fuzzy searching
   const fuse = useMemo(() => {
     return new Fuse(cocktailsWithMissing, {
-      threshold: 0.35,
+      threshold: 0.3,
+      ignoreLocation: true,
+      minMatchCharLength: 2,
       keys: [
-        "name",
-        {
-          name: "ingredients",
-          getFn: (cocktail) =>
-            cocktail.ingredients.map(i => i.name).join(" "),
-        },
+        { name: "name", weight: 0.7 },
+        { name: "ingredients.name", weight: 0.3 },
       ],
     });
   }, [cocktailsWithMissing]);
 
-
-  // Filter cocktails based on search input (but never filter by missing ingredients)
   const filteredCocktails = useMemo(() => {
-    if (!search) return cocktailsWithMissing; 
-    const results = fuse.search(search);
-    return results.map(r => r.item);
+    if (!search.trim()) return cocktailsWithMissing;
+    return fuse.search(search).map(r => r.item);
   }, [search, fuse, cocktailsWithMissing]);
 
-  // 4️⃣ Styles
+  // Styles
   const containerStyle = {
     minHeight: "100vh",
     width: "100vw",
@@ -88,7 +85,12 @@ export default function SearchCocktailsPage({ cocktailsData, barStock, darkMode,
 
       <div style={gridStyle}>
         {filteredCocktails.map(c => (
-          <CocktailCard key={c.name} cocktail={c} darkMode={darkMode} unit={unit} />
+          <CocktailCard
+            key={c.slug}  
+            cocktail={c}
+            darkMode={darkMode}
+            unit={unit}
+          />
         ))}
       </div>
     </div>
