@@ -20,10 +20,18 @@ export default function SearchCocktailsPage({ cocktailsData, barStock, darkMode,
   // fuzzy searching
   const fuse = useMemo(() => {
     return new Fuse(cocktailsWithMissing, {
-      keys: ["name", "ingredients.name"], // search by cocktail name or ingredient names
-      threshold: 0.4,
+      threshold: 0.35,
+      keys: [
+        "name",
+        {
+          name: "ingredients",
+          getFn: (cocktail) =>
+            cocktail.ingredients.map(i => i.name).join(" "),
+        },
+      ],
     });
   }, [cocktailsWithMissing]);
+
 
   // Filter cocktails based on search input (but never filter by missing ingredients)
   const filteredCocktails = useMemo(() => {
